@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, html {
+  font-size: 16px;
+  overflow-x: hidden;
+  font-family: opens sans, Lato,Helvetica,Arial,Catamaran,Helvetica,Arial,sans-serif; }
+
+header {
+  width: 100%;
+  min-height: 600px;
+  background-image: url("../img/hipster.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  transition: all .35s; }
+  .main-menu .logo {
+    color: black;
+    display: block;
+    font-size: 3rem; }
+
+.header-top {
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0rem .2rem 0 .2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  transition: all .35s; }
+
+nav {
+  width: auto;
+  height: auto;
+  display: flex; }
+  nav ul {
+    display: flex;
+    align-items: center;
+    margin-right: .8rem;
+    transition: .2s all linear; }
+    nav ul li {
+      padding-left: .6rem;
+      padding-right: .6rem;
+      transition: .2s all linear; }
+    nav ul a {
+      color: black;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: .9rem; }
+  nav .btn-login {
+    text-transform: uppercase;
+    padding: 8px 45px;
+    border-radius: 300px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
+    nav .btn-login:hover {
+      border: 1px solid transparent;
+      cursor: pointer;
+      border-color: #e4fde1;
+      background-color: #e4fde1; }
+
+.apresentacao {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  .apresentacao h1 {
+    font-size: 2rem;
+    color: #fff; }
+
+.introduceProduct {
+  min-height: 300px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 14rem 0; }
+  .introduceProduct div {
+    width: 80%;
+    height: auto;
+    margin: auto; }
+    .introduceProduct div h2 {
+      font-size: 3.5rem;
+      text-align: center;
+      display: block;
+      margin-bottom: 1.6rem; }
+    .introduceProduct div .introduceProduct-p {
+      margin-top: 7rem; }
+      .introduceProduct div .introduceProduct-p p {
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 1.8rem; }
+
+.menu-fixo {
+  background: #fff;
+  height: 68px; }
+
+.menu-dropdown {
+  width: 100%;
+  min-height: 30px;
+  background: #fff;
+  display: none !important;
+  position: absolute;
+  right: auto;
+  left: 0;
+  top: 62px;
+  transition: all .32s; }
+  .menu-dropdown ul {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; }
+  .menu-dropdown li {
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    display: flex;
+    align-items: center; }
+    .menu-dropdown li:hover {
+      background-color: #fcfcfc; }
+    .menu-dropdown li a {
+      color: black;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: .9rem;
+      font-family: opens sans, Lato, Helvetica, Arial, Catamaran, Helvetica, Arial, sans-serif; }
+
+.servicos {
+  width: 100%;
+  min-height: 400px;
+  background: #fdcc52;
+  padding: 9rem 0; }
+  .servicos h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem; }
+    @media (max-width: 1024px) {
+      .servicos h2 {
+        font-size: 2.5rem; } }
+  .servicos .apresentaPlanos {
+    width: 80%;
+    height: auto;
+    margin: 9rem auto;
+    display: flex; }
+    @media (max-width: 1024px) {
+      .servicos .apresentaPlanos {
+        width: 90%;
+        flex-flow: column wrap; } }
+  .servicos .btn-quero-cont {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 20px 46px;
+    border-radius: 300px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
+    .servicos .btn-quero-cont:hover {
+      border: 1px solid transparent;
+      cursor: pointer;
+      border-color: #e4fde1;
+      background-color: #e4fde1; }
+
+.planos {
+  width: auto;
+  min-height: 1px;
+  padding-right: .9rem;
+  padding-left: .9rem;
+  text-align: justify; }
+  @media (max-width: 1024px) {
+    .planos {
+      width: 100%;
+      margin-bottom: 2rem; } }
+  .planos img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    max-width: 140px;
+    height: auto; }
+  .planos h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #114b5f; }
+  .planos p {
+    font-size: 1.1rem;
+    font-weight: 200; }
+    @media (max-width: 1024px) {
+      .planos p {
+        padding: 0 9rem; } }
+    @media (max-width: 700px) {
+      .planos p {
+        padding: 0; } }
+
+.contato {
+  width: 100%;
+  min-height: 100px;
+  background-color: #fcfcfc;
+  padding: 9rem 0; }
+  .contato .wrap {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; }
+    .contato .wrap h3 {
+      font-size: 2rem; }
+    .contato .wrap form {
+      width: 300px;
+      height: auto;
+      background-color: #fff;
+      padding: 3rem; }
+      .contato .wrap form input {
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        padding: .4rem;
+        margin-bottom: .5rem; }
+      .contato .wrap form button {
+        display: block;
+        text-transform: uppercase;
+        padding: 20px 46px;
+        border-radius: 300px;
+        border: 1px solid black;
+        background-color: transparent;
+        transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
+        .contato .wrap form button:hover {
+          border: 1px solid transparent;
+          cursor: pointer;
+          border-color: #e4fde1;
+          background-color: #e4fde1; }
+
+footer {
+  width: 100%;
+  min-height: 50px;
+  background-color: #222;
+  padding: 2rem 0; }
+  footer .wrap {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; }
+  footer h6 {
+    text-align: center;
+    color: #fff; }
+
+.menu-show {
+  display: block !important; }
+
+.modal-login {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: transparent;
+  z-index: 9999;
+  transition: all cubic-bezier(0.4, 0, 0.09, 0.12); }
+  .modal-login .close-modal {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: auto;
+    right: 5%;
+    top: 15px;
+    padding: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
+    .modal-login .close-modal:hover {
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50%; }
+  .modal-login .img-usuario {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #fff, #cdcdcd);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; }
+  .modal-login > div {
+    position: absolute;
+    margin: auto;
+    width: 300px;
+    min-height: 100px;
+    background-color: #fcfcfc;
+    padding: 3rem 0 5rem 0;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    top: 80px;
+    box-shadow: 0px 0px 160px 1px rgba(0, 0, 0, 0.3); }
+    @media (min-width: 375px) {
+      .modal-login > div {
+        width: 360px; } }
+    @media (min-width: 700px) {
+      .modal-login > div {
+        width: 460px; } }
+  .modal-login form {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 80%; }
+    .modal-login form input {
+      width: 100%;
+      padding: .9rem .4rem;
+      display: block;
+      margin-bottom: .9rem;
+      border-radius: 66px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      transition: padding ease-in .4s; }
+      .modal-login form input::placeholder {
+        font-size: 1.2rem; }
+      .modal-login form input:focus {
+        padding: 0.8rem;
+        outline: none;
+        box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2); }
+    .modal-login form button {
+      margin-top: .9rem;
+      width: 100%;
+      text-transform: uppercase;
+      padding: 8px 45px;
+      border-radius: 300px;
+      border: 1px solid black;
+      background-color: transparent;
+      transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+      text-align: center; }
+      .modal-login form button:hover {
+        border: 1px solid transparent;
+        cursor: pointer;
+        border-color: #e4fde1;
+        background-color: #e4fde1; }
+
+.display-modal {
+  display: block; }
+
+.desfoque {
+  filter: blur(2px); }
+
+.btn-hamburguer {
+  display: none; }
+
+@media (max-width: 768px) {
+  nav ul, nav button {
+    display: none !important; }
+
+  .btn-hamburguer {
+    display: block !important;
+    cursor: pointer; } }
+
+/*# sourceMappingURL=main.css.map */
