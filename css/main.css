@@ -101,6 +101,15 @@ nav {
       padding-left: .6rem;
       padding-right: .6rem;
       transition: .2s all linear; }
+    nav ul li:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 5px;
+      background: #000;
+      transition: width .3s; }
+    nav ul li:hover:after {
+      width: 100%; }
     nav ul a {
       color: black;
       cursor: pointer;
@@ -162,7 +171,8 @@ nav {
   right: auto;
   left: 0;
   top: 62px;
-  transition: all .32s; }
+  transition: all .32s;
+  padding: 1.4rem 0; }
   .menu-dropdown ul {
     width: 80%;
     height: auto;
@@ -299,7 +309,7 @@ footer {
     height: auto;
     margin: 0 auto; }
   footer h6 {
-    font-size: .8rem;
+    font-size: .9rem;
     text-align: center;
     color: #fff; }
 
