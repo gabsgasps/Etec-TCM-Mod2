@@ -56,7 +56,7 @@ body, html {
 
 header {
   width: 100%;
-  min-height: 600px;
+  min-height: 700px;
   background-image: url("../img/hipster.jpg");
   background-position: center bottom;
   background-size: cover;
@@ -171,10 +171,13 @@ nav {
     padding-top: .9rem;
     padding-bottom: .9rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    border-radius: 66px; }
     .menu-dropdown li:hover {
       background-color: #fcfcfc; }
     .menu-dropdown li a {
+      display: block;
+      padding: .2rem .9rem;
       color: black;
       cursor: pointer;
       text-transform: uppercase;
@@ -184,7 +187,7 @@ nav {
 .servicos {
   width: 100%;
   min-height: 400px;
-  background: #fdcc52;
+  background: #fffccc;
   padding: 9rem 0; }
   .servicos h2 {
     text-align: center;
@@ -194,7 +197,7 @@ nav {
       .servicos h2 {
         font-size: 2.5rem; } }
   .servicos .apresentaPlanos {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 9rem auto;
     display: flex; }
@@ -231,7 +234,7 @@ nav {
     display: block;
     margin: 0 auto;
     margin-bottom: 2rem;
-    max-width: 140px;
+    max-width: 160px;
     height: auto; }
   .planos h3 {
     font-size: 2rem;
@@ -240,11 +243,13 @@ nav {
     font-weight: 600;
     color: #114b5f; }
   .planos p {
-    font-size: 1.1rem;
-    font-weight: 200; }
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 200;
+    text-align: center; }
     @media (max-width: 1024px) {
       .planos p {
-        padding: 0 9rem; } }
+        padding: 0 8rem; } }
     @media (max-width: 700px) {
       .planos p {
         padding: 0; } }
@@ -294,6 +299,7 @@ footer {
     height: auto;
     margin: 0 auto; }
   footer h6 {
+    font-size: .8rem;
     text-align: center;
     color: #fff; }
 
@@ -396,12 +402,55 @@ footer {
 .btn-hamburguer {
   display: none; }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   nav ul, nav button {
     display: none !important; }
 
   .btn-hamburguer {
     display: block !important;
     cursor: pointer; } }
+/*Sobre CSS*/
+.header-sobre {
+  width: 100%;
+  height: 500px;
+  background-color: #fcfcfc; }
+
+.main-sobre {
+  width: 100%;
+  height: 500px;
+  background-color: #fff; }
+
+.equipe {
+  width: 100%;
+  height: 500px;
+  background-color: #fffccc; }
+
+/*Planos CSS*/
+.planos-header {
+  width: 100%;
+  height: 500px;
+  background-color: #fcfcfc; }
+
+.destaque-planos {
+  width: 100%;
+  height: 500px;
+  background-color: #fffffc; }
+
+.area-Planos {
+  width: 100%;
+  height: 500px;
+  background-color: #fffccc; }
+
+.header-contato {
+  width: 100%;
+  height: 500px; }
+
+.chamada {
+  width: 100%;
+  height: 500px; }
+
+.form-contatar {
+  width: 100%;
+  height: 500px; }
 
 /*# sourceMappingURL=main.css.map */

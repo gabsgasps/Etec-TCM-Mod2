@@ -17,7 +17,7 @@ body, html{
 //cabaçalho
 header{
 	width: 100%;
-	min-height: 600px;
+	min-height: 700px;
 	background-image: url('../img/hipster.jpg');
 	background-position: center bottom;
 	background-size: cover;
@@ -67,6 +67,7 @@ header{
 				padding-left: .6rem;
 				padding-right: .6rem;
 			    transition: .2s all linear;
+
 			}
 			a{
 				color: black;
@@ -168,12 +169,15 @@ header{
 	    padding-bottom: .9rem;
 	    display: flex;
 	    align-items: center;
+	    border-radius: 66px;
 
     	&:hover{
     		background-color: #fcfcfc;
     	}
 
-    	a{
+    	a{	
+    		display: block;
+		    padding: .2rem .9rem;
     		color: black;
 			cursor: pointer;
 			text-transform: uppercase;
@@ -187,7 +191,7 @@ header{
 .servicos{
 	width: 100%;
 	min-height: 400px;
-	background: #fdcc52;
+	background: #fffccc;
 	padding: 9rem 0;
 	h2{
 		text-align: center;
@@ -198,7 +202,7 @@ header{
 		}
 	}
 	.apresentaPlanos{
-		width: 80%;
+		width: 90%;
 		height: auto;
 		margin: 9rem auto;
 		display: flex;
@@ -246,7 +250,7 @@ header{
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 2rem;
-		max-width: 140px;
+		max-width: 160px;
 		height: auto;
 	}
 
@@ -259,10 +263,12 @@ header{
 	}
 
 	p{
-		font-size: 1.1rem;
+		font-size: 1.2rem;
+		line-height: 1.4rem;
 		font-weight: 200;
+		text-align: center;
 		@media (max-width: 1024px){
-			padding: 0 9rem;
+			padding: 0 8rem;
 		}
 		@media (max-width: 700px){
 			padding: 0;
@@ -332,10 +338,13 @@ footer{
 		margin: 0 auto;
 	}
 	h6{
+		font-size: .8rem;
 		text-align: center;
 		color: #fff;
 	}
 }
+
+
 .menu-show{
 	display: block!important;
 }
@@ -459,7 +468,7 @@ footer{
 		display: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 900px){
 
 	nav ul, nav button{
 
@@ -472,3 +481,14 @@ footer{
 
 	}
 }
+
+/*Sobre CSS*/
+@import 'sobre';
+
+
+
+/*Planos CSS*/
+@import 'planos';
+
+
+@import 'contato';

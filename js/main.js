@@ -18,8 +18,6 @@ btn_hamburguer.addEventListener('click', ()=>{
 
 var btn_login = document.querySelector(".btn-login");
 
-var header = document.querySelector("header");
-
 var modal = document.querySelector(".modal-login");
 
 var closeM = document.querySelector('.close-modal');
@@ -27,13 +25,11 @@ var closeM = document.querySelector('.close-modal');
 btn_login.addEventListener('click', ()=>{
 
 
-	if (header.classList.contains('desfoque') && 
-			modal.classList.contains('display-modal')) {
+	if (modal.classList.contains('display-modal')) {
 		fechaModal();
 	
 	}else{
 
-		header.classList.add('desfoque');
 		modal.classList.add('display-modal');
 	}
 
@@ -44,7 +40,6 @@ function fechaModal(){
 
 	closeM.addEventListener("click", () => {
 
-		header.classList.remove('desfoque');
 		modal.classList.remove('display-modal');
 	});
 }
