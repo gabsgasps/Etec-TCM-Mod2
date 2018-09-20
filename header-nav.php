@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	
 		
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -34,6 +37,7 @@
 				
 				<div class="menu-dropdown">
 					<ul>
+						<a href="./area-Login.php"><button class="btn-login b-l-dropdowm">Login</button></a>
 						<li>
 							<a href="index.php">Home</a>
 						</li>
@@ -55,7 +59,7 @@
 				<i class="fas fa-times"></i>
 			</div>
 			<div class="img-usuario">
-				<i class="fas fa-user" style="font-size: 2rem"></i>
+				<i class="material-icons" style="font-size: 2rem">person_outline</i>
 			</div>
 			<form action="" method="post">
 				<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">

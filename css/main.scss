@@ -87,20 +87,20 @@ header{
 			}
 		}
 
-		.btn-login{
-			text-transform: uppercase;
-		    padding: 8px 45px;
-		    border-radius: 300px;
-		    border: 1px solid black;
-		    background-color: transparent;
-		    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+	}
+	.btn-login{
+		text-transform: uppercase;
+	    padding: 8px 45px;
+	    border-radius: 300px;
+	    border: 1px solid black;
+	    background-color: transparent;
+	    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
 
-			&:hover{
-			    border: 1px solid transparent;
-			    cursor: pointer;
-			    border-color: #e4fde1;
-			    background-color: #e4fde1;
-			}
+		&:hover{
+		    border: 1px solid transparent;
+		    cursor: pointer;
+		    border-color: #e4fde1;
+		    background-color: #e4fde1;
 		}
 	}
 
@@ -163,10 +163,16 @@ header{
 	position: absolute;
     right: auto;
     left: 0;
-    top: 62px;
-    transition: all .32s;
+    top: 66px;
+    transform: translate3d(100%, 0, 0);
     padding: 1.4rem 0;
+    transition:  transform .5s ease;
+    -webkit-transition:  transform .5s ease;
+	-moz-transition:  transform .5s ease;
 
+	.b-l-dropdowm{
+		margin-bottom: .9rem;
+	}
     ul{
     	width: 80%;
     	height: auto;
@@ -211,7 +217,7 @@ header{
 		}
 	}
 	.apresentaPlanos{
-		width: 90%;
+		width: 80%;
 		height: auto;
 		margin: 9rem auto;
 		display: flex;
@@ -246,9 +252,9 @@ header{
 .planos{
 	width: auto;
 	min-height: 1px;
-	padding-right: .9rem;
-	padding-left: .9rem;
-	text-align:justify;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	text-align: justify;
 
 	@media (max-width: 1024px){
 			width: 100%;
@@ -286,7 +292,7 @@ header{
 }
 
 
-
+/*parte de contato do home*/
 .contato{
 	width: 100%;
 	min-height: 100px;
@@ -299,24 +305,38 @@ header{
 		margin: 0 auto;
 
 		h3{
-			font-size: 2rem;
+			font-size: 2.4rem;
+			text-align: center;
+			margin-bottom: .5rem;
+		}
+		h4{
+			text-align: center;
+			margin-bottom: .9rem;
 		}
 
 		form{
-			width: 300px;
+			width: 100%;
 			height: auto;
+			margin: 0 auto;
 			background-color: #fff;
-			padding: 3rem;
+			padding: 5rem;
 
 			input{
+				width: 60%;
+				display: block;
+				margin: 0 auto;
 				border: 1px solid rgba(0, 0, 0, .4);
 				border-radius: 5px;
-				padding: .4rem;
-				margin-bottom: .5rem;
-			}
+				padding: .9rem;
+				margin-bottom: 2rem;
+				transition: box-shadow .3s;
+				-webkit-transition: box-shadow .3s;
+				-moz-transition: box-shadow .3s;
+			}	
 
 			button{
 				display: block;
+				margin: 0 auto;
 				text-transform: uppercase;
 			    padding: 20px 46px;
 			    border-radius: 300px;
@@ -356,6 +376,8 @@ footer{
 
 .menu-show{
 	display: block!important;
+	transform: translate3d(0, 0,0);
+	// transition: linear .5s;
 }
 .modal-login{
 	display: none;
@@ -475,6 +497,7 @@ footer{
 }
 .btn-hamburguer{
 		display: none;
+		transition: all .8s;
 }
 
 @media (max-width: 900px){
@@ -501,3 +524,6 @@ footer{
 
 
 @import 'contato';
+
+/*CSS da AREA de Login para Mobile*/ 
+@import 'area-Login';

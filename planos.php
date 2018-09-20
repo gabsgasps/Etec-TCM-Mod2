@@ -1,7 +1,9 @@
 <?php include_once('header-nav.php') ?>
 	
 	<section class="planos-header">
-		<div class="wrap"></div>
+		<div class="wrap">
+			<h1>Nosos Planos</h1>
+		</div>
 	</section>
 	<section class="destaque-planos">
 		<div class="wrap"></div>
