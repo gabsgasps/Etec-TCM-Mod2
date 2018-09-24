@@ -318,8 +318,7 @@ header{
 			width: 100%;
 			height: auto;
 			margin: 0 auto;
-			background-color: #fff;
-			padding: 5rem;
+			
 
 			input{
 				width: 60%;
@@ -332,6 +331,11 @@ header{
 				transition: box-shadow .3s;
 				-webkit-transition: box-shadow .3s;
 				-moz-transition: box-shadow .3s;
+
+				@media (max-width: 768px) {
+					
+					width: 90%;
+				}
 			}	
 
 			button{

@@ -1,19 +1,17 @@
 <?php include_once('header-nav.php');?>
-	<div class="area-Login">
+	<section class="login-mobile">
 		<div class="wrap">
-			<h1>Vamos conversar!</h1>
-			<h3>Em caso de dúvidas, estaremos a disposição</h3>
+			<h2>Faça seu Login</h2>
+			<h6>Para poder contratar um plano</h6>
 		</div>
-	</div>
-	<div class="areaForm">
+	</section>
+	<section class="form-mobile">
 		<div class="wrap">
-			<form action="" method="post">
-				<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">
-				<input type="password" placeholder="Senha" name="campoSenha" class="campoSenha">
-
-				<textarea name="mensagem" cols="30" rows="10"></textarea>
-				<button type="submit">Envia</button>
+			<form action="">
+				<input type="text" placeholder="Nome">
+				<input type="email" placeholder="Email">
+				<button>Entrar</button>
 			</form>
 		</div>
-	</div>
+	</section>
 <?php include_once('footer.php'); ?>
