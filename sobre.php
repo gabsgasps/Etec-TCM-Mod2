@@ -28,6 +28,40 @@
 		</div>
 	</section>
 	<section class="equipe">
-		
+		<section class="servicos">
+				<h2>Ferramentas que utilizamos</h2>
+
+				<div class="apresentaPlanos">
+					<div class="planos">
+						<img src="img/google.svg" alt="">
+						<h3>Adwords</h3>
+						<p>Para anúncios e Campanhas. Cuja abrangência traz ótimos resultados e possívéis novos clientes para serem fidelizados.</p>
+					</div>
+					<div class="planos">
+						<img src="img/facebook.svg" alt="">
+						<h3>Social Media</h3>
+						<p>Aproxima a marca do seu target, sendo efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
+					</div>
+					<div class="planos">
+						<img src="img/googleanalytics.svg" alt="">
+						<h3>Analytics</h3>
+						<p>Ferramenta análise e controle de relatórios acerca dos usuários. Sendo uma ferramenta primordial para acertar o target.</p>
+					</div>
+
+				</div>
+				<div class="apresentaPlanos">
+					<div class="planos">
+						<img src="img/google.svg" alt="">
+						<h3>SEO</h3>
+						<p>Para anúncios e Campanhas. Cuja abrangência traz ótimos resultados e possívéis novos clientes para serem fidelizados.</p>
+					</div>
+					<div class="planos">
+						<img src="img/facebook.svg" alt="">
+						<h3>Adsense</h3>
+						<p>Aproxima a marca do seu target, sendo efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
+					</div>
+
+				</div>
+		</section>
 	</section>
 <?php  include_once('footer.php');?>

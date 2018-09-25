@@ -38,7 +38,9 @@
 			</div>
 
 		</div>
-			<button class="btn-quero-cont">Ver Planos </button>
+			<a href="planos.php">
+				<button class="btn-quero-cont">Ver Planos </button>
+			</a>
 	</section>
 
 	<section class="contato">

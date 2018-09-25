@@ -66,5 +66,7 @@
 				<input type="password" placeholder="Senha" name="campoSenha" class="campoSenha">
 				<button type="submit">Envia</button>
 			</form>
+
+			<a href="cadastrar">Quero me cadastrar</a>
 		</div>
 	</div>
