@@ -10,8 +10,11 @@
 			<form action="">
 				<input type="text" placeholder="Nome">
 				<input type="email" placeholder="Email">
-				<button>Entrar</button>
+				<button type="submit">Entrar</button>
 			</form>
+			<a href="cadastro-mobile.php">
+				<h5>Não tenho cadastro? Quero me cadastrar</h5>
+			</a>
 		</div>
 	</section>
 <?php include_once('footer.php'); ?>
