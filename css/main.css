@@ -135,7 +135,7 @@ nav {
   display: flex;
   justify-content: center; }
   .apresentacao h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff; }
 
 .introduceProduct {
@@ -178,11 +178,17 @@ nav {
   -webkit-transition: transform .5s ease;
   -moz-transition: transform .5s ease; }
   .menu-dropdown .b-l-dropdowm {
-    margin-bottom: .9rem; }
+    display: block;
+    margin: auto;
+    margin-bottom: .9rem;
+    font-size: 1rem; }
   .menu-dropdown ul {
     width: 80%;
     height: auto;
     margin: 0 auto; }
+    .menu-dropdown ul a {
+      display: block;
+      margin: auto; }
   .menu-dropdown li {
     padding-top: .9rem;
     padding-bottom: .9rem;
@@ -193,11 +199,12 @@ nav {
       background-color: #fcfcfc; }
     .menu-dropdown li a {
       display: block;
+      margin: auto;
       padding: .2rem .9rem;
       color: black;
       cursor: pointer;
       text-transform: uppercase;
-      font-size: .9rem;
+      font-size: 1.1rem;
       font-family: opens sans, Lato, Helvetica, Arial, Catamaran, Helvetica, Arial, sans-serif; }
 
 .servicos {
@@ -257,7 +264,7 @@ nav {
     text-align: center;
     margin-bottom: 2rem;
     font-weight: 600;
-    color: #114b5f; }
+    color: #222; }
   .planos p {
     font-size: 1.2rem;
     line-height: 1.4rem;
@@ -463,7 +470,8 @@ footer {
     .header-sobre .wrap h1 {
       text-align: center;
       font-size: 4rem;
-      margin-bottom: .9rem; }
+      margin-bottom: .9rem;
+      line-height: 4rem; }
     .header-sobre .wrap h6 {
       text-align: center;
       font-size: 1rem; }
@@ -529,7 +537,8 @@ footer {
     align-items: center; }
     .planos-header .wrap h1 {
       text-align: center;
-      font-size: 3rem; }
+      font-size: 4rem;
+      line-height: 4rem; }
 
 .destaque-planos {
   width: 100%;
@@ -554,8 +563,9 @@ footer {
     margin: 0 auto; }
     .area-Login .wrap h1 {
       text-align: center;
-      font-size: 3rem;
-      margin-bottom: .9rem; }
+      font-size: 3.7rem;
+      margin-bottom: .9rem;
+      line-height: 4rem; }
     .area-Login .wrap h3 {
       text-align: center;
       font-size: .95rem; }
@@ -575,7 +585,7 @@ footer {
       width: 100%;
       height: auto;
       margin: 0 auto;
-      padding: 5rem 1rem; }
+      padding: 5rem 0rem; }
       .areaForm .wrap form input {
         width: 100%;
         display: block;
@@ -630,10 +640,11 @@ footer {
     width: 80%;
     height: auto;
     margin: 0 auto; }
-    .login-mobile .wrap h2 {
+    .login-mobile .wrap h1 {
       text-align: center;
       font-size: 4rem;
-      margin-bottom: .9rem; }
+      margin-bottom: .9rem;
+      line-height: 4rem; }
     .login-mobile .wrap h6 {
       text-align: center;
       font-size: 1rem; }
@@ -698,7 +709,8 @@ footer {
     .header-cadastro-M .wrap h1 {
       font-size: 3.4rem;
       text-align: center;
-      margin-bottom: .9rem; }
+      margin-bottom: .9rem;
+      line-height: 4rem; }
     .header-cadastro-M .wrap h6 {
       font-size: 1rem;
       text-align: center; }
@@ -730,6 +742,7 @@ footer {
             width: 75%; } }
       .area-cadastro .wrap form button {
         display: block;
+        width: 100%;
         margin: 0 auto;
         text-transform: uppercase;
         padding: 20px 46px;
