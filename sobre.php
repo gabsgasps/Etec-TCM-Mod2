@@ -9,15 +9,20 @@
 		<div class="wrap">
 			<article>
 				<h2>Missão</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic amet repellendus assumenda voluptatem iste. In exercitationem aliquam eligendi sint quidem natus eum, aliquid, laboriosam id adipisci excepturi voluptas eaque.</p>
+				<p>Prestar serviços de Marketing Digital, destinado a usar recursos para divulgar ao máximo a empresa e até redes socais dos clientes, com confiabilidade e custos adequados a seus negócios.</p>
 			</article>
 			<article>
 				<h2>Visão</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic amet repellendus assumenda voluptatem iste. In exercitationem aliquam eligendi sint quidem natus eum, aliquid, laboriosam id adipisci excepturi voluptas eaque.</p>
+				<p>Ser uma plataforma reconhecida, por sua resposabilidade e confiança, destacando-se no ramo de Marketing Digital, com sua equipe capaciatada e comprometida com a qualidade total e a satisfação dos clientes.</p>
 			</article>
 			<article>
 				<h2>Valores</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi hic amet repellendus assumenda voluptatem iste. In exercitationem aliquam eligendi sint quidem natus eum, aliquid, laboriosam id adipisci excepturi voluptas eaque.</p>
+				<p>Compromisso
+					Confiablidade
+					Ética e transparência
+					Empreendedorismo e inovação
+					Qualidade de nossos serviços
+					Buscamos excelência empresarial.</p>
 			</article>
 		</div>
 

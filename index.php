@@ -3,12 +3,13 @@
 
 		<div class="apresentacao">
 			<h1>TARGEET</h1>
+			<h6>Acertando o Alvo</h6>
 		</div>
 	</header>
 
 	<section class="introduceProduct">
 		<div>
-			<h2>Targeet</h2>
+			<h2>Somos Targeet</h2>
 
 			<div class="introduceProduct-p">
 				
@@ -17,7 +18,12 @@
 			</div>
 		</div>
 	</section>
-
+	<section class="intersecao-1">
+		<div class="wrap">
+			<h2>Marketing Completo</h2>
+			<h6>Tornando a sua empresa reconhecida na web</h6>
+		</div>
+	</section>
 	<section class="servicos">
 		<h2>O que Usamos</h2>
 		<div class="apresentaPlanos">

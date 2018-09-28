@@ -21,7 +21,9 @@
 <body>
 <div class="main-menu" id="topo">
 		<div class="header-top">
-			<a href="index.php" class="logo"><i class="fas fa-adjust"></i></a>
+			<a href="index.php" class="logo">
+				<img src="img/logo.png" alt="logo-targeet">
+			</a>
 			<nav>
 				<ul>
 					<li>
