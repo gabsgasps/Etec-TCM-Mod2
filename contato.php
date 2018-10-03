@@ -8,6 +8,7 @@
 	<div class="areaForm">
 		<div class="wrap">
 			<form action="" method="post">
+				<input type="text" placeholder="Nome" name="campoNome" class="campoEmail">
 				<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">
 				<input type="password" placeholder="Senha" name="campoSenha" class="campoSenha">
 

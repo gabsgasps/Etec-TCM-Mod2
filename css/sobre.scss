@@ -41,7 +41,7 @@
 		article{
 			width: 100%;
 			height: auto;
-			padding: 0 9rem;
+			padding: 0 6rem;
 			margin-bottom: 2rem;
 
 			@media (max-width: 768px){
@@ -49,6 +49,9 @@
 			}
 			@media (max-width: 425px){
 				padding: 0 0rem;
+			}
+			@media (min-width: 1024px){
+				padding: 0 8rem;
 			}
 			h2{
 				font-size: 1.8rem;

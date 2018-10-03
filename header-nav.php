@@ -61,7 +61,7 @@
 				<i class="fas fa-times"></i>
 			</div>
 			<div class="img-usuario">
-				<i class="material-icons" style="font-size: 2rem">person_outline</i>
+				<i class="material-icons" style="font-size: 4rem">person_outline</i>
 			</div>
 			<form action="" method="post">
 				<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">

@@ -18,7 +18,7 @@ body, html{
 header{
 	width: 100%;
 	min-height: 700px;
-	background-image: url('../img/hipster.jpg');
+	background-image: url('../img/banner-home.jpg');
 	background-position: center bottom;
 	background-size: cover;
 	background-attachment: fixed;
@@ -87,7 +87,7 @@ header{
 				width: 100%;
 			}
 			a{
-				color: black;
+				color: white;
 				cursor: pointer;
 				text-transform: uppercase;
 				font-size: .9rem;
@@ -96,22 +96,34 @@ header{
 
 	}
 	.btn-login{
+		color: white;
 		text-transform: uppercase;
 	    padding: 8px 45px;
 	    border-radius: 300px;
-	    border: 1px solid black;
+	    border: 1px solid white;
 	    background-color: transparent;
 	    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
 
 		&:hover{
-		    border: 1px solid transparent;
+			color: black;
+		    border: 2px solid transparent;
 		    cursor: pointer;
 		    border-color: #e4fde1;
 		    background-color: #e4fde1;
 		}
 	}
 
-//
+.scrolling{
+
+	nav ul li a{
+		color: black;
+	}
+	button{
+		color: black;
+		border: 1px solid black;
+		transition: all linear .4s;
+	}
+}
 .apresentacao{
 	width: 90%;
 	margin: 0 auto;
@@ -122,6 +134,11 @@ header{
 		color: #fff;
 		letter-spacing: 1rem;
 		text-align: center;
+	    text-shadow: 1px 1px 5px;
+
+		@media(max-width: 425px){
+			font-size: 2.7rem;
+		}
 	}
 
 	h6{
@@ -170,6 +187,10 @@ header{
 	    	letter-spacing: .7rem;
 	    	margin-bottom: .9rem;
 	    	font-weight: 700;
+
+	    	@media (max-width: 767px){
+				letter-spacing: .1rem;
+	    	}
 	    }
 	    h6{
 	    	font-size: 1rem;

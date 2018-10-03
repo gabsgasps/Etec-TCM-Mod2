@@ -53,8 +53,10 @@ window.addEventListener('scroll', ()=>{
 	if (window.pageYOffset <= 100) {
 
 		mainMenu.classList.remove('menu-fixo');
+		mainMenu.classList.remove('scrolling');
 	}else{
 		mainMenu.classList.add('menu-fixo');
+		mainMenu.classList.add('scrolling');
 	}
 
 });

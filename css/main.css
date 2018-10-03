@@ -57,7 +57,7 @@ body, html {
 header {
   width: 100%;
   min-height: 700px;
-  background-image: url("../img/hipster.jpg");
+  background-image: url("../img/banner-home.jpg");
   background-position: center bottom;
   background-size: cover;
   background-attachment: fixed;
@@ -117,23 +117,32 @@ nav {
     nav ul li:hover:after {
       width: 100%; }
     nav ul a {
-      color: black;
+      color: white;
       cursor: pointer;
       text-transform: uppercase;
       font-size: .9rem; }
 
 .btn-login {
+  color: white;
   text-transform: uppercase;
   padding: 8px 45px;
   border-radius: 300px;
-  border: 1px solid black;
+  border: 1px solid white;
   background-color: transparent;
   transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
   .btn-login:hover {
-    border: 1px solid transparent;
+    color: black;
+    border: 2px solid transparent;
     cursor: pointer;
     border-color: #e4fde1;
     background-color: #e4fde1; }
+
+.scrolling nav ul li a {
+  color: black; }
+.scrolling button {
+  color: black;
+  border: 1px solid black;
+  transition: all linear .4s; }
 
 .apresentacao {
   width: 90%;
@@ -142,7 +151,11 @@ nav {
     font-size: 3.8rem;
     color: #fff;
     letter-spacing: 1rem;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 1px 1px 5px; }
+    @media (max-width: 425px) {
+      .apresentacao h1 {
+        font-size: 2.7rem; } }
   .apresentacao h6 {
     margin-top: .8rem;
     font-size: 1.2rem;
@@ -183,6 +196,9 @@ nav {
       letter-spacing: .7rem;
       margin-bottom: .9rem;
       font-weight: 700; }
+      @media (max-width: 767px) {
+        .intersecao-1 .wrap h2 {
+          letter-spacing: .1rem; } }
     .intersecao-1 .wrap h6 {
       font-size: 1rem;
       color: #fff;
@@ -543,7 +559,7 @@ footer {
     .main-sobre .wrap article {
       width: 100%;
       height: auto;
-      padding: 0 9rem;
+      padding: 0 6rem;
       margin-bottom: 2rem; }
       @media (max-width: 768px) {
         .main-sobre .wrap article {
@@ -551,6 +567,9 @@ footer {
       @media (max-width: 425px) {
         .main-sobre .wrap article {
           padding: 0 0rem; } }
+      @media (min-width: 1024px) {
+        .main-sobre .wrap article {
+          padding: 0 8rem; } }
       .main-sobre .wrap article h2 {
         font-size: 1.8rem;
         font-weight: bold;
@@ -780,7 +799,8 @@ footer {
   height: 600px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 4rem; }
   .area-cadastro .wrap {
     width: 80%;
     height: auto;
@@ -810,6 +830,9 @@ footer {
         border: 1px solid black;
         background-color: transparent;
         transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
+        @media (min-width: 425px) {
+          .area-cadastro .wrap form button {
+            width: 75%; } }
         .area-cadastro .wrap form button:hover {
           border: 1px solid transparent;
           cursor: pointer;
