@@ -8,8 +8,8 @@
 	<section class="form-mobile">
 		<div class="wrap">
 			<form action="">
-				<input type="text" placeholder="Nome">
 				<input type="email" placeholder="Email">
+				<input type="password" placeholder="Senha">
 				<button type="submit">Entrar</button>
 			</form>
 			<a href="cadastro-mobile.php">

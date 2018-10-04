@@ -18,12 +18,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="intersecao-1">
-		<div class="wrap">
-			<h2>Marketing Completo</h2>
-			<h6>Tornando a sua empresa reconhecida na web</h6>
-		</div>
-	</section>
+
 	<section class="servicos">
 		<h2>O que Usamos</h2>
 		<div class="apresentaPlanos">
@@ -48,6 +43,13 @@
 				<button class="btn-quero-cont">Ver Planos </button>
 			</a>
 	</section>
+	<section class="intersecao-1">
+		<div class="wrap">
+			<h2>Marketing Completo</h2>
+			<h6>Tornando a sua empresa reconhecida na web</h6>
+		</div>
+	</section>
+	
 
 	<section class="contato">
 		<div class="wrap">

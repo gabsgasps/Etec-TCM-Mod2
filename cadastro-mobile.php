@@ -15,8 +15,8 @@
 				<input type="date"/>
 				<input type="text" class="campos" placeholder="RG: xx.xxx.xxx-xx"/>
 				<input type="tel" class="campos" placeholder="(xx)xxxxx-xxxx"/>
-				<input type="text" class="campos" placeholder="Senha"/>
-				<input type="text" class="campos" placeholder="Confirmar Senha"/>
+				<input type="password" class="campos" placeholder="Senha"/>
+				<input type="password" class="campos" placeholder="Confirmar Senha"/>
 				<button type="submit">ENVIAR</button>
 			</form>
 		</div>

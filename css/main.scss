@@ -37,7 +37,7 @@ header{
     transition: all .35s;
 
     .logo{
-		width: 180px;
+		width: 195px;
 		height: auto;
 		display: block;
 		@media (max-width: 768px){
@@ -118,10 +118,18 @@ header{
 	nav ul li a{
 		color: black;
 	}
-	button{
+	.btn-login{
 		color: black;
 		border: 1px solid black;
 		transition: all linear .4s;
+	}
+
+	.btn-hamburguer{
+		color: black;
+	}
+
+	.logo{
+		width: 180px;
 	}
 }
 .apresentacao{
@@ -296,7 +304,6 @@ header{
 .servicos{
 	width: 100%;
 	min-height: 400px;
-	background: #fffccc;
 	padding: 9rem 0;
 	h2{
 		text-align: center;
@@ -598,8 +605,9 @@ footer{
 	filter: blur(2px);
 }
 .btn-hamburguer{
-		display: none;
-		transition: all .8s;
+	color: white;
+	display: none;
+	transition: all .8s;
 }
 
 @media (max-width: 900px){
@@ -635,3 +643,7 @@ footer{
 
 /* Cadastro para o Mobile*/
 @import 'cadastro-mobile';
+
+
+/* Area do Usuario*/
+@import 'areaUsuario';
