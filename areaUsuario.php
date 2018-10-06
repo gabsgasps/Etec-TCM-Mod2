@@ -1,16 +1,13 @@
 <?php include_once('header-nav.php') ?>
-	
-	<section class="header-areaUsu">
-		<div class="wrap">
-			
-		</div>
-	</section>
-
 	<section class="area-Usu">
 		<div class="wrap">
 			<div class="card">
 				<div class="card-thumb">
-					<img src="img/GGR.jpg" alt="">
+					<label for="envia" class="enviarFoto">Alterar Foto</label>
+					<input id="envia"
+					type="file" >
+						<img src="img/GGR.jpg" alt="">
+
 				</div>
 
 				<div class="card-info">
@@ -27,5 +24,13 @@
 			</div>
 		</div>
 	</section>
+	
+	<section class="header-areaUsu">
+		<div class="wrap">
+			<h1>Área do Usuário</h1>
+		</div>
+	</section>
+
+	
 
 <?php include_once('footer.php') ?>
