@@ -578,33 +578,48 @@ footer {
         font-size: 1.8rem;
         font-weight: bold;
         text-align: center;
-        margin-bottom: .9rem; }
+        margin-bottom: 2.8rem; }
       .main-sobre .wrap article p {
         text-align: center;
         font-size: 1rem;
-        line-height: 1.2rem; }
+        line-height: 1.2rem;
+        margin-bottom: 4rem; }
 
-.ferramentas {
+.introduceSobre {
   width: 100%;
-  min-height: 500px;
+  min-height: 450px;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .ferramentas .wrap {
+  .introduceSobre .wrap {
     width: 80%;
     height: auto;
     margin: 0 auto; }
+    .introduceSobre .wrap h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 5rem;
+      font-weight: 700; }
+    .introduceSobre .wrap p {
+      font-size: 1.1rem;
+      padding: 0 4rem;
+      line-height: 1.25rem;
+      text-align: justify; }
 
 .equipe {
   width: 100%;
-  min-height: 500px;
-  background-color: #fffccc; }
+  min-height: 500px; }
 
 /*Planos CSS*/
 .planos-header {
   width: 100%;
   height: 500px;
-  background-color: #fcfcfc;
+  background-image: url(../img/sobre.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -618,17 +633,32 @@ footer {
     .planos-header .wrap h1 {
       text-align: center;
       font-size: 4rem;
-      line-height: 4rem; }
+      line-height: 4rem;
+      color: white; }
 
 .destaque-planos {
   width: 100%;
-  height: 500px;
-  background-color: #fffffc; }
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0; }
+  .destaque-planos .wrap {
+    width: 80%;
+    height: auto; }
+    .destaque-planos .wrap h2 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: .9rem; }
+    .destaque-planos .wrap h4 {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.2rem; }
 
 .area-Planos {
   width: 100%;
   height: 500px;
-  background-color: #fffccc; }
+  background: #f7f7f7; }
 
 .area-Login {
   width: 100%;
@@ -923,21 +953,30 @@ footer {
       background-color: #e4fde1; }
 
 .enviarFoto {
-  color: white;
+  color: transparent;
   font-size: 1.2rem;
   text-align: center;
   position: absolute;
   margin: 75% auto auto !important;
   width: 300px !important;
   height: 75px !important;
-  background: rgba(0, 0, 0, 0.1);
+  background: transparent;
   border-radius: 0 0 66px 66px;
   cursor: pointer;
   line-height: 4;
   transition: all .4s; }
 
 .enviarFoto:hover {
-  background: rgba(0, 0, 0, 0.3); }
+  background: rgba(0, 0, 0, 0.3);
+  color: white; }
+
+.icon-camera {
+  visibility: hidden;
+  color: floralwhite;
+  margin-left: .5rem; }
+
+.enviarFoto:hover > i {
+  visibility: visible; }
 
 input[type='file'] {
   display: none; }

@@ -3,7 +3,9 @@
 		<div class="wrap">
 			<div class="card">
 				<div class="card-thumb">
-					<label for="envia" class="enviarFoto">Alterar Foto</label>
+					<label for="envia" class="enviarFoto">Alterar Foto
+						<i class="fas fa-camera icon-camera"></i>
+					</label>
 					<input id="envia"
 					type="file" >
 						<img src="img/GGR.jpg" alt="">

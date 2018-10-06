@@ -5,6 +5,12 @@
 			<h6>Missão, Visão, Valores...</h6>
 		</div>
 	</section>
+	<section class="introduceSobre">
+		<div class="wrap">
+			<h2>Quem Somos</h2>
+			<p>Somos uma empresa que trabalha no ramo de Marketing Digital e Social Media, que conta com uma equipe, eficiente e dedicada para com os seus clientes. Oferecendo serviços que mais captam (possíveis novos clientes), segmentam e fundamentam o nosso cliente (empresa) dentro do âmbito Digital.</p>
+		</div>
+	</section>
 	<section class="main-sobre">
 		<div class="wrap">
 			<article>
@@ -17,8 +23,8 @@
 			</article>
 			<article>
 				<h2>Valores</h2>
-				<p>Compromisso
-					Confiablidade
+				<p>Compromisso,
+					Confiablidade,
 					Ética e transparência
 					Empreendedorismo e inovação
 					Qualidade de nossos serviços
@@ -27,11 +33,7 @@
 		</div>
 
 	</section>
-	<section class="ferramentas">
-		<div class="wrap">
-			<h3>colocar as ferramentas que usamos</h3>
-		</div>
-	</section>
+	
 	<section class="equipe">
 		<section class="servicos">
 				<h2>Ferramentas que utilizamos</h2>
