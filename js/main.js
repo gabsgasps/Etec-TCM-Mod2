@@ -36,16 +36,6 @@ btn_login.addEventListener('click', ()=>{
 	
 });
 
-function fechaModal(){
-
-	closeM.addEventListener("click", () => {
-
-		modal.classList.remove('display-modal');
-	});
-}
-fechaModal();
-
-
 window.addEventListener('scroll', ()=>{
 
 	let mainMenu = document.querySelector(".main-menu");
@@ -60,3 +50,33 @@ window.addEventListener('scroll', ()=>{
 	}
 
 });
+
+// modal
+let cadastrar = document.querySelector("#cadastrar");
+
+let modal_cadastro = document.querySelector(".modal-cadastro");
+
+cadastrar.addEventListener('click', ()=>{
+
+
+	if (modal_cadastro.classList.contains('display-modal')) {
+		fechaModal();
+	
+	}else{
+
+		modal_cadastro.classList.add('display-modal');
+		modal.classList.remove('display-modal');
+	}
+
+	
+});
+
+function fechaModal(){
+
+	closeM.addEventListener("click", () => {
+
+		modal.classList.remove('display-modal');
+		modal_cadastro.classList.remove('display-modal');
+	});
+}
+fechaModal();

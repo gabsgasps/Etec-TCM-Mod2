@@ -71,7 +71,8 @@ header {
   right: 0;
   width: 100%;
   height: 50px;
-  transition: all .35s; }
+  transition: all .35s;
+  z-index: 9; }
   .main-menu .logo {
     width: 195px;
     height: auto;
@@ -253,7 +254,10 @@ nav {
     display: block;
     margin: auto;
     margin-bottom: .9rem;
-    font-size: 1rem; }
+    font-size: 1rem;
+    color: black;
+    border: 1px solid;
+    padding: 8px 70px; }
   .menu-dropdown ul {
     width: 80%;
     height: auto;
@@ -510,7 +514,90 @@ footer {
     text-align: center; }
 
 .display-modal {
-  display: block; }
+  display: block !important; }
+
+.modal-cadastro {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: transparent;
+  z-index: 9999;
+  transition: all cubic-bezier(0.4, 0, 0.09, 0.12); }
+  .modal-cadastro .close-modal {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: auto;
+    right: 5%;
+    top: 15px;
+    padding: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
+    .modal-cadastro .close-modal:hover {
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50%; }
+  .modal-cadastro > div {
+    position: absolute;
+    margin: auto;
+    width: 300px;
+    min-height: 100px;
+    background-color: #fcfcfc;
+    padding: 3rem 0 5rem 0;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    top: 80px;
+    box-shadow: 0px 0px 160px 1px rgba(0, 0, 0, 0.3); }
+    @media (min-width: 375px) {
+      .modal-cadastro > div {
+        width: 360px; } }
+    @media (min-width: 700px) {
+      .modal-cadastro > div {
+        width: 460px; } }
+  .modal-cadastro form {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 80%; }
+    .modal-cadastro form input {
+      width: 100%;
+      padding: .4rem;
+      display: block;
+      margin-bottom: .9rem;
+      border-radius: 66px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      transition: padding ease-in .4s;
+      font-size: 1.2rem; }
+      .modal-cadastro form input::placeholder {
+        font-size: 1.2rem; }
+      .modal-cadastro form input:focus {
+        padding: 0.9rem;
+        outline: none;
+        box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2); }
+    .modal-cadastro form button {
+      font-size: 1.3rem;
+      margin-top: .9rem;
+      margin-bottom: .9rem;
+      width: 100%;
+      text-transform: uppercase;
+      padding: 12px 45px;
+      border-radius: 300px;
+      border: 1px solid black;
+      background-color: transparent;
+      transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+      text-align: center; }
+      .modal-cadastro form button:hover {
+        border: 1px solid transparent;
+        cursor: pointer;
+        border-color: #e4fde1;
+        background-color: #e4fde1; }
+  .modal-cadastro a {
+    display: block;
+    text-align: center; }
 
 .desfoque {
   filter: blur(2px); }
@@ -581,7 +668,7 @@ footer {
         margin-bottom: 2.8rem; }
       .main-sobre .wrap article p {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
         line-height: 1.2rem;
         margin-bottom: 4rem; }
 
@@ -605,6 +692,9 @@ footer {
       padding: 0 4rem;
       line-height: 1.25rem;
       text-align: justify; }
+      @media (max-width: 768px) {
+        .introduceSobre .wrap p {
+          padding: 0rem; } }
 
 .equipe {
   width: 100%;
@@ -671,14 +761,13 @@ footer {
     .area-Planos .wrap .card-planos {
       width: auto;
       min-height: 300px;
-      text-align: center; }
-      .area-Planos .wrap .card-planos .card-header {
-        padding: 1rem 2rem; }
-        .area-Planos .wrap .card-planos .card-header h4 {
-          font-size: 2rem;
-          margin-bottom: 1rem; }
-        .area-Planos .wrap .card-planos .card-header h6 {
-          font-size: 1.5rem; }
+      text-align: center;
+      margin: .9rem 0; }
+      .area-Planos .wrap .card-planos .card-header h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem; }
+      .area-Planos .wrap .card-planos .card-header h6 {
+        font-size: 1.5rem; }
       .area-Planos .wrap .card-planos .card-body {
         padding: 3rem 0rem; }
         .area-Planos .wrap .card-planos .card-body ul li {
@@ -695,11 +784,12 @@ footer {
       .area-Planos .wrap .card-planos .card-footer {
         width: 70%;
         height: auto;
-        margin: auto; }
+        margin: auto;
+        display: flex;
+        justify-content: center; }
         .area-Planos .wrap .card-planos .card-footer button {
           font-size: 1.1rem;
           display: block;
-          width: 100%;
           margin: 0 auto;
           text-transform: uppercase;
           padding: 8px 45px;
@@ -723,7 +813,7 @@ footer {
 
 .area-Login {
   width: 100%;
-  min-height: 500px;
+  min-height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -937,7 +1027,7 @@ footer {
 /* Area do Usuario*/
 .header-areaUsu {
   width: 100%;
-  min-height: 500px;
+  min-height: 700px;
   background-image: url(../img/hipster.jpg);
   background-position: center bottom;
   background-size: cover;
@@ -965,6 +1055,9 @@ footer {
     width: 80%;
     height: auto;
     margin: 0 auto; }
+    @media (max-width: 375px) {
+      .area-Usu .wrap {
+        width: 100%; } }
 
 .card {
   display: block;
@@ -972,6 +1065,9 @@ footer {
   width: 90%;
   height: auto;
   padding: 0 0rem .9rem; }
+  @media (max-width: 375px) {
+    .card {
+      width: 100%; } }
   .card input {
     display: block;
     width: 40%;
@@ -1041,5 +1137,13 @@ footer {
 
 input[type='file'] {
   display: none; }
+
+@media (max-width: 768px) {
+  .enviarFoto {
+    background: rgba(0, 0, 0, 0.3);
+    color: white; }
+
+  .enviarFoto > i {
+    visibility: visible; } }
 
 /*# sourceMappingURL=main.css.map */

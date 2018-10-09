@@ -71,9 +71,10 @@
 			width: auto;
 			min-height: 300px;
 			text-align: center;
+			margin: .9rem 0;
 
 			.card-header{
-				padding: 1rem 2rem;
+				// padding: 1rem 2rem;
 
 				h4{
 					font-size: 2rem;
@@ -109,10 +110,12 @@
 				width: 70%;
 				height: auto;
 				margin: auto;
+				display: flex;
+				justify-content: center;
 				button{
 					font-size: 1.1rem;
 					display: block;
-					width: 100%;
+					
 					margin: 0 auto;	
 					text-transform: uppercase;
 				    padding: 8px 45px;
