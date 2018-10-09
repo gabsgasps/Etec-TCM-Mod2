@@ -613,7 +613,7 @@ footer {
 /*Planos CSS*/
 .planos-header {
   width: 100%;
-  height: 500px;
+  height: 700px;
   background-image: url(../img/sobre.jpg);
   background-position: center bottom;
   background-size: cover;
@@ -634,7 +634,8 @@ footer {
       text-align: center;
       font-size: 4rem;
       line-height: 4rem;
-      color: white; }
+      color: white;
+      font-weight: 700; }
 
 .destaque-planos {
   width: 100%;
@@ -649,7 +650,8 @@ footer {
     .destaque-planos .wrap h2 {
       font-size: 2.2rem;
       text-align: center;
-      margin-bottom: .9rem; }
+      margin-bottom: .9rem;
+      font-weight: 700; }
     .destaque-planos .wrap h4 {
       text-align: center;
       font-size: 1.1rem;
@@ -657,8 +659,67 @@ footer {
 
 .area-Planos {
   width: 100%;
+  height: auto;
+  padding: 5rem 0; }
+  .area-Planos .wrap {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap; }
+    .area-Planos .wrap .card-planos {
+      width: auto;
+      min-height: 300px;
+      text-align: center; }
+      .area-Planos .wrap .card-planos .card-header {
+        padding: 1rem 2rem; }
+        .area-Planos .wrap .card-planos .card-header h4 {
+          font-size: 2rem;
+          margin-bottom: 1rem; }
+        .area-Planos .wrap .card-planos .card-header h6 {
+          font-size: 1.5rem; }
+      .area-Planos .wrap .card-planos .card-body {
+        padding: 3rem 0rem; }
+        .area-Planos .wrap .card-planos .card-body ul li {
+          font-size: 16px;
+          padding: .9rem 0;
+          color: #777;
+          cursor: pointer;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          transition: all 500ms ease-in; }
+          .area-Planos .wrap .card-planos .card-body ul li:hover {
+            border-left: 15px solid #ffc700;
+            border-right: 15px solid #ffc700; }
+      .area-Planos .wrap .card-planos .card-footer {
+        width: 70%;
+        height: auto;
+        margin: auto; }
+        .area-Planos .wrap .card-planos .card-footer button {
+          font-size: 1.1rem;
+          display: block;
+          width: 100%;
+          margin: 0 auto;
+          text-transform: uppercase;
+          padding: 8px 45px;
+          border-radius: 300px;
+          border: 1px solid black;
+          background-color: transparent;
+          transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
+          .area-Planos .wrap .card-planos .card-footer button:hover {
+            border: 1px solid transparent;
+            cursor: pointer;
+            border-color: #e4fde1;
+            background-color: #e4fde1; }
+
+.info-planos {
+  width: 100%;
   height: 500px;
   background: #f7f7f7; }
+  .info-planos .wrap {
+    width: 80%;
+    height: auto; }
 
 .area-Login {
   width: 100%;

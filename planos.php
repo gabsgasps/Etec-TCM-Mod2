@@ -11,7 +11,63 @@
 			<h4 class="">Marketing Digital, SEO, Redes Sociais e Otimização de Buscas</h4>
 		</div>
 	</section>
+	
 	<section class="area-Planos">
+		<div class="wrap">
+			<div class="card-planos">
+				<div class="card-header">
+					<h4>Nome do plano</h4>
+					<h6>Preço</h6>
+				</div>
+				<div class="card-body">
+					<ul>
+						<li>descrição do plano</li>
+						<li>descrição do plano</li>
+						<li>descrição do plano</li>
+					</ul>
+				</div>
+				<div class="card-footer">
+					<button>Contratar</button>
+				</div>
+			</div>
+
+			<div class="card-planos">
+				<div class="card-header">
+					<h4>Nome do plano</h4>
+					<h6>Preço</h6>
+				</div>
+				<div class="card-body">
+					<ul>
+						<li>descrição do plano</li>
+						<li>descrição do plano</li>
+						<li>descrição do plano</li>
+					</ul>
+				</div>
+				<div class="card-footer">
+					<button>Contratar</button>
+				</div>
+			</div>
+
+			<div class="card-planos">
+				<div class="card-header">
+					<h4>Nome do plano</h4>
+					<h6>Preço</h6>
+				</div>
+				<div class="card-body">
+					<ul>
+						<li>descrição do plano</li>
+						<li>descrição do plano</li>
+						<li>descrição do plano</li>
+					</ul>
+				</div>
+				<div class="card-footer">
+					<button>Contratar</button>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="info-planos">
 		<div class="wrap"></div>
 	</section>
 <?php  include_once('footer.php');?>

@@ -10,7 +10,6 @@
 			<form action="" method="post">
 				<input type="text" placeholder="Nome" name="campoNome" class="campoEmail">
 				<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">
-				<input type="password" placeholder="Senha" name="campoSenha" class="campoSenha">
 
 				<textarea name="mensagem" cols="30" rows="10"></textarea>
 				<button type="submit">Envia</button>
