@@ -49,21 +49,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+header, .header-sobre, .planos-header, .area-Login, .header-areaUsu {
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.intersecao-1 .wrap, .contato .wrap, footer .wrap, .planos-header .wrap, .destaque-planos .wrap, .area-Planos .wrap, .info-planos .wrap, .area-Login .wrap, .areaForm .wrap, .login-mobile .wrap, .form-mobile .wrap, .header-cadastro-M .wrap, .area-cadastro .wrap, .header-areaUsu .wrap, .area-Usu .wrap {
+  width: 80%;
+  height: auto;
+  margin: 0 auto; }
+
+header, nav ul, .intersecao-1, .menu-dropdown li, .modal-login .close-modal, .modal-login .img-usuario, .modal-cadastro .close-modal, .header-sobre, .main-sobre, .introduceSobre, .planos-header, .planos-header .wrap, .destaque-planos, .area-Login, .areaForm, .login-mobile, .form-mobile, .header-areaUsu, .area-Usu {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.btn-login:hover, .servicos .btn-quero-cont:hover, .contato .wrap form button:hover, .area-Planos .wrap .card-planos .card-footer button:hover, .areaForm .wrap form button:hover, .form-mobile .wrap form button:hover, .area-cadastro .wrap form button:hover, .card .card-info button:hover {
+  color: black;
+  border: 1px solid transparent !important;
+  cursor: pointer;
+  border-color: #e4fde1;
+  background-color: #e4fde1; }
+
 body, html {
   font-size: 16px;
   overflow-x: hidden;
-  font-family: opens sans, Lato,Helvetica,Arial,Catamaran,Helvetica,Arial,sans-serif; }
+  font-family: opens sans, Lato, Helvetica, Arial, Catamaran, Helvetica, Arial, sans-serif; }
 
 header {
   width: 100%;
   min-height: 700px;
-  background-image: url("../img/banner-home.jpg");
-  background-position: center bottom;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-image: url("../img/banner-home.jpg"); }
 
 .main-menu {
   position: fixed;
@@ -79,7 +95,7 @@ header {
     display: block; }
     @media (max-width: 768px) {
       .main-menu .logo {
-        width: 140px; } }
+        width: 155px; } }
     .main-menu .logo img {
       max-width: 100%;
       height: auto; }
@@ -90,8 +106,8 @@ header {
   margin: 0 auto;
   padding: 0rem .2rem 0 .2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding-top: 2rem;
   transition: all .35s; }
 
@@ -100,8 +116,6 @@ nav {
   height: auto;
   display: flex; }
   nav ul {
-    display: flex;
-    align-items: center;
     margin-right: .8rem;
     transition: .2s all linear; }
     nav ul li {
@@ -125,18 +139,13 @@ nav {
 
 .btn-login {
   color: white;
+  display: block;
   text-transform: uppercase;
   padding: 8px 45px;
   border-radius: 300px;
   border: 1px solid white;
   background-color: transparent;
   transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
-  .btn-login:hover {
-    color: black;
-    border: 2px solid transparent;
-    cursor: pointer;
-    border-color: #e4fde1;
-    background-color: #e4fde1; }
 
 .scrolling nav ul li a {
   color: black; }
@@ -147,7 +156,7 @@ nav {
 .scrolling .btn-hamburguer {
   color: black; }
 .scrolling .logo {
-  width: 180px; }
+  width: 151px; }
 
 .apresentacao {
   width: 90%;
@@ -176,9 +185,6 @@ nav {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative; }
   .intersecao-1::after {
     width: 100%;
@@ -190,8 +196,6 @@ nav {
     content: "";
     display: block; }
   .intersecao-1 .wrap {
-    width: 80%;
-    height: auto;
     position: relative;
     z-index: 12; }
     .intersecao-1 .wrap h2 {
@@ -268,8 +272,6 @@ nav {
   .menu-dropdown li {
     padding-top: .9rem;
     padding-bottom: .9rem;
-    display: flex;
-    align-items: center;
     border-radius: 66px; }
     .menu-dropdown li:hover {
       background-color: #fcfcfc; }
@@ -304,19 +306,15 @@ nav {
         width: 90%;
         flex-flow: column wrap; } }
   .servicos .btn-quero-cont {
+    color: black;
     display: block;
-    margin: 0 auto;
     text-transform: uppercase;
     padding: 20px 46px;
     border-radius: 300px;
     border: 1px solid black;
     background-color: transparent;
-    transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
-    .servicos .btn-quero-cont:hover {
-      border: 1px solid transparent;
-      cursor: pointer;
-      border-color: #e4fde1;
-      background-color: #e4fde1; }
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 auto; }
 
 .planos {
   width: auto;
@@ -358,59 +356,47 @@ nav {
   min-height: 100px;
   background-color: #fcfcfc;
   padding: 9rem 0; }
-  .contato .wrap {
-    width: 80%;
+  .contato .wrap h3 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: .5rem; }
+  .contato .wrap h4 {
+    text-align: center;
+    margin-bottom: .9rem; }
+  .contato .wrap form {
+    width: 100%;
     height: auto;
     margin: 0 auto; }
-    .contato .wrap h3 {
-      font-size: 2.4rem;
-      text-align: center;
-      margin-bottom: .5rem; }
-    .contato .wrap h4 {
-      text-align: center;
-      margin-bottom: .9rem; }
-    .contato .wrap form {
-      width: 100%;
-      height: auto;
+    .contato .wrap form input {
+      width: 60%;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      border-radius: 5px;
+      padding: .9rem;
+      margin-bottom: 2rem;
+      transition: box-shadow .3s;
+      -webkit-transition: box-shadow .3s;
+      -moz-transition: box-shadow .3s; }
+      @media (max-width: 768px) {
+        .contato .wrap form input {
+          width: 90%; } }
+    .contato .wrap form button {
+      color: black;
+      display: block;
+      text-transform: uppercase;
+      padding: 20px 46px;
+      border-radius: 300px;
+      border: 1px solid black;
+      background-color: transparent;
+      transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
       margin: 0 auto; }
-      .contato .wrap form input {
-        width: 60%;
-        display: block;
-        margin: 0 auto;
-        border: 1px solid rgba(0, 0, 0, 0.4);
-        border-radius: 5px;
-        padding: .9rem;
-        margin-bottom: 2rem;
-        transition: box-shadow .3s;
-        -webkit-transition: box-shadow .3s;
-        -moz-transition: box-shadow .3s; }
-        @media (max-width: 768px) {
-          .contato .wrap form input {
-            width: 90%; } }
-      .contato .wrap form button {
-        display: block;
-        margin: 0 auto;
-        text-transform: uppercase;
-        padding: 20px 46px;
-        border-radius: 300px;
-        border: 1px solid black;
-        background-color: transparent;
-        transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
-        .contato .wrap form button:hover {
-          border: 1px solid transparent;
-          cursor: pointer;
-          border-color: #e4fde1;
-          background-color: #e4fde1; }
 
 footer {
   width: 100%;
   min-height: 50px;
   background-color: #222;
   padding: 2rem 0; }
-  footer .wrap {
-    width: 80%;
-    height: auto;
-    margin: 0 auto; }
   footer h6 {
     font-size: .9rem;
     text-align: center;
@@ -437,9 +423,6 @@ footer {
     right: 5%;
     top: 15px;
     padding: .9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
     .modal-login .close-modal:hover {
       cursor: pointer;
@@ -451,9 +434,6 @@ footer {
     margin: 0 auto;
     background: linear-gradient(to bottom, #fff, #cdcdcd);
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 2rem; }
   .modal-login > div {
     position: absolute;
@@ -533,9 +513,6 @@ footer {
     right: 5%;
     top: 15px;
     padding: .9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
     .modal-cadastro .close-modal:hover {
       cursor: pointer;
@@ -617,31 +594,37 @@ footer {
 /*Sobre CSS*/
 .header-sobre {
   width: 100%;
-  min-height: 500px;
-  background-color: #fcfcfc;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  min-height: 600px;
+  background-image: url(../img/banner-sobre.jpg); }
+  .header-sobre:after {
+    content: '';
+    width: 100%;
+    height: 99%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1; }
   .header-sobre .wrap {
     width: 80%;
     height: auto;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative;
+    z-index: 2; }
     .header-sobre .wrap h1 {
       text-align: center;
       font-size: 4rem;
       margin-bottom: .9rem;
-      line-height: 4rem; }
+      line-height: 4rem;
+      color: white;
+      text-shadow: 1px 1px 5px; }
     .header-sobre .wrap h6 {
       text-align: center;
-      font-size: 1rem; }
+      font-size: 1rem;
+      color: white; }
 
 .main-sobre {
   width: 100%;
   min-height: 500px;
   background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 5rem 0; }
   .main-sobre .wrap {
     width: 80%;
@@ -674,10 +657,7 @@ footer {
 
 .introduceSobre {
   width: 100%;
-  min-height: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  min-height: 450px; }
   .introduceSobre .wrap {
     width: 80%;
     height: auto;
@@ -704,57 +684,43 @@ footer {
 .planos-header {
   width: 100%;
   height: 700px;
-  background-image: url(../img/sobre.jpg);
-  background-position: center bottom;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-image: url(../img/sobre.jpg); }
+  .planos-header:after {
+    content: '';
+    width: 100%;
+    height: 115%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1; }
   .planos-header .wrap {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    position: relative;
+    z-index: 2; }
     .planos-header .wrap h1 {
       text-align: center;
       font-size: 4rem;
       line-height: 4rem;
       color: white;
-      font-weight: 700; }
+      text-shadow: 1px 1px 5px; }
 
 .destaque-planos {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 4rem 0; }
-  .destaque-planos .wrap {
-    width: 80%;
-    height: auto; }
-    .destaque-planos .wrap h2 {
-      font-size: 2.2rem;
-      text-align: center;
-      margin-bottom: .9rem;
-      font-weight: 700; }
-    .destaque-planos .wrap h4 {
-      text-align: center;
-      font-size: 1.1rem;
-      line-height: 1.2rem; }
+  .destaque-planos .wrap h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: .9rem;
+    font-weight: 700; }
+  .destaque-planos .wrap h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.2rem; }
 
 .area-Planos {
   width: 100%;
   height: auto;
   padding: 5rem 0; }
   .area-Planos .wrap {
-    width: 80%;
-    height: auto;
-    margin: auto;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap; }
@@ -788,276 +754,214 @@ footer {
         display: flex;
         justify-content: center; }
         .area-Planos .wrap .card-planos .card-footer button {
-          font-size: 1.1rem;
+          color: black;
           display: block;
-          margin: 0 auto;
           text-transform: uppercase;
           padding: 8px 45px;
           border-radius: 300px;
           border: 1px solid black;
           background-color: transparent;
-          transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
-          .area-Planos .wrap .card-planos .card-footer button:hover {
-            border: 1px solid transparent;
-            cursor: pointer;
-            border-color: #e4fde1;
-            background-color: #e4fde1; }
+          transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+          font-size: 1.1rem; }
 
 .info-planos {
   width: 100%;
   height: 500px;
   background: #f7f7f7; }
-  .info-planos .wrap {
-    width: 80%;
-    height: auto; }
 
 .area-Login {
   width: 100%;
   min-height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/banner-contato.jpg);
-  background-position: center bottom;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-image: url(../img/banner-contato.jpg); }
+  .area-Login:after {
+    content: '';
+    width: 100%;
+    height: 115%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1; }
   .area-Login .wrap {
-    width: 80%;
-    height: auto;
-    margin: 0 auto; }
+    position: relative;
+    z-index: 2; }
     .area-Login .wrap h1 {
       text-align: center;
-      font-size: 3.7rem;
+      font-size: 4rem;
       margin-bottom: .9rem;
-      line-height: 4rem; }
+      line-height: 4rem;
+      color: white;
+      text-shadow: 1px 1px 5px; }
     .area-Login .wrap h3 {
       text-align: center;
-      font-size: .95rem; }
+      font-size: .95rem;
+      color: white; }
 
 .areaForm {
   width: 100%;
   min-height: 500px;
-  background-color: #fcfcfc;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .areaForm .wrap {
-    width: 80%;
+  background-color: #fcfcfc; }
+  .areaForm .wrap form {
+    width: 100%;
     height: auto;
-    margin: 0 auto; }
-    .areaForm .wrap form {
+    margin: 0 auto;
+    padding: 5rem 0rem; }
+    .areaForm .wrap form input {
       width: 100%;
-      height: auto;
+      display: block;
       margin: 0 auto;
-      padding: 5rem 0rem; }
-      .areaForm .wrap form input {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 5px;
-        padding: .9rem;
-        margin-bottom: 2rem;
-        transition: box-shadow .3s;
-        -webkit-transition: box-shadow .3s;
-        -moz-transition: box-shadow .3s;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      padding: .9rem;
+      margin-bottom: 2rem;
+      transition: box-shadow .3s;
+      -webkit-transition: box-shadow .3s;
+      -moz-transition: box-shadow .3s;
+      font-size: 1.3rem; }
+      @media (min-width: 768px) {
+        .areaForm .wrap form input {
+          width: 70%; } }
+      .areaForm .wrap form input::placeholder {
         font-size: 1.3rem; }
-        @media (min-width: 768px) {
-          .areaForm .wrap form input {
-            width: 70%; } }
-        .areaForm .wrap form input::placeholder {
-          font-size: 1.3rem; }
-      .areaForm .wrap form textarea {
-        font-size: 1.3rem;
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: .9rem;
-        border: 1px solid rgba(0, 0, 0, 0.3); }
-        @media (min-width: 768px) {
-          .areaForm .wrap form textarea {
-            width: 70%; } }
-      .areaForm .wrap form button {
-        font-size: 1.1rem;
-        display: block;
-        margin: 0 auto;
-        text-transform: uppercase;
-        padding: 20px 5rem;
-        border-radius: 300px;
-        border: 1px solid black;
-        background-color: transparent;
-        transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
-        .areaForm .wrap form button:hover {
-          border: 1px solid transparent;
-          cursor: pointer;
-          border-color: #e4fde1;
-          background-color: #e4fde1; }
+    .areaForm .wrap form textarea {
+      font-size: 1.3rem;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: .9rem;
+      border: 1px solid rgba(0, 0, 0, 0.3); }
+      @media (min-width: 768px) {
+        .areaForm .wrap form textarea {
+          width: 70%; } }
+    .areaForm .wrap form button {
+      color: black;
+      display: block;
+      text-transform: uppercase;
+      padding: 20px 5rem;
+      border-radius: 300px;
+      border: 1px solid black;
+      background-color: transparent;
+      transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+      font-size: 1.1rem;
+      margin: 0 auto; }
 
 /*CSS da AREA de Login para Mobile*/
 .login-mobile {
   width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .login-mobile .wrap {
-    width: 80%;
-    height: auto;
-    margin: 0 auto; }
-    .login-mobile .wrap h1 {
-      text-align: center;
-      font-size: 4rem;
-      margin-bottom: .9rem;
-      line-height: 4rem; }
-    .login-mobile .wrap h6 {
-      text-align: center;
-      font-size: 1rem; }
+  height: 500px; }
+  .login-mobile .wrap h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: .9rem;
+    line-height: 4rem; }
+  .login-mobile .wrap h6 {
+    text-align: center;
+    font-size: 1rem; }
 
 .form-mobile {
   width: 100%;
   height: 400px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .form-mobile .wrap {
-    width: 80%;
-    height: auto;
-    margin: 0 auto; }
-    @media (min-width: 768px) {
-      .form-mobile .wrap {
-        width: 60%; } }
-    .form-mobile .wrap form {
-      width: 100%;
-      height: auto; }
-      .form-mobile .wrap form input {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-        border-radius: 33px;
-        padding: .9rem 1rem;
-        border: 1px solid rgba(0, 0, 0, 0.4);
-        font-size: 1.2rem; }
-      .form-mobile .wrap form button {
-        font-size: 1.2rem;
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-        text-transform: uppercase;
-        padding: 8px 45px;
-        border-radius: 300px;
-        border: 1px solid black;
-        background-color: transparent;
-        transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
-        .form-mobile .wrap form button:hover {
-          border: 1px solid transparent;
-          cursor: pointer;
-          border-color: #e4fde1;
-          background-color: #e4fde1; }
-    .form-mobile .wrap h5 {
-      margin-top: .9rem;
-      text-align: center; }
+  padding: 0; }
+  @media (min-width: 768px) {
+    .form-mobile .wrap {
+      width: 60%; } }
+  .form-mobile .wrap form {
+    width: 100%;
+    height: auto; }
+    .form-mobile .wrap form input {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      border-radius: 33px;
+      padding: .9rem 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      font-size: 1.2rem; }
+    .form-mobile .wrap form button {
+      color: black;
+      display: block;
+      text-transform: uppercase;
+      padding: 8px 45px;
+      border-radius: 300px;
+      border: 1px solid black;
+      background-color: transparent;
+      transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+      font-size: 1.2rem;
+      width: 90%;
+      margin: 0 auto; }
+  .form-mobile .wrap h5 {
+    margin-top: .9rem;
+    text-align: center; }
 
 /* Cadastro para o Mobile*/
 .header-cadastro-M {
   width: 100%;
   height: 500px;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .header-cadastro-M .wrap {
-    width: 80%;
-    height: auto;
-    margin: 0 auto; }
-    .header-cadastro-M .wrap h1 {
-      font-size: 3.4rem;
-      text-align: center;
-      margin-bottom: .9rem;
-      line-height: 4rem; }
-    .header-cadastro-M .wrap h6 {
-      font-size: 1rem;
-      text-align: center; }
+  align-items: center;
+  justify-content: center; }
+  .header-cadastro-M .wrap h1 {
+    font-size: 3.4rem;
+    text-align: center;
+    margin-bottom: .9rem;
+    line-height: 4rem; }
+  .header-cadastro-M .wrap h6 {
+    font-size: 1rem;
+    text-align: center; }
 
 .area-cadastro {
   width: 100%;
   height: 600px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding-bottom: 4rem; }
-  .area-cadastro .wrap {
-    width: 80%;
-    height: auto;
-    margin: 0 auto; }
-    .area-cadastro .wrap form {
+  .area-cadastro .wrap form {
+    width: 100%;
+    height: auto; }
+    .area-cadastro .wrap form input {
+      display: block;
       width: 100%;
-      height: auto; }
-      .area-cadastro .wrap form input {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 1.1rem;
-        border-radius: 33px;
-        padding: .9rem 1rem;
-        border: 1px solid rgba(0, 0, 0, 0.4);
-        font-size: 1.2rem; }
-        @media (min-width: 425px) {
-          .area-cadastro .wrap form input {
-            width: 75%; } }
-      .area-cadastro .wrap form button {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        text-transform: uppercase;
-        padding: 20px 46px;
-        border-radius: 300px;
-        border: 1px solid black;
-        background-color: transparent;
-        transition: background-color .15s ease-in-out, border-color .15s ease-in-out; }
-        @media (min-width: 425px) {
-          .area-cadastro .wrap form button {
-            width: 75%; } }
-        .area-cadastro .wrap form button:hover {
-          border: 1px solid transparent;
-          cursor: pointer;
-          border-color: #e4fde1;
-          background-color: #e4fde1; }
+      margin: 0 auto;
+      margin-bottom: 1.1rem;
+      border-radius: 33px;
+      padding: .9rem 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      font-size: 1.2rem; }
+      @media (min-width: 425px) {
+        .area-cadastro .wrap form input {
+          width: 75%; } }
+    .area-cadastro .wrap form button {
+      color: black;
+      display: block;
+      text-transform: uppercase;
+      padding: 20px 46px;
+      border-radius: 300px;
+      border: 1px solid black;
+      background-color: transparent;
+      transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 1.2rem; }
+      @media (min-width: 425px) {
+        .area-cadastro .wrap form button {
+          width: 75%; } }
 
 /* Area do Usuario*/
 .header-areaUsu {
   width: 100%;
   min-height: 700px;
-  background-image: url(../img/hipster.jpg);
-  background-position: center bottom;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .header-areaUsu .wrap {
-    width: 80%;
-    height: auto;
-    margin: 0 auto; }
-    .header-areaUsu .wrap h1 {
-      font-size: 4rem;
-      text-align: center;
-      margin-bottom: .9rem; }
+  background-image: url(../img/hipster.jpg); }
+  .header-areaUsu .wrap h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: .9rem; }
 
 .area-Usu {
   width: 100%;
   min-height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 6rem 0; }
-  .area-Usu .wrap {
-    width: 80%;
-    height: auto;
-    margin: 0 auto; }
-    @media (max-width: 375px) {
-      .area-Usu .wrap {
-        width: 100%; } }
+  @media (max-width: 375px) {
+    .area-Usu .wrap {
+      width: 100%; } }
 
 .card {
   display: block;
@@ -1091,23 +995,19 @@ footer {
     width: 100%;
     height: auto; }
   .card .card-info button {
-    clear: left;
-    font-size: 1.2rem;
+    color: black;
     display: block;
-    width: 50%;
-    margin: 0 auto;
     text-transform: uppercase;
     padding: 8px 45px;
     border-radius: 300px;
     border: 1px solid black;
     background-color: transparent;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+    clear: left;
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 0 auto;
     margin-top: 2rem; }
-    .card .card-info button:hover {
-      border: 1px solid transparent;
-      cursor: pointer;
-      border-color: #e4fde1;
-      background-color: #e4fde1; }
 
 .enviarFoto {
   color: transparent;

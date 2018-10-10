@@ -1,14 +1,10 @@
 .login-mobile{
 	width: 100%;
 	height: 500px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %flex;
 
 	.wrap{
-		width: 80%;
-		height:auto;
-		margin: 0 auto;
+		@extend %wrap;
 
 		h1{
 			text-align: center;
@@ -31,14 +27,11 @@
 	width: 100%;
 	height: 400px;
 	padding:0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %flex;
 
 	.wrap{
-		width: 80%;
-		height: auto;
-		margin: 0 auto;
+		@extend %wrap;
+		
 		@media (min-width: 768px){
 			width: 60%;
 		}
@@ -58,23 +51,11 @@
 			}
 
 			button{
+				@include btn-padrao(8px, 45px, black);
 				font-size: 1.2rem;
-				display: block;
 				width: 90%;
 				margin: 0 auto;	
-				text-transform: uppercase;
-			    padding: 8px 45px;
-			    border-radius: 300px;
-			    border: 1px solid black;
-			    background-color: transparent;
-			    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
-
-				&:hover{
-				    border: 1px solid transparent;
-				    cursor: pointer;
-				    border-color: #e4fde1;
-				    background-color: #e4fde1;
-				}
+				
 			}
 		}
 

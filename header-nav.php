@@ -14,8 +14,6 @@
 		
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.min.css">
-
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -35,7 +33,11 @@
 				</ul>
 				<button class="btn-login">Login</button>
 			</nav>
-			<i class="fa fa-bars btn-hamburguer" style="font-size: 2rem;">
+			
+				<i class="material-icons btn-hamburguer" style="font-size: 2.5rem;">
+				menu
+				</i>
+			
 				
 				<div class="menu-dropdown">
 					<ul>
@@ -69,11 +71,11 @@
 				<button type="submit">Envia</button>
 			</form>
 
-			<a href="#"  id="cadastrar">Quero me cadastrar</a>
+			<a href="cadastro-mobile.php"  id="cadastrar">Quero me cadastrar</a>
 		</div>
 	</div>
 
-	<div class="modal-cadastro">
+	<!-- <div class="modal-cadastro">
 		<div>
 			<div class="close-modal">
 				
@@ -91,4 +93,4 @@
 				<button type="submit">Envia</button>
 			</form>
 		</div>
-	</div>
+	</div> -->

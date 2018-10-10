@@ -1,29 +1,37 @@
 .area-Login{
 	width: 100%;
 	min-height:700px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %flex;
 	background-image: url(../img/banner-contato.jpg);
-	background-position: center bottom;
-	background-size: cover;
-	background-attachment: fixed;
+	@extend %background-fixed;
+	
+	&:after {
+	    content: '';
+	    width: 100%;
+	    height: 115%;
+	    background: rgba(0,0,0,0.5);
+	    position: absolute;
+	    z-index: 1;
+	}
 
 	.wrap{
 
-		width: 80%;
-		height: auto;
-		margin: 0 auto;
+		@extend %wrap;
+		position: relative;
+		z-index: 2;
 
 		h1{
 			text-align: center;
-			font-size: 3.7rem;
+			font-size: 4rem;
 			margin-bottom: .9rem;
 			line-height: 4rem;
+			color: white;
+			text-shadow: 1px 1px 5px;
 		}
 		h3{
 			text-align: center;
 			font-size: .95rem;
+			color: white;
 		}
 	}
 }
@@ -34,13 +42,9 @@
 	width: 100%;
 	min-height: 500px;
 	background-color: #fcfcfc;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %flex;
 	 .wrap{
-		width: 80%;
-		height: auto;
-		margin: 0 auto;
+		@extend %wrap;
 		form{
 			width: 100%;
 			height: auto;
@@ -80,22 +84,9 @@
 				}
 			}
 			button{
+				@include btn-padrao(20px, 5rem, black);
 				font-size: 1.1rem;
-				display: block;
 				margin: 0 auto;
-				text-transform: uppercase;
-			    padding: 20px 5rem;
-			    border-radius: 300px;
-			    border: 1px solid black;
-			    background-color: transparent;
-			    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
-				
-				&:hover{
-					    border: 1px solid transparent;
-					    cursor: pointer;
-					    border-color: #e4fde1;
-					    background-color: #e4fde1;
-				}
 			}
 		}	
 	 }

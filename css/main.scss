@@ -3,28 +3,26 @@
 *{
 	box-sizing: border-box;
 }
-@import "reset";
+@import "reset/reset";
+@import "var/var";
+@import "placeholders/placeholders";
+@import "mixins/mixins";
 
 
-$font-family: opens sans, Lato,Helvetica,Arial,Catamaran,Helvetica,Arial,sans-serif;
 //#114b5f, #028090, #e4fde1, #456990, #f45b69
 body, html{
 	
 	font-size: 16px;
 	overflow-x: hidden;
-	font-family: opens sans, Lato,Helvetica,Arial,Catamaran,Helvetica,Arial,sans-serif;
+	font-family: $font-family;
 }
 //cabaçalho
 header{
 	width: 100%;
 	min-height: 700px;
 	background-image: url('../img/banner-home.jpg');
-	background-position: center bottom;
-	background-size: cover;
-	background-attachment: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %background-fixed;
+	@extend %flex;
 	
 }
 
@@ -42,7 +40,7 @@ header{
 		height: auto;
 		display: block;
 		@media (max-width: 768px){
-			width: 140px;
+			width: 155px;
 		}
 		img{
 			max-width: 100%;
@@ -56,9 +54,7 @@ header{
 		height: 40px;
 		margin: 0 auto;
 	    padding: 0rem .2rem 0 .2rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		@include flex(center, space-between);
 		padding-top: 2rem;
 	    transition: all .35s;
 	}
@@ -67,8 +63,7 @@ header{
 		height: auto;
 		display: flex;
 		ul{
-			display: flex;
-			align-items: center;
+			@extend %flex;
 			margin-right: .8rem;
 			transition: .2s all linear;
 			li{
@@ -97,21 +92,7 @@ header{
 
 	}
 	.btn-login{
-		color: white;
-		text-transform: uppercase;
-	    padding: 8px 45px;
-	    border-radius: 300px;
-	    border: 1px solid white;
-	    background-color: transparent;
-	    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
-
-		&:hover{
-			color: black;
-		    border: 2px solid transparent;
-		    cursor: pointer;
-		    border-color: #e4fde1;
-		    background-color: #e4fde1;
-		}
+		@include btn-padrao(8px, 45px);
 	}
 
 .scrolling{
@@ -130,7 +111,7 @@ header{
 	}
 
 	.logo{
-		width: 180px;
+		width: 151px;
 	}
 }
 .apresentacao{
@@ -167,9 +148,7 @@ header{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     position: relative;
      &::after{
      	    width: 100%;
@@ -183,8 +162,7 @@ header{
      }
 
 	.wrap{
-		width: 80%;
-		height: auto;
+		@extend %wrap;
 		position: relative;
 	    z-index: 12;
 		
@@ -284,8 +262,7 @@ header{
     li{
     	padding-top: .9rem;
 	    padding-bottom: .9rem;
-	    display: flex;
-	    align-items: center;
+	    @extend %flex;
 	    border-radius: 66px;
     	&:hover{
     		background-color: #fcfcfc;
@@ -331,22 +308,8 @@ header{
 	}
 
 	.btn-quero-cont{
-		display: block;
+		@include btn-padrao(20px, 46px, black);
 		margin: 0 auto;
-		text-transform: uppercase;
-	    padding: 20px 46px;
-	    border-radius: 300px;
-	    border: 1px solid black;
-	    background-color: transparent;
-	    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
-	
-		&:hover{
-			    border: 1px solid transparent;
-			    cursor: pointer;
-			    border-color: #e4fde1;
-			    background-color: #e4fde1;
-		}
-
 	}
 }
 
@@ -401,9 +364,7 @@ header{
 	padding: 9rem 0;
 
 	.wrap{
-		width: 80%;
-		height: auto;
-		margin: 0 auto;
+		@extend %wrap;
 
 		h3{
 			font-size: 2.4rem;
@@ -440,21 +401,8 @@ header{
 			}	
 
 			button{
-				display: block;
+				@include btn-padrao(20px, 46px, black);
 				margin: 0 auto;
-				text-transform: uppercase;
-			    padding: 20px 46px;
-			    border-radius: 300px;
-			    border: 1px solid black;
-			    background-color: transparent;
-			    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
-			
-				&:hover{
-					    border: 1px solid transparent;
-					    cursor: pointer;
-					    border-color: #e4fde1;
-					    background-color: #e4fde1;
-				}
 			}
 		}
 	} 
@@ -467,9 +415,7 @@ footer{
 	background-color: #222;
 	padding: 2rem 0;
 	.wrap{
-		width: 80%;
-		height: auto;
-		margin: 0 auto;
+		@extend %wrap;
 	}
 	h6{
 		font-size: .9rem;
@@ -502,9 +448,7 @@ footer{
 		right: 5%;
 		top: 15px;
 		padding: .9rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@extend %flex;
 	    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:hover{
@@ -519,9 +463,7 @@ footer{
 		margin: 0 auto; 
 		background: linear-gradient(to bottom, #fff, #cdcdcd);
 		border-radius: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@extend %flex;
 		margin-bottom: 2rem;
 	}
 	> div{
@@ -624,9 +566,7 @@ footer{
 		right: 5%;
 		top: 15px;
 		padding: .9rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@extend %flex;
 	    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:hover{
@@ -737,24 +677,16 @@ footer{
 
 /*Sobre CSS*/
 @import 'sobre';
-
-
-
 /*Planos CSS*/
 @import 'planos';
-
 
 @import 'contato';
 
 /*CSS da AREA de Login para Mobile*/ 
 @import 'area-Login';
 
-
-
-
 /* Cadastro para o Mobile*/
 @import 'cadastro-mobile';
-
 
 /* Area do Usuario*/
 @import 'areaUsuario';

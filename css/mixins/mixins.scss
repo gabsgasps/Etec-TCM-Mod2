@@ -1,0 +1,18 @@
+@mixin flex($align-items, $j-content) {
+	display: flex;
+	align-items: $align-items;
+	justify-content: $j-content;
+}
+
+@mixin btn-padrao($padding-t-b, $padding-r-l, $color: white){
+	color: $color;
+	display: block;
+	text-transform: uppercase;
+    padding: $padding-t-b $padding-r-l;
+    border-radius: 300px;
+    border: 1px solid $color;
+    background-color: transparent;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+
+	@extend %btn-hover;
+}

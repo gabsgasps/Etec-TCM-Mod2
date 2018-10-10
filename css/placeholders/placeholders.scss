@@ -1,0 +1,28 @@
+%background-fixed{
+	background-position: center bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+%wrap{
+	width: 80%;
+	height:auto;
+	margin: 0 auto;
+}
+
+%flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+%btn-hover{
+	
+	&:hover{
+		color: black;
+	    border: 1px solid transparent!important;
+	    cursor: pointer;
+	    border-color: $cor-hover-btn;
+	    background-color: $cor-hover-btn;
+	}
+}
