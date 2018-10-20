@@ -4,7 +4,7 @@ onde foi criado uma empresa chamada Targeet cujo segmento é Marketing Digital.
 
 Situação do Site: Em desenvolvimento e em Reestruturação do site.
 
--Integrantes :
+> Integrantes :
   </Gabriel Gasparino>
   </Luana Firmino>
   </Kalisan Seriacopi>
