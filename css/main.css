@@ -59,7 +59,7 @@ header, .header-sobre, .planos-header, .area-Login, .header-areaUsu {
   height: auto;
   margin: 0 auto; }
 
-header, nav ul, .intersecao-1, .menu-dropdown li, .modal-login .close-modal, .modal-login .img-usuario, .modal-cadastro .close-modal, .header-sobre, .main-sobre, .introduceSobre, .planos-header, .planos-header .wrap, .destaque-planos, .area-Login, .areaForm, .login-mobile, .form-mobile, .header-areaUsu, .area-Usu {
+header, nav ul, .intersecao-1, .menu-dropdown li, .modal .close-modal, .modal .img-usuario, .modal-cadastro .close-modal, .header-sobre, .main-sobre, .introduceSobre, .planos-header, .planos-header .wrap, .destaque-planos, .area-Login, .areaForm, .login-mobile, .form-mobile, .header-areaUsu, .area-Usu {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -406,7 +406,7 @@ footer {
   display: block !important;
   transform: translate3d(0, 0, 0); }
 
-.modal-login {
+.modal {
   display: none;
   width: 100%;
   height: 100%;
@@ -415,7 +415,7 @@ footer {
   border: transparent;
   z-index: 9999;
   transition: all cubic-bezier(0.4, 0, 0.09, 0.12); }
-  .modal-login .close-modal {
+  .modal .close-modal {
     width: 60px;
     height: 60px;
     position: absolute;
@@ -424,18 +424,18 @@ footer {
     top: 15px;
     padding: .9rem;
     transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); }
-    .modal-login .close-modal:hover {
+    .modal .close-modal:hover {
       cursor: pointer;
       background: rgba(0, 0, 0, 0.3);
       border-radius: 50%; }
-  .modal-login .img-usuario {
+  .modal .img-usuario {
     width: 100px;
     height: 100px;
     margin: 0 auto;
     background: linear-gradient(to bottom, #fff, #cdcdcd);
     border-radius: 50%;
     margin-bottom: 2rem; }
-  .modal-login > div {
+  .modal > div {
     position: absolute;
     margin: auto;
     width: 300px;
@@ -448,16 +448,16 @@ footer {
     top: 80px;
     box-shadow: 0px 0px 160px 1px rgba(0, 0, 0, 0.3); }
     @media (min-width: 375px) {
-      .modal-login > div {
+      .modal > div {
         width: 360px; } }
     @media (min-width: 700px) {
-      .modal-login > div {
+      .modal > div {
         width: 460px; } }
-  .modal-login form {
+  .modal form {
     width: 80%;
     margin: 0 auto;
     min-height: 80%; }
-    .modal-login form input {
+    .modal form input {
       width: 100%;
       padding: .9rem .4rem;
       display: block;
@@ -466,13 +466,13 @@ footer {
       border: 1px solid rgba(0, 0, 0, 0.5);
       transition: padding ease-in .4s;
       font-size: 1.2rem; }
-      .modal-login form input::placeholder {
+      .modal form input::placeholder {
         font-size: 1.2rem; }
-      .modal-login form input:focus {
+      .modal form input:focus {
         padding: 0.9rem;
         outline: none;
         box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2); }
-    .modal-login form button {
+    .modal form button {
       font-size: 1.3rem;
       margin-top: .9rem;
       margin-bottom: .9rem;
@@ -484,12 +484,12 @@ footer {
       background-color: transparent;
       transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
       text-align: center; }
-      .modal-login form button:hover {
+      .modal form button:hover {
         border: 1px solid transparent;
         cursor: pointer;
         border-color: #e4fde1;
         background-color: #e4fde1; }
-  .modal-login a {
+  .modal a {
     display: block;
     text-align: center; }
 
@@ -521,7 +521,7 @@ footer {
   .modal-cadastro > div {
     position: absolute;
     margin: auto;
-    width: 300px;
+    width: 430px;
     min-height: 100px;
     background-color: #fcfcfc;
     padding: 3rem 0 5rem 0;
@@ -719,7 +719,8 @@ footer {
 .area-Planos {
   width: 100%;
   height: auto;
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  background: #f7f7f7; }
   .area-Planos .wrap {
     display: flex;
     justify-content: space-around;
@@ -741,12 +742,12 @@ footer {
           padding: .9rem 0;
           color: #777;
           cursor: pointer;
-          border-left: 15px solid transparent;
-          border-right: 15px solid transparent;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
           transition: all 500ms ease-in; }
           .area-Planos .wrap .card-planos .card-body ul li:hover {
-            border-left: 15px solid #ffc700;
-            border-right: 15px solid #ffc700; }
+            border-left: 8px solid #ffc700;
+            border-right: 8px solid #ffc700; }
       .area-Planos .wrap .card-planos .card-footer {
         width: 70%;
         height: auto;
@@ -766,8 +767,7 @@ footer {
 
 .info-planos {
   width: 100%;
-  height: 500px;
-  background: #f7f7f7; }
+  height: 500px; }
 
 .area-Login {
   width: 100%;
