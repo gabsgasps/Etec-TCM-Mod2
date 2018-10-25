@@ -15,12 +15,15 @@ btn_hamburguer.addEventListener('click', ()=>{
 	
 });
 
+/////////////////////////////////////////////////
 
+// ------ MODAL
 var btn_login = document.querySelector(".btn-login");
 
-var modal = document.querySelector(".modal-login");
+var modal = document.querySelector(".modal");
 
 var closeM = document.querySelector('.close-modal');
+
 
 btn_login.addEventListener('click', ()=>{
 
@@ -34,8 +37,37 @@ btn_login.addEventListener('click', ()=>{
 	}
 
 	
-});
+});//end btn-login
 
+
+// close modal
+function fechaModal(){
+
+	closeM.addEventListener("click", () => {
+
+		modal.classList.remove('display-modal');
+	});
+}// end close modal
+
+fechaModal();
+
+// show modal cadastro
+let cadastrar = document.querySelector("#cadastrar");
+let area_muda_login = document.querySelector(".area-que-muda-login");
+
+
+cadastrar.addEventListener('click', ()=>{
+
+	// area_muda_login.classList.remove('display-modal');
+	console.log('Fazer o modal mudar o conteudo sendo hora para fazer e outra cadastrar');
+
+	
+});//end open modal
+
+
+//////////////////////////////////////////
+
+// efeito no scroll
 window.addEventListener('scroll', ()=>{
 
 	let mainMenu = document.querySelector(".main-menu");
@@ -49,34 +81,10 @@ window.addEventListener('scroll', ()=>{
 		mainMenu.classList.add('scrolling');
 	}
 
-});
-
-// modal
-let cadastrar = document.querySelector("#cadastrar");
-
-let modal_cadastro = document.querySelector(".modal-cadastro");
-
-cadastrar.addEventListener('click', ()=>{
+});//end efeito escroll
 
 
-	if (modal_cadastro.classList.contains('display-modal')) {
-		fechaModal();
-	
-	}else{
 
-		modal_cadastro.classList.add('display-modal');
-		modal.classList.remove('display-modal');
-	}
+
 
 	
-});
-
-function fechaModal(){
-
-	closeM.addEventListener("click", () => {
-
-		modal.classList.remove('display-modal');
-		modal_cadastro.classList.remove('display-modal');
-	});
-}
-fechaModal();
