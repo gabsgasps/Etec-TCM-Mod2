@@ -5,4 +5,4 @@ node_modules
 css/main.css.map
 
 #scss cache #
-css/.sass-cache/*
+css/.sass-cache/
