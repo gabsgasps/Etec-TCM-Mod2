@@ -51,15 +51,27 @@ function fechaModal(){
 
 fechaModal();
 
-// show modal cadastro
+// change the modal 
 let cadastrar = document.querySelector("#cadastrar");
 let area_muda_login = document.querySelector(".area-que-muda-login");
-
+let area_muda_cadastro = document.querySelector(".area-que-muda-cadastro");
 
 cadastrar.addEventListener('click', ()=>{
 
-	// area_muda_login.classList.remove('display-modal');
-	console.log('Fazer o modal mudar o conteudo sendo hora para fazer e outra cadastrar');
+	area_muda_login.classList.add('d-none');
+	area_muda_cadastro.classList.remove('d-none');
+	// console.log('Fazer o modal mudar o conteudo sendo hora para fazer e outra cadastrar');
+
+	
+});//end modal
+
+let logar = document.querySelector("#logar");
+
+logar.addEventListener('click', ()=>{
+
+	area_muda_login.classList.remove('d-none');
+	area_muda_cadastro.classList.add('d-none');
+	// console.log('Fazer o modal mudar o conteudo sendo hora para fazer e outra cadastrar');
 
 	
 });//end open modal
@@ -71,15 +83,17 @@ cadastrar.addEventListener('click', ()=>{
 window.addEventListener('scroll', ()=>{
 
 	let mainMenu = document.querySelector(".main-menu");
+		if (document.querySelector(".main-menu")) {
+			
+			if (window.pageYOffset <= 100) {
 
-	if (window.pageYOffset <= 100) {
-
-		mainMenu.classList.remove('menu-fixo');
-		mainMenu.classList.remove('scrolling');
-	}else{
-		mainMenu.classList.add('menu-fixo');
-		mainMenu.classList.add('scrolling');
-	}
+				mainMenu.classList.remove('menu-fixo');
+				mainMenu.classList.remove('scrolling');
+			}else{
+				mainMenu.classList.add('menu-fixo');
+				mainMenu.classList.add('scrolling');
+			}
+		}
 
 });//end efeito escroll
 

@@ -3,3 +3,6 @@ node_modules
 
 # scss map
 css/main.css.map
+
+#scss cache
+css/.sass-cache/**

@@ -1,4 +1,4 @@
-<?php include_once('header-nav.php') ?>
+<?php include_once('header-nav-diferente/header-nav.php') ?>
 	<section class="area-Usu">
 		<div class="wrap">
 			<div class="card">

@@ -1,5 +1,5 @@
-<?php include_once('header-nav.php');?>
-	<section class="header-cadastro-M">
+<?php include_once('header-nav-diferente/header-nav.php') ?>	
+<section class="header-cadastro-M">
 		<div class="wrap">
 			<h1>Faça seu cadastro</h1>
 			<h6>E contrate nossos fantásticos planos</h6>
