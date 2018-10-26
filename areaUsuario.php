@@ -27,11 +27,7 @@
 		</div>
 	</section>
 	
-	<section class="header-areaUsu">
-		<div class="wrap">
-			<h1>Área do Usuário</h1>
-		</div>
-	</section>
+
 
 	
 
