@@ -11,14 +11,18 @@
 			<form action="cadastro-mobile.php" method="">
 				<div class="img-up">
 					<label for="img-up" class="">Alterar Foto
-						<i class="fas fa-camera icon-camera"></i>
+						<i class="material-icons">
+						camera_alt</i>
+
+
 					</label>
+					
 					<input id="img-up"
 					type="file" >
 						<img src="" alt="">
 
 				</div>
-				<input type="text" class="campos" placeholder="Nome"></input>
+				<input type="text" class="campos" placeholder="Nome">
 				<input type="email" class="campos" placeholder="Email"/>
 				<input type="text" class="campos" placeholder="CPF: "/>
 				<input type="tel" class="campos" placeholder="(xx)xxxxx-xxxx"/>

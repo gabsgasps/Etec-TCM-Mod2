@@ -4,13 +4,16 @@
 	background-image: url(../img/banner-sobre.jpg);
 	@extend %background-fixed;
 	@extend %flex;
+    position: relative;
+        
 	&:after {
 	    content: '';
 	    width: 100%;
-	    height: 99%;
+	    height: 100%;
 	    background: rgba(0,0,0,0.5);
 	    position: absolute;
 	    z-index: 1;
+        
 	}
 
 	.wrap{

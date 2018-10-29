@@ -75,8 +75,13 @@
 	<!-- href="cadastro-mobile.php"   --> 
 			</div>
 			<div class="area-que-muda-cadastro d-none">
+               <div>
+                <i class="material-icons" id="logar">
+                    arrow_back
+                </i>
+               </div>
 				<form action="" method="post">
-					<input type="text" class="campos" placeholder="Nome"></input>
+					<input type="text" class="campos" placeholder="Nome">
 					<input type="email" class="campos" placeholder="Email"/>
 					<input type="text" class="campos" placeholder="CPF: "/>
 					<input type="tel" class="campos" placeholder="(xx)xxxxx-xxxx"/>
@@ -85,9 +90,6 @@
 					<button type="submit">Envia</button>
 				</form>
 
-				<a id="logar">Já tenho Login</a>
 			</div>
 		</div>
 	</div>
-
-	
