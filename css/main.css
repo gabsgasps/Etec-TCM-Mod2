@@ -93,6 +93,16 @@ header {
   width: 100%;
   min-height: 700px;
   background-image: url("../img/banner-home.jpg");
+  position: relative;
+  z-index: 3;
+}
+header:after {
+  content: "";
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .main-menu-diferente {
@@ -140,6 +150,7 @@ header {
   justify-content: space-between;
   padding-top: 2rem;
   transition: all 0.35s;
+  z-index: 3;
 }
 
 nav {
@@ -203,13 +214,14 @@ nav ul a {
 .apresentacao {
   width: 90%;
   margin: 0 auto;
+  z-index: 3;
 }
 .apresentacao h1 {
   font-size: 3.8rem;
   color: #fff;
   letter-spacing: 1rem;
   text-align: center;
-  text-shadow: 1px 1px 5px;
+  text-shadow: 1px 1px 50px;
 }
 @media (max-width: 425px) {
   .apresentacao h1 {
@@ -295,9 +307,10 @@ nav ul a {
 }
 
 .menu-fixo {
-  background: #fff;
+  background: rgba(255, 190, 0, 0.84);
   height: 68px;
   z-index: 9999;
+  box-shadow: 1px 1px 15px;
 }
 
 .menu-dropdown {
@@ -695,7 +708,7 @@ footer h6 {
 .main-sobre {
   width: 100%;
   min-height: 500px;
-  background-color: #fff;
+  background-color: #444f4c;
   padding: 5rem 0;
 }
 .main-sobre .wrap {
@@ -729,6 +742,7 @@ footer h6 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 2.8rem;
+  color: #ffc42e;
 }
 .main-sobre .wrap article p {
   text-align: center;
@@ -828,7 +842,7 @@ footer h6 {
   width: auto;
   min-height: 300px;
   text-align: center;
-  margin: 0.9rem 0;
+  margin: 0.9rem;
 }
 .area-Planos .wrap .card-planos .card-header h4 {
   font-size: 2rem;
