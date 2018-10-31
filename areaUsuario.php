@@ -1,4 +1,4 @@
-<?php include_once('header-nav.php') ?>
+<?php include_once('header-nav-diferente/header-nav.php') ?>
 	<section class="area-Usu">
 		<div class="wrap">
 			<div class="card">
@@ -27,11 +27,7 @@
 		</div>
 	</section>
 	
-	<section class="header-areaUsu">
-		<div class="wrap">
-			<h1>Área do Usuário</h1>
-		</div>
-	</section>
+
 
 	
 

@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="main-menu" id="topo">
+<div class="main-menu " id="topo">
 		<div class="header-top">
 			<a href="index.php" class="logo">
 				<img src="img/logo.png" alt="logo-targeet">
@@ -51,46 +51,46 @@
 					</ul>
 					
 				</div>
-			</i>
 		</div>
 	</div>
 
 
-	<div class="modal-login">
+	<div class="modal">
 		<div>
 			<div class="close-modal">
 				
 				<i class="fas fa-times"></i>
 			</div>
-			<div class="img-usuario">
-				<i class="material-icons" style="font-size: 4rem">person_outline</i>
+			<div class="area-que-muda-login">
+				<div class="img-usuario">
+					<i class="material-icons" style="font-size: 4rem">person_outline</i>
+				</div>
+				<form action="" method="post">
+					<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">
+					<input type="password" placeholder="Senha" name="campoSenha" class="campoSenha">
+					<button type="submit">Envia</button>
+				</form>
+			<a id="cadastrar">Quero me cadastrar</a>
+	<!-- href="cadastro-mobile.php"   --> 
 			</div>
-			<form action="" method="post">
-				<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">
-				<input type="password" placeholder="Senha" name="campoSenha" class="campoSenha">
-				<button type="submit">Envia</button>
-			</form>
+			<div class="area-que-muda-cadastro d-none">
+               <div>
+                <i class="material-icons" id="logar">
+                    arrow_back
+                </i>
+               </div>
+				<form action="" method="post">
+					<input type="text" class="campos" placeholder="Nome">
+					<input type="email" class="campos" placeholder="Email"/>
+					<input type="text" class="campos" placeholder="CPF: "/>
+					<input type="tel" class="campos" placeholder="(xx)xxxxx-xxxx"/>
+					<input type="password" class="campos" placeholder="Senha"/>
+					<input type="password" class="campos" placeholder="Confirmar Senha"/>
+					<button type="submit">Envia</button>
+				</form>
 
-			<a href="cadastro-mobile.php"  id="cadastrar">Quero me cadastrar</a>
+			</div>
 		</div>
 	</div>
 
-	<!-- <div class="modal-cadastro">
-		<div>
-			<div class="close-modal">
-				
-				<i class="fas fa-times"></i>
-			</div>
-			<form action="" method="post">
-				<input type="text" class="campos" placeholder="Nome"></input>
-				<input type="text" class="campos" placeholder="Sobrenome"/>
-				<input type="email" class="campos" placeholder="Email"/>
-				<input type="date"/>
-				<input type="text" class="campos" placeholder="RG: xx.xxx.xxx-xx"/>
-				<input type="tel" class="campos" placeholder="(xx)xxxxx-xxxx"/>
-				<input type="password" class="campos" placeholder="Senha"/>
-				<input type="password" class="campos" placeholder="Confirmar Senha"/>
-				<button type="submit">Envia</button>
-			</form>
-		</div>
-	</div> -->
+	
