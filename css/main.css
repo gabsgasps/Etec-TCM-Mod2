@@ -92,7 +92,7 @@ body, html {
 header {
   width: 100%;
   min-height: 700px;
-  background-image: url("../img/banner-home.jpg");
+  background-image: url("../img/home.jpeg");
   position: relative;
   z-index: 3;
 }
@@ -102,7 +102,7 @@ header:after {
   z-index: 1;
   height: 100%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .main-menu-diferente {
@@ -672,8 +672,8 @@ footer h6 {
 /*Sobre CSS*/
 .header-sobre {
   width: 100%;
-  min-height: 600px;
-  background-image: url(../img/banner-sobre.jpg);
+  min-height: 700px;
+  background-image: url(../img/novo-sobre.jpeg);
   position: relative;
 }
 .header-sobre:after {

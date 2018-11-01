@@ -19,7 +19,7 @@ body, html{
 header{
 	width: 100%;
 	min-height: 700px;
-	background-image: url('../img/banner-home.jpg');
+	background-image: url('../img/home.jpeg');
 	@extend %background-fixed;
 	@extend %flex;
     position: relative;
@@ -31,7 +31,7 @@ header{
         z-index: 1;
         height: 100%;
         position: absolute;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.2);
     }
 	
 }
