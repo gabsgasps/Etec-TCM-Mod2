@@ -54,7 +54,7 @@
 		article{
 			width: 100%;
 			height: auto;
-			padding: 0 6rem;
+			padding: 2rem 6rem;
 			margin-bottom: 2rem;
 
 			@media (max-width: 768px){
@@ -66,24 +66,35 @@
 			@media (min-width: 1024px){
 				padding: 0 8rem;
 			}
-			h2{
-				font-size: 1.8rem;
-				font-weight: bold;
-				text-align: center;
-				margin-bottom: 2.8rem;
-                color: map-get($pallete, amarelo);
-			}
+			
 
 			p{
 				text-align: center;
 				font-size: 1.1rem;
 				line-height: 1.2rem;
-				margin-bottom: 4rem; 
 			}
 		}
 	}
 }
-
+.destaque-sobre{
+				width: 100%;
+				height: auto;
+				padding: 2rem;
+				@include flex(center, center); 
+				border-radius: 8px;
+			    border: transparent;
+			    box-shadow: 0 16px 38px -12px rgba(0,0,0,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+				margin-bottom: 2.8rem;
+				
+				h2{
+					font-size: 1.8rem;
+					font-weight: bold;
+					text-align: center;
+	                color: map-get($pallete, amarelo);
+	                display: block;
+				}
+				
+			}
 .introduceSobre{
 	width: 100%;
 	min-height: 450px;
