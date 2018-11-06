@@ -63,7 +63,7 @@ table {
   background-attachment: fixed;
 }
 
-.area-Usu .wrap, .header-areaUsu .wrap, .area-cadastro .wrap, .header-cadastro-M .wrap, .form-mobile .wrap, .login-mobile .wrap, .areaForm .wrap, .area-Login .wrap, .info-planos .wrap, .area-Planos .wrap, .destaque-planos .wrap, .planos-header .wrap, footer .wrap, .contato .wrap, .intersecao-1 .wrap {
+.area-Usu .wrap, .header-areaUsu .wrap, .area-cadastro .wrap, .header-cadastro-M .wrap, .form-mobile .wrap, .login-mobile .wrap, .areaForm .wrap, .area-Login .wrap, .info-planos .wrap, .area-Planos .wrap, .destaque-planos .wrap, .planos-header .wrap, footer .wrap, .contato .wrap, .algunsClientes .wrap, .intersecao-1 .wrap {
   width: 80%;
   height: auto;
   margin: 0 auto;
@@ -83,6 +83,10 @@ table {
   background-color: #e4fde1;
 }
 
+.area-Planos .wrap .card-planos .card-body ul li:hover, .area-Planos .wrap .card-planos {
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
 body, html {
   font-size: 16px;
   overflow-x: hidden;
@@ -92,7 +96,7 @@ body, html {
 header {
   width: 100%;
   min-height: 700px;
-  background-image: url("../img/banner-home.jpg");
+  background-image: url("../img/home.jpeg");
   position: relative;
   z-index: 3;
 }
@@ -102,7 +106,7 @@ header:after {
   z-index: 1;
   height: 100%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .main-menu-diferente {
@@ -284,7 +288,7 @@ nav ul a {
   min-height: 300px;
   max-width: 100%;
   background-color: #fff;
-  padding: 7rem 0;
+  padding: 9rem 0;
 }
 .introduceProduct div {
   width: 80%;
@@ -313,20 +317,76 @@ nav ul a {
   box-shadow: 1px 1px 15px;
 }
 
+.algunsClientes {
+  width: 100%;
+  min-height: 500px;
+}
+.algunsClientes h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.algunsClientes .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+.algunsClientes .cliente {
+  width: 360px;
+  min-width: 200px;
+  border-radius: 0.4rem;
+  height: 500px;
+  min-height: 170px;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin: 0.9rem;
+  margin-bottom: 5rem;
+}
+.algunsClientes .cliente .destaque-cliente {
+  position: relative;
+  top: -90px;
+  width: 100%;
+  height: 52%;
+  padding: 2rem;
+  background: #ffc42e;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.algunsClientes .cliente .info-cliente {
+  width: 100%;
+  height: auto;
+  padding: 0.9rem;
+}
+.algunsClientes .cliente h3 {
+  font-weight: 700;
+  font-size: 1.8em;
+  text-align: center;
+}
+.algunsClientes .cliente p {
+  color: #555;
+  line-height: 1.3;
+  min-height: 15vh;
+  text-align: center;
+  margin-top: 0.9rem;
+}
+
 .menu-dropdown {
   width: 100%;
   min-height: 30px;
   background: #fff;
-  display: none !important;
+  opacity: 0;
   position: absolute;
   right: auto;
   left: 0;
   top: 66px;
   transform: translate3d(100%, 0, 0);
   padding: 1.4rem 0;
-  transition: transform 0.5s ease;
-  -webkit-transition: transform 0.5s ease;
-  -moz-transition: transform 0.5s ease;
+  transition: transform 0.5s ease, opacity, linear 0.4s;
+  -webkit-transition: transform 0.5s ease, opacity linear 0.4s;
+  -moz-transition: transform 0.5s ease, opacity linear 0.4s;
 }
 .menu-dropdown .b-l-dropdowm {
   display: block;
@@ -422,7 +482,7 @@ nav ul a {
   margin: 0 auto;
   margin-bottom: 2rem;
   max-width: 160px;
-  height: auto;
+  min-height: 120px;
 }
 .planos h3 {
   font-size: 2rem;
@@ -511,12 +571,14 @@ footer h6 {
 }
 
 .menu-show {
-  display: block !important;
+  opacity: 1;
   transform: translate3d(0, 0, 0);
+  transition: transform linear 0.5s, opacity linear 0.5s;
 }
 
 .modal {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -619,11 +681,15 @@ footer h6 {
 }
 
 .display-modal {
-  display: block !important;
+  opacity: 1;
+  visibility: visible;
+  display: block;
 }
 
 .d-none {
-  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 
 .area-que-muda-cadastro > div {
@@ -672,8 +738,8 @@ footer h6 {
 /*Sobre CSS*/
 .header-sobre {
   width: 100%;
-  min-height: 600px;
-  background-image: url(../img/banner-sobre.jpg);
+  min-height: 700px;
+  background-image: url(../img/novo-sobre.jpeg);
   position: relative;
 }
 .header-sobre:after {
@@ -719,7 +785,7 @@ footer h6 {
 .main-sobre .wrap article {
   width: 100%;
   height: auto;
-  padding: 0 6rem;
+  padding: 2rem 6rem;
   margin-bottom: 2rem;
 }
 @media (max-width: 768px) {
@@ -737,18 +803,30 @@ footer h6 {
     padding: 0 8rem;
   }
 }
-.main-sobre .wrap article h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 2.8rem;
-  color: #ffc42e;
-}
 .main-sobre .wrap article p {
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.2rem;
-  margin-bottom: 4rem;
+}
+
+.destaque-sobre {
+  width: 100%;
+  height: auto;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: transparent;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.8rem;
+}
+.destaque-sobre h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffc42e;
+  display: block;
 }
 
 .introduceSobre {
@@ -843,10 +921,12 @@ footer h6 {
   min-height: 300px;
   text-align: center;
   margin: 0.9rem;
+  padding: 2rem;
+  border-radius: 0.7rem;
 }
 .area-Planos .wrap .card-planos .card-header h4 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .area-Planos .wrap .card-planos .card-header h6 {
   font-size: 1.5rem;
@@ -861,12 +941,11 @@ footer h6 {
   cursor: pointer;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  transition: all 500ms ease-in;
+  transition: border linear 0.1s;
 }
 .area-Planos .wrap .card-planos .card-body ul li:hover {
   border-left: 8px solid #ffc700;
   border-right: 8px solid #ffc700;
-  box-shadow: 1px 1px 1px;
 }
 .area-Planos .wrap .card-planos .card-footer {
   width: 70%;
@@ -1109,9 +1188,26 @@ footer h6 {
   width: 200px;
   height: 200px;
   margin: auto;
+  margin-bottom: 3rem;
 }
 .img-up label {
+  font-size: 1.2rem;
+  text-align: center;
   position: absolute;
+  top: auto;
+  bottom: 3px;
+  margin: 0 auto;
+  width: 300px !important;
+  height: 75px !important;
+  background: transparent;
+  border-radius: 0 0 66px 66px;
+  cursor: pointer;
+  line-height: 4;
+  transition: all 0.4s;
+}
+.img-up label:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 .img-up input {
   display: none !important;
@@ -1119,6 +1215,7 @@ footer h6 {
 .img-up img {
   max-width: 100%;
   height: auto;
+  border-radius: 6px;
 }
 
 /* Area do Usuario*/
@@ -1203,7 +1300,9 @@ footer h6 {
   font-size: 1.2rem;
   text-align: center;
   position: absolute;
-  margin: 75% auto auto !important;
+  top: auto;
+  bottom: 3px;
+  margin: 0 auto;
   width: 300px !important;
   height: 75px !important;
   background: transparent;

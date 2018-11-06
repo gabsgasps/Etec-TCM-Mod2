@@ -7,8 +7,8 @@
 						<i class="fas fa-camera icon-camera"></i>
 					</label>
 					<input id="envia"
-					type="file" >
-						<img src="img/GGR.jpg" alt="">
+					type="file" onchange="exibeImagem(event);" >
+						<img src="img/GGR.jpg" alt="" id="preview">
 
 				</div>
 
@@ -27,7 +27,21 @@
 		</div>
 	</section>
 	
+    <script type="text/javascript">
+		function exibeImagem(eventObject){
+			
 
+			var leitorDeArquivo = new FileReader();
+			leitorDeArquivo.onload = function (e){
+				document.getElementById("preview").src = e.target.result;
+			}
+
+			leitorDeArquivo.readAsDataURL(eventObject.target.files[0]);
+
+			console.log(eventObject.target);
+
+		}
+	</script>
 
 	
 

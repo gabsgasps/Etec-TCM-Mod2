@@ -20,7 +20,38 @@
 			
 		</div>
 	</section>
-
+    
+    <section class="algunsClientes">
+          <h2>Alguns Clientes</h2>
+       <div class="wrap">
+            <div class="cliente">
+                <div class="destaque-cliente"></div>
+                <div class="info-cliente">
+                    <h3>Cliente 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum mollitia cupiditate odit excepturi quae repellat, obcaecati numquam, labore iusto deserunt laudantium.</p>
+                </div>
+            </div>
+            <div class="cliente">
+                <div class="destaque-cliente"></div>
+                <div class="info-cliente">
+                    <h3>Cliente 2</h3>
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum mollitia cupiditate odit excepturi quae repellat, obcaecati numquam, labore iusto deserunt laudantium.
+                    </p>
+                </div>
+            </div>
+            <div class="cliente">
+                <div class="destaque-cliente"></div>
+                <div class="info-cliente">
+                    <h3>Cliente 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum mollitia cupiditate odit excepturi quae repellat, obcaecati numquam, labore iusto deserunt laudantium.
+                    </p>
+                </div>
+            </div>
+            
+       </div>
+    </section>
 	<section class="servicos">
 		<h2>O que Usamos</h2>
 		<div class="apresentaPlanos">
