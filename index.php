@@ -16,7 +16,7 @@
 				<p>A Targeet é uma empresa dedicada na Área de Marketing Digital para acertar o target (público-alvo) dos nossos clientes. Usufruindo de métricas, padrões e boas práticas para o alcance do target.</p>
 				
 			</div>
-
+            <h2>as</h2>  
 			
 		</div>
 	</section>
