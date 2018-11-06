@@ -17,9 +17,14 @@
 
 					</label>
 					
+<!--
 					<input id="img-up"
 					type="file" >
 						<img src="" alt="">
+-->
+						<input id="envia"
+					type="file" onchange="exibeImagem(event);" >
+						<img src="img/GGR.jpg" alt="" class="preview">
 
 				</div>
 				<input type="text" class="campos" placeholder="Nome">
@@ -32,4 +37,21 @@
 			</form>
 		</div>
 	</section>
+	
+	<script type="text/javascript">
+		function exibeImagem(eventObject){
+			
+
+			var leitorDeArquivo = new FileReader();
+			leitorDeArquivo.onload = function (e){
+				document.querySelector('.preview').src = e.target.result;
+			}
+
+			leitorDeArquivo.readAsDataURL(eventObject.target.files[0]);
+
+			console.log(eventObject.target);
+
+		}
+	</script>
+
 <?php include_once('footer.php'); ?>

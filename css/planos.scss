@@ -70,20 +70,23 @@
 			min-height: 300px;
 			text-align: center;
 			margin: .9rem;
+            padding: 2rem;
+            @extend %sombra;
+            border-radius: .7rem;
 
 			.card-header{
 				// padding: 1rem 2rem;
 
 				h4{
 					font-size: 2rem;
-					margin-bottom: 1rem;
+					margin-bottom: 2rem;
 				}
 
 				h6{
 					font-size: 1.5rem;
 				}
 			}
-
+            
 			.card-body{
 				padding: 3rem 0rem;
 
@@ -94,12 +97,12 @@
 				    cursor: pointer;
 				    border-left: 8px solid transparent;
 				    border-right: 8px solid transparent;
-				    transition: all 500ms ease-in;
+				    transition: border linear .1s;
 
 				    &:hover{
 				    	border-left: 8px solid rgb(255, 199, 0);
 					    border-right: 8px solid rgb(255, 199, 0);
-                        box-shadow: 1px 1px 1px;
+                        @extend %sombra;
 
 				    }
 				}

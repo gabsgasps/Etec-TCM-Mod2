@@ -211,7 +211,7 @@ header{
 	min-height: 300px;
 	max-width: 100%;
 	background-color: #fff;
-	padding: 7rem 0;
+	padding: 9rem 0;
 
 	div{
 		width: 80%;
@@ -243,6 +243,64 @@ header{
     height: 68px;
 	z-index: 9999;
     box-shadow: 1px 1px 15px;
+}
+
+.algunsClientes{
+    width: 100%;
+    min-height: 500px;
+    
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .wrap{
+        @extend %wrap;
+        @include flex(center, space-evenly);
+        flex-flow: row wrap;
+    }
+    
+    .cliente{
+        width: 360px;
+        min-width: 200px;
+        border-radius: .4rem;
+        height: 500px;
+        min-height: 170px;
+        padding: 2rem;
+        background: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+        margin: .9rem;
+        margin-bottom: 5rem;
+        
+        .destaque-cliente{
+           position: relative;
+            top: -90px;
+            width: 100%;
+            height: 52%;
+            padding: 2rem;
+            background: map-get($pallete, amarelo);
+            margin: 0 auto;
+            border-radius: 6px;
+            box-shadow: 0 16px 38px -12px rgba(0,0,0,.56),0 4px 25px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+        }
+        .info-cliente{
+            width: 100%;
+            height: auto;
+            padding: .9rem;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 1.8em;
+            text-align: center;
+        }
+        p{
+            color: #555;
+            line-height: 1.3;
+            min-height: 15vh;
+            text-align: center;
+            margin-top: .9rem;
+        }
+    }
 }
 
 //estilização do menu dropdown
