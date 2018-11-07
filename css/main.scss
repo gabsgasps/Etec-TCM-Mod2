@@ -19,7 +19,7 @@ body, html{
 header{
 	width: 100%;
 	min-height: 700px;
-	background-image: url('../img/home.jpeg');
+	background-image: url('../img/sobre.jpg');
 	@extend %background-fixed;
 	@extend %flex;
     position: relative;
@@ -31,7 +31,7 @@ header{
         z-index: 1;
         height: 100%;
         position: absolute;
-        background: rgba(0,0,0,0.2);
+        background: rgba(0,0,0,0.4);
     }
 	
 }
@@ -145,6 +145,7 @@ header{
 		letter-spacing: 1rem;
 		text-align: center;
 	    text-shadow: 1px 1px 50px;
+        font-weight: bolder;
 
 		@media(max-width: 425px){
 			font-size: 2.7rem;
@@ -153,10 +154,11 @@ header{
 
 	h6{
 		margin-top: .8rem;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		color: #fff;
 		letter-spacing: .2rem;
 		text-align: center;
+        font-weight: bolder;
 	}
 }
 

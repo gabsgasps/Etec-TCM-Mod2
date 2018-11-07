@@ -66,16 +66,24 @@
 		justify-content: space-around;
 		flex-flow: row wrap;
 		.card-planos{
-			width: auto;
+			min-width: 300px;
 			min-height: 300px;
 			text-align: center;
 			margin: .9rem;
             padding: 2rem;
-            @extend %sombra;
+            @extend %sombraMenor;
             border-radius: .7rem;
 
 			.card-header{
 				// padding: 1rem 2rem;
+                width: 100%;
+                height: auto;
+                padding: 3rem;
+                position: relative;
+                top: -45px;
+                @extend %sombra;
+                border-radius: 6px;
+                background: linear-gradient(336deg, yellow, red);
 
 				h4{
 					font-size: 2rem;
@@ -93,7 +101,6 @@
 				ul li{
 					font-size: 16px;
 				    padding: .9rem 0;
-				    color: #777;
 				    cursor: pointer;
 				    border-left: 8px solid transparent;
 				    border-right: 8px solid transparent;

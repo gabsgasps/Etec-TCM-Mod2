@@ -3,7 +3,7 @@
 
 		<div class="apresentacao">
 			<h1>TARGEET</h1>
-			<h6>Acertando o Alvo</h6>
+			<h6>A Empresa que cuida de Você</h6>
 		</div>
 	</header>
 
