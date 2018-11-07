@@ -46,10 +46,10 @@
 		<section class="servicos">
 				<h2>Ferramentas que utilizamos</h2>
 
-				<div class="apresentaPlanos">
+				<div class="apresentaPlanos" style="width:85%">
 					<div class="planos">
 						<div class="destaque-sobre">
-							<img src="img/google.svg" alt="">
+							<img style="margin-bottom: 0;" src="img/adwords_logo.png" alt="">
 						</div>
 						<h3>Adwords</h3>
 						<p>Para anúncios e Campanhas. Cuja abrangência traz ótimos resultados e possívéis novos clientes para serem fidelizados.</p>
@@ -57,7 +57,7 @@
 					<div class="planos">
 						<div class="destaque-sobre">
 							
-						<img src="img/facebook.svg" alt="">
+						<img style="margin-bottom: 0;" src="img/social.png" alt="">
 						</div>
 						<h3>Social Media</h3>
 						<p>Aproxima a marca do seu target, sendo efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
@@ -65,7 +65,7 @@
 					<div class="planos">
 						<div class="destaque-sobre">
 							
-						<img src="img/googleanalytics.svg" alt="">
+						<img style="margin-bottom: 0;" src="img/ana.png" alt="">
 						</div>
 						<h3>Analytics</h3>
 						<p>Ferramenta análise e controle de relatórios acerca dos usuários. Sendo uma ferramenta primordial para acertar o target.</p>
@@ -76,23 +76,16 @@
 					<div class="planos">
 						<div class="destaque-sobre">
 							
-						<img src="img/seo.svg" alt="">
+						<img style="margin-bottom: 0;" src="img/seo.svg" alt="">
 						</div>
 						<h3>SEO</h3>
 						<p>Para anúncios e Campanhas. Cuja abrangência traz ótimos resultados e possívéis novos clientes para serem fidelizados.</p>
 					</div>
+					
 					<div class="planos">
 						<div class="destaque-sobre">
 							
-						<img src="img/ad.svg" alt="">
-						</div>
-						<h3>Adsense</h3>
-						<p>Aproxima a marca do seu target, sendo efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
-					</div>
-					<div class="planos">
-						<div class="destaque-sobre">
-							
-						<img src="img/ad.svg" alt="">
+						<img style="margin-bottom: 0;" src="img/ad.png" alt="">
 						</div>
 						<h3>Adsense</h3>
 						<p>Aproxima a marca do seu target, sendo efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
