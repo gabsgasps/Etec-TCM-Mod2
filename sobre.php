@@ -76,7 +76,7 @@
 					<div class="planos">
 						<div class="destaque-sobre">
 							
-						<img style="margin-bottom: 0;" src="img/seo.svg" alt="">
+						<img style="margin-bottom: 0;" src="img/seo.png" alt="">
 						</div>
 						<h3>SEO</h3>
 						<p>Para anúncios e Campanhas. Cuja abrangência traz ótimos resultados e possívéis novos clientes para serem fidelizados.</p>
