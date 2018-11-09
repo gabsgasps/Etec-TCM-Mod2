@@ -257,7 +257,9 @@ header{
         margin-bottom: 5rem;
     }
     .wrap{
-        @extend %wrap;
+        width: 100%;
+        height: auto;
+	    margin: 0 auto;
         @include flex(center, space-evenly);
         flex-flow: row wrap;
     }
