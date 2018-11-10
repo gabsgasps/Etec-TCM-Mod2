@@ -22,7 +22,7 @@
 					type="file" >
 						<img src="" alt="">
 -->
-						<input id="envia"
+						<input id="img-up"
 					type="file" onchange="exibeImagem(event);" >
 						<img src="img/GGR.jpg" alt="" class="preview">
 

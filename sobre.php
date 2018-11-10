@@ -89,7 +89,7 @@
 						<h3>Adsense</h3>
 						<p>Aproxima a marca do seu target, sendo efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
 					</div>
-					<img style="margin-bottom: 0;" src="img/ad.png" alt="">
+					
 				</div>
 		</section>
 	</section>
