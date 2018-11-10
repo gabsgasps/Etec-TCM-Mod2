@@ -90,7 +90,7 @@
 
 
 .enviarFoto{
-	color: transparent;
+	// color: transparent;
 	font-size: 1.2rem;
 	text-align: center;
 	position: absolute;
@@ -106,15 +106,20 @@
 	transition: all .4s;
 
 }
+.icon-camera{
+	color: black; 
+	margin-left: .5rem;
+	transition: all .4s;
+}
 .enviarFoto:hover{
 	background: rgba(0,0,0,0.3);
 	color: white;
+
+	.icon-camera{
+		color: floralwhite; 
+	}
 }
-.icon-camera{
-	visibility: hidden;
-	color: floralwhite; 
-	margin-left: .5rem;
-}
+
 .enviarFoto:hover > i{
 	visibility: visible;
 }
