@@ -1,7 +1,7 @@
 $font-family: opens sans, Lato,Helvetica,Arial,Catamaran,Helvetica,Arial,sans-serif;
 
 // cor do hover de cada botão
-$cor-hover-btn: #e4fde1;
+$cor-hover-btn: map-get($pallete, amarelo);
 
 
 
