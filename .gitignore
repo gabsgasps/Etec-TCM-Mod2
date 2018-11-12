@@ -2,10 +2,10 @@
 node_modules
 
 # scss map #
-css/main.css.map
+/css/main.css.map
 
 #scss cache #
-css/.sass-cache/
+/css/.sass-cache
 
 # project
 .project
