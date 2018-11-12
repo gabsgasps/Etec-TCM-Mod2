@@ -6,3 +6,12 @@ css/main.css.map
 
 #scss cache #
 css/.sass-cache/
+
+# project
+.project
+
+# buildpath
+.buildpath
+
+# settings
+.settings/
