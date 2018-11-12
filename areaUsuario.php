@@ -13,7 +13,7 @@
 				</div>
 
 				<div class="card-info">
-					<form action="">
+					<form action="" action="post">
 						<input type="text" value="COlocar dados">
 						<input type="text" value="COlocar dados">
 						<input type="text" value="COlocar dados">

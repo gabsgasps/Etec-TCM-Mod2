@@ -65,7 +65,7 @@
 				<div class="img-usuario">
 					<i class="material-icons" style="font-size: 4rem">person_outline</i>
 				</div>
-				<form action="" method="post">
+				<form action="logar.php" method="post">
 					<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">
 					<input type="password" placeholder="Senha" name="campoSenha" class="campoSenha">
 					<button type="submit">Envia</button>
@@ -79,12 +79,12 @@
                     arrow_back
                 </i>
                </div>
-				<form action="" method="post">
-					<input type="text" class="campos" placeholder="Nome">
-					<input type="email" class="campos" placeholder="Email"/>
-					<input type="text" class="campos" placeholder="CPF: "/>
-					<input type="tel" class="campos" placeholder="(xx)xxxxx-xxxx"/>
-					<input type="password" class="campos" placeholder="Senha"/>
+				<form action="cadastrar.php" method="post">
+					<input type="text" class="campos" name="campoNome" placeholder="Nome">
+					<input type="email" class="campos" name="campoEmail" placeholder="Email"/>
+					<input type="text" class="campos" name="campoCpf" placeholder="CPF: "/>
+					<input type="tel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx"/>
+					<input type="password" class="campos" name="campoSenha" placeholder="Senha"/>
 					<input type="password" class="campos" placeholder="Confirmar Senha"/>
 					<button type="submit">Envia</button>
 				</form>
