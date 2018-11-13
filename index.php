@@ -13,7 +13,7 @@
 
 			<div class="introduceProduct-p">
 				
-				<p>A Targeet é uma empresa dedicada na Área de Marketing Digital para acertar o target (público-alvo) dos nossos clientes. Usufruindo de métricas, padrões e boas práticas para o alcance do target.</p>
+				<p>A Targeet é uma empresa dedicada na Área de Marketing Digital para acertar o target (público-alvo) dos nossos clientes. Usufruindo de métricas, padrões e boas práticas para o alcance do target. </p>
 				
 			</div>
 
@@ -63,12 +63,12 @@
 			<div class="planos">
 				<img src="img/facebook.svg" alt="">
 				<h3>Social Media</h3>
-				<p>Aproxima a marca do seu target, sendo efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
+				<p>Aproxima a marca do seu target, sendo um meio efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
 			</div>
 			<div class="planos">
 				<img src="img/googleanalytics.svg" alt="">
 				<h3>Analytics</h3>
-				<p>Ferramenta análise e controle de relatórios acerca dos usuários. Sendo uma ferramenta primordial para acertar o target.</p>
+				<p>Ferramenta de análise e controle de relatórios acerca dos usuários. Sendo uma ferramenta primordial para acertar o target.</p>
 			</div>
 
 		</div>
