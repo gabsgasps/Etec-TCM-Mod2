@@ -8,7 +8,9 @@
 	<section class="introduceSobre">
 		<div class="wrap">
 			<h2>Quem Somos</h2>
-			<p>Somos uma empresa que trabalha no ramo de Marketing Digital e Social Media, que conta com uma equipe, eficiente e dedicada para com os seus clientes. Oferecendo serviços que mais captam (possíveis novos clientes), segmentam e fundamentam o nosso cliente (empresa) dentro do âmbito Digital.</p>
+			<p>
+                Somos uma empresa que trabalha no ramo de Marketing Digital e Social Media, que conta com uma equipe, eficiente e dedicada para com os seus clientes. Oferecendo serviços que mais captam (possíveis novos clientes), segmentam e fundamentam o nosso cliente (empresa) dentro do âmbito Digital. Com o trabalho intenso para alcançar o target do nosso cliente, ao analisar e tabular dados que diz respeito sobre o público alvo, fidelizando-os nas redes sociais.
+            </p>
 		</div>
 	</section>
 	<section class="main-sobre">
@@ -62,14 +64,7 @@
 						<h3>Social Media</h3>
 						<p>Aproxima a marca do seu target, sendo efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
 					</div>
-					<div class="planos">
-						<div class="destaque-sobre">
-							
-						<img style="margin-bottom: 0;" src="img/ana.png" alt="">
-						</div>
-						<h3>Analytics</h3>
-						<p>Ferramenta análise e controle de relatórios acerca dos usuários. Sendo uma ferramenta primordial para acertar o target.</p>
-					</div>
+					
 
 				</div>
 				<div class="apresentaPlanos areaServico">
@@ -79,15 +74,16 @@
 						<img style="margin-bottom: 0;" src="img/seo.png" alt="">
 						</div>
 						<h3>SEO</h3>
-						<p>Para anúncios e Campanhas. Cuja abrangência traz ótimos resultados e possívéis novos clientes para serem fidelizados.</p>
+						<p>Otimização para Mecanismos de Busca é o conjunto de ações e estratégias de Marketing Digital que têm como objetivo o aumento do tráfego e do desempenho de um site por meio de resultados orgânicos de mecanismos de pesquisa.</p>
 					</div>
 					
 					<div class="planos">
 						<div class="destaque-sobre">
-							<img style="margin-bottom: 0;" src="img/ad.png" alt="">
+							
+						<img style="margin-bottom: 0;" src="img/ana.png" alt="">
 						</div>
-						<h3>Adsense</h3>
-						<p>Aproxima a marca do seu target, sendo efetivo ao trazer a marca para o dia-a-dia do seu cliente</p>
+						<h3>Analytics</h3>
+						<p>Ferramenta de análise e controle de relatórios acerca dos usuários. Sendo uma ferramenta primordial para acertar o target.</p>
 					</div>
 					
 				</div>
