@@ -46,7 +46,8 @@
 	
 	<section class="equipe">
 		<section class="servicos">
-				<h2>Ferramentas que utilizamos</h2>
+				<h2>Algumas Ferramentas que utilizamos</h2>
+				
 
 				<div class="apresentaPlanos areaServico">
 					<div class="planos">
