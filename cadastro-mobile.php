@@ -22,8 +22,8 @@
 					type="file" >
 						<img src="" alt="">
 -->
-						<input id="envia"
-					type="file" onchange="exibeImagem(event);" >
+						<input id="img-up"
+					type="file" onchange="exibeImagem(event);" accept="image/*" >
 						<img src="img/GGR.jpg" alt="" class="preview">
 
 				</div>

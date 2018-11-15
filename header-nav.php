@@ -12,7 +12,7 @@
       rel="stylesheet">
 	
 		
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
 
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -59,7 +59,9 @@
 		<div>
 			<div class="close-modal">
 				
-				<i class="fas fa-times"></i>
+				<i class="material-icons">
+close
+</i>
 			</div>
 			<div class="area-que-muda-login">
 				<div class="img-usuario">
@@ -68,7 +70,7 @@
 				<form action="logar.php" method="post">
 					<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">
 					<input type="password" placeholder="Senha" name="campoSenha" class="campoSenha">
-					<button type="submit">Envia</button>
+					<button type="submit">Entrar</button>
 				</form>
 			<a id="cadastrar">Quero me cadastrar</a>
 	<!-- href="cadastro-mobile.php"   --> 

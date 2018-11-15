@@ -1,7 +1,7 @@
 <?php include_once('header-nav.php');?>
 	<div class="area-Login">
 		<div class="wrap">
-			<h1>Vamos conversar!</h1>
+			<h1>Vamos Conversar!</h1>
 			<h3>Em caso de dúvidas, estaremos a disposição</h3>
 		</div>
 	</div>

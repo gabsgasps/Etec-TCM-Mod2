@@ -7,7 +7,7 @@
 						<i class="fas fa-camera icon-camera"></i>
 					</label>
 					<input id="envia"
-					type="file" onchange="exibeImagem(event);" >
+					type="file" onchange="exibeImagem(event);" accept="image/*">
 						<img src="img/GGR.jpg" alt="" id="preview">
 
 				</div>
