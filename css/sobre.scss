@@ -50,6 +50,10 @@
 		width: 80%;
 		height: auto;
 		margin: 0 auto;
+		
+		@media (max-width: 425px){
+			width: 85%;
+		}
 
 		article{
 			width: 100%;
@@ -71,8 +75,8 @@
 
 			p{
 				text-align: center;
-				font-size: 1.3rem;
-				line-height: 1.1rem;
+				font-size: 1.2rem;
+				line-height: 1.4rem;
                 
 			}
 		}
@@ -125,6 +129,7 @@
 	width: 100%;
 	min-height: 500px;
 	@extend %flex;
+	padding: 2rem 0;
 
 	.wrap{
 		width: 80%;
@@ -139,9 +144,9 @@
 		}
 
 		p{
-			font-size: 1.3rem;
+			font-size: 1.1rem;
 			padding: 0 4rem;
-			line-height: 1.25rem;
+			line-height: 1.35rem;
 			text-align: justify;
 
 			@media (max-width: 768px) {

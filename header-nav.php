@@ -59,7 +59,9 @@
 		<div>
 			<div class="close-modal">
 				
-				<i class="fas fa-times"></i>
+				<i class="material-icons">
+close
+</i>
 			</div>
 			<div class="area-que-muda-login">
 				<div class="img-usuario">

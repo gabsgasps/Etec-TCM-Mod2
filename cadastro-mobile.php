@@ -23,7 +23,7 @@
 						<img src="" alt="">
 -->
 						<input id="img-up"
-					type="file" onchange="exibeImagem(event);" >
+					type="file" onchange="exibeImagem(event);" accept="image/*" >
 						<img src="img/GGR.jpg" alt="" class="preview">
 
 				</div>

@@ -9,8 +9,12 @@
 		<div class="wrap">
 			<h2>Quem Somos</h2>
 			<p>
-                Somos uma empresa que trabalha no ramo de Marketing Digital e Social Media, que conta com uma equipe, eficiente e dedicada para com os seus clientes. Oferecendo serviços que mais captam (possíveis novos clientes), segmentam e fundamentam o nosso cliente (empresa) dentro do âmbito Digital. Com o trabalho intenso para alcançar o target do nosso cliente, ao analisar e tabular dados que diz respeito sobre o público alvo, fidelizando-os nas redes sociais.
+                Somos uma empresa que trabalha no ramo de Marketing Digital e Social Media, que conta com uma equipe, eficiente e dedicada para com os seus clientes.
+               Oferecendo serviços que mais captam (possíveis novos clientes), segmentam e fundamentam o nosso cliente (empresa) dentro do âmbito Digital. 
             </p>
+           <!--  <p>
+            	Com o trabalho intenso para alcançar o target do nosso cliente, ao analisar e tabular dados que diz respeito sobre o público alvo, fidelizando-os nas redes sociais.
+            </p> -->
 		</div>
 	</section>
 	<section class="main-sobre">
@@ -46,7 +50,7 @@
 	
 	<section class="equipe">
 		<section class="servicos">
-				<h2>Algumas Ferramentas que utilizamos</h2>
+				<h2>Ferramentas que utilizamos</h2>
 				
 
 				<div class="apresentaPlanos areaServico">
