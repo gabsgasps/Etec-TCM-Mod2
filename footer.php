@@ -5,5 +5,7 @@
 	</footer>
 
 	<script src="js/main.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/mask.js"></script>
 </body>
 </html>

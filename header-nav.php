@@ -82,13 +82,43 @@ close
                 </i>
                </div>
 				<form action="cadastrar.php" method="post">
-					<input type="text" class="campos" name="campoNome" placeholder="Nome">
-					<input type="email" class="campos" name="campoEmail" placeholder="Email"/>
-					<input type="text" class="campos" name="campoCpf" placeholder="CPF: "/>
-					<input type="tel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx"/>
-					<input type="password" class="campos" name="campoSenha" placeholder="Senha"/>
-					<input type="password" class="campos" placeholder="Confirmar Senha"/>
-					<button type="submit">Envia</button>
+					<input type="text" id="campoNome" class="campos" name="campoNome" placeholder="Nome">
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-size: .9rem;font-weight: bolder;" class="messageNome" >
+							Campo Nome Requirido
+						</li>
+					</ul>
+					<input type="email" id="campoEmail" class="campos" name="campoEmail" placeholder="Email"/>
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmail">
+							Campo Email Requirido
+						</li>
+					</ul>
+					<input type="text" id="campoCpf" class="campos" name="campoCpf" placeholder="CPF: 000.000.000-00" />
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpf">
+							Campo Cpf Requirido
+						</li>
+					</ul>
+					<input type="tel" id="campoTel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx"/>
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageTel">
+							Campo Telefone Requirido
+						</li>
+					</ul>
+					<input type="password" id="campoSenha" class="campos" name="campoSenha" placeholder="Senha" value="opa" />
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageSenha">
+							Campo Senha Requirido
+						</li>
+					</ul>
+					<input type="password" id="cConfirmaSenha" class="campos" placeholder="Confirmar Senha"/>
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageConfSenha">
+							Campo Confirma Senha Requirido
+						</li>
+					</ul>
+					<button class="enviar" type="submit">Envia</button>
 				</form>
 
 			</div>
