@@ -8,5 +8,6 @@
 	<script src="js/validation.js"></script>
 	<script src="js/mask.js"></script>
 	<script src="js/validation-mobile.js"></script>
+	<script src="js/login-mobile.js"></script>
 </body>
 </html>

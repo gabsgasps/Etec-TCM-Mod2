@@ -8,7 +8,7 @@
 	<section class="form-mobile">
 		<div class="wrap">
 			<form action="">
-				<input type="email" placeholder="Email" class="cEmailMobi">
+				<input type="email" placeholder="Email" class="cEmailMobi" autofocus>
 				<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mEmailLogMobi">
 							Campo Email Requirido
 					</li>

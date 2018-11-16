@@ -25,44 +25,44 @@ var statusButton = [];
 
 
 cNomeMobiCad.addEventListener('keyup', (event) => {
-
-	if (!event.target.value.length) {
-		mNomeMobiCad.style.display = 'block';
-		btnCadMobi.disabled = true;
-	}else {
-		btnCadMobi.disabled = false;
-		mNomeMobiCad.style.display = 'none';
-	}
+	setTimeout(() => {
+		if (!event.target.value.length) {
+			mNomeMobiCad.style.display = 'block';
+			btnCadMobi.disabled = true;
+		}else {
+			btnCadMobi.disabled = false;
+			mNomeMobiCad.style.display = 'none';
+		}
+	}, 500);
 });
 
 cEmailMobiCad.addEventListener('keyup', (event) => {
-
-	if (!event.target.value.length) {
-		btnCadMobi.disabled = true;
-		mEmailMobiCad.style.display = 'block';
-		mEmailMobiCadCaracter.style.display = 'none';
-	}else {
-		if (camposMobiCad[1].value.indexOf('@')  < 1 || 
-				camposMobiCad[1].value.indexOf('.')  < 1 ) {
+	setTimeout(() => {
+		if (!event.target.value.length) {
 			btnCadMobi.disabled = true;
-			mEmailMobiCadCaracter.style.display = 'block';
-			mEmailMobiCad.style.display = 'none';
-			
-		} else{
+			mEmailMobiCad.style.display = 'block';
 			mEmailMobiCadCaracter.style.display = 'none';
-			btnCadMobi.disabled = false;
-		}
-	}
+		}else if (camposMobiCad[1].value.indexOf('@')  < 1 || 
+					camposMobiCad[1].value.indexOf('.')  < 1 ) {
+				btnCadMobi.disabled = true;
+				mEmailMobiCadCaracter.style.display = 'block';
+				mEmailMobiCad.style.display = 'none';
+				
+			} else{
+				mEmailMobiCadCaracter.style.display = 'none';
+				btnCadMobi.disabled = false;
+			}
+	}, 500);
+	
 });
 
 cCpfMobiCad.addEventListener('keyup', (event) => {
-
+setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
 		mCpfMobiCad.style.display = 'block';
 		mCpfMobiCadConfig.style.display = 'none';
-	}else {
-		if (!/\d{3}\.\d{3}\.\d{3}-\d{2}/.test(camposMobiCad[2].value)) {
+	}else if (!/\d{3}\.\d{3}\.\d{3}-\d{2}/.test(camposMobiCad[2].value)) {
 			btnCadMobi.disabled = true;
 			mCpfMobiCadConfig.style.display = 'block';
 			mCpfMobiCad.style.display = 'none';
@@ -70,11 +70,12 @@ cCpfMobiCad.addEventListener('keyup', (event) => {
 			btnCadMobi.disabled = false;
 			mCpfMobiCadConfig.style.display = 'none';
 		}
-	}
+	}, 500);
+	
 });
 
 cTelMobiCad.addEventListener('keyup', (event) => {
-
+setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
 		mTelMobiCad.style.display = 'block';
@@ -82,15 +83,15 @@ cTelMobiCad.addEventListener('keyup', (event) => {
 		btnCadMobi.disabled = false;
 		mTelMobiCad.style.display = 'none';
 	}
+	}, 500);
 });
 
 cSenhaMobiCad.addEventListener('keyup', (event) => {
-
+setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
 		mSenhaMobiCad.style.display = 'block';
-	}else {
-		if( camposMobiCad[4].value !== camposMobiCad[5].value) {
+	}else if( camposMobiCad[4].value !== camposMobiCad[5].value) {
 			btnCadMobi.disabled = true;
 			mConfSenha.style.display = 'block';
 			mConfSenhaReq.style.display = 'none';
@@ -99,25 +100,26 @@ cSenhaMobiCad.addEventListener('keyup', (event) => {
 			mConfSenha.style.display = 'none';
 			btnCadMobi.disabled = false;
 		}
-	}
+	}, 500);
 });
 
 cConfSenhaMobiCad.addEventListener('keyup', (event) => {
-
-	if (!event.target.value.length) {
-		btnCadMobi.disabled = true;
-		mConfSenhaReq.style.display = 'block';
-		mConfSenha.style.display = 'none';
-	}else {
-		if( camposMobiCad[4].value !== camposMobiCad[5].value) {
+	setTimeout(() => {
+		if (!event.target.value.length) {
 			btnCadMobi.disabled = true;
-			mConfSenha.style.display = 'block';
-			mConfSenhaReq.style.display = 'none';
-		}else {
 			mConfSenha.style.display = 'none';
-			btnCadMobi.disabled = false;
-		}
-	}
+			mConfSenhaReq.style.display = 'block';
+		}else if( camposMobiCad[4].value !== camposMobiCad[5].value) {
+
+				mConfSenhaReq.style.display = 'none';
+				btnCadMobi.disabled = true;
+				mConfSenha.style.display = 'block';
+			}else {
+				mConfSenha.style.display = 'none';
+				btnCadMobi.disabled = false;
+			}
+	}, 500);
+	
 });
 /////////////// ??????????????????????///
 
@@ -132,64 +134,3 @@ btnCadMobi.addEventListener('click', () => {
 	
 });
 
-// ///////////////////////// //////////////////////////
-
-const btnLogMobi = document.querySelector('.btnLogMobi');
-
-// campos
-const cEmailMobi = document.querySelector(".cEmailMobi");
-const cSenhaMobi = document.querySelector(".cSenhaMobi");
-// end campos
-
-const camposLogMobi = [cEmailMobi, cSenhaMobi];
-
-
-// areas messages
-let mEmailLogMobi = document.querySelector(".mEmailLogMobi");
-let mEmailCaracterLogMobi = document.querySelector(".mEmailCaracterLogMobi");
-let mSenhaMobi = document.querySelector(".mSenhaMobi");
-// end messages areas
-
-cEmailMobi.addEventListener('keyup', (event) => {
-
-	if (!event.target.value.length) {
-		btnLogMobi.disabled = true;
-		mEmailLogMobi.style.display = 'block';
-		mEmailCaracterLogMobi.style.display = 'none';
-
-	}else {
-		if (camposLogMobi[0].value.indexOf('@')  < 1 || 
-				camposLogMobi[0].value.indexOf('.')  < 1 ) {
-
-			mEmailLogMobi.style.display = 'none';
-			mEmailCaracterLogMobi.style.display = 'block';
-			btnLogMobi.disabled = true;
-		} else{
-			mEmailCaracterLogMobi.style.display = 'none';
-			btnLogMobi.disabled = false;
-		}
-	}
-});
-cSenhaMobi.addEventListener('keyup', (event) => {
-
-	if (!event.target.value.length) {
-		btnLogMobi.disabled = true;
-		mSenhaMobi.style.display = 'block';
-	}else {
-		
-		mSenhaMobi.style.display = 'none';
-		
-		btnLogMobi.disabled = false;
-	}
-});
-
-btnLogMobi.addEventListener('click', () => {
-	
-	for(let i=0; i < campos.length; i++) {
-		
-		if (!camposLogMobi[i].value.length){
-			event.preventDefault();
-		}
-	}
-	
-});
