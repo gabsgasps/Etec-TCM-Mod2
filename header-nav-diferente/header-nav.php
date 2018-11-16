@@ -60,19 +60,32 @@
 		<div>
 			<div class="close-modal">
 				
-				<i class="fas fa-times"></i>
+				<i class="material-icons">
+		close
+		</i>
 			</div>
 			<div class="area-que-muda-login">
 				<div class="img-usuario">
 					<i class="material-icons" style="font-size: 4rem">person_outline</i>
 				</div>
-				<form action="" method="post">
-					<input type="text" placeholder="Email" name="campoEmail" class="campoEmail">
-					<input type="password" placeholder="Senha" name="campoSenha" class="campoSenha">
-					<button type="submit">Envia</button>
+				<form action="logar.php" method="post">
+					<input type="text" placeholder="Email" name="campoEmail" class="campoEmailLogin">
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailLog">
+							Campo Email Requirido
+						</li>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailCaracterLog">
+							Insira os caracteres '@'  e ' . ' no campo Email 
+						</li>
+					<input type="password" placeholder="Senha" name="campoSenha" class="campoSenhaLogin">
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageSenhaLog">
+							Campo Senha Requirido
+						</li>
+					</ul>
+					<button type="submit" class="enviarLogin">Entrar</button>
 				</form>
 			<a id="cadastrar">Quero me cadastrar</a>
-	<!-- href="cadastro-mobile.php"   --> 
+			<!-- href="cadastro-mobile.php"   --> 
 			</div>
 			<div class="area-que-muda-cadastro d-none">
                <div>
@@ -80,14 +93,54 @@
                     arrow_back
                 </i>
                </div>
-				<form action="" method="post">
-					<input type="text" class="campos" placeholder="Nome">
-					<input type="email" class="campos" placeholder="Email"/>
-					<input type="text" class="campos" placeholder="CPF: "/>
-					<input type="tel" class="campos" placeholder="(xx)xxxxx-xxxx"/>
-					<input type="password" class="campos" placeholder="Senha"/>
-					<input type="password" class="campos" placeholder="Confirmar Senha"/>
-					<button type="submit">Envia</button>
+				<form action="cadastrar.php" method="post">
+					<input type="text" class="campoNome" class="campos" name="campoNome" placeholder="Nome">
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-size: .9rem;font-weight: bolder;" class="messageNome" >
+							Campo Nome Requirido
+						</li>
+					</ul>
+					<input type="email" class="campoEmail" class="campos" name="campoEmail" placeholder="Email"/>
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmail">
+							Campo Email Requirido
+						</li>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailCaracter">
+							Insira os caracteres '@'  e ' . ' no campo Email 
+						</li>
+
+					</ul>
+					<input type="text" class="campoCpf" class="campos" name="campoCpf" placeholder="CPF: 000.000.000-00" />
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpf">
+							Campo Cpf Requirido
+						</li>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpfConfig">
+							Campo CPF errado
+						</li>
+					</ul>
+					<input type="tel" class="campoTel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx"/>
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageTel">
+							Campo Telefone Requirido
+						</li>
+					</ul>
+					<input type="password" class="campoSenha" class="campos" name="campoSenha" placeholder="Senha" value="opa" />
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageSenha">
+							Campo Senha Requirido
+						</li>
+					</ul>
+					<input type="password" class="cConfirmaSenha" class="campos" placeholder="Confirmar Senha"/>
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageConfSenhaReq">
+							Campo Confirma Senha Requirido
+						</li>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageConfSenha">
+							Confirme a Senha
+						</li>
+					</ul>
+					<button class="enviar" type="submit">Envia</button>
 				</form>
 
 			</div>

@@ -27,13 +27,53 @@
 						<img src="img/GGR.jpg" alt="" class="preview">
 
 				</div>
-				<input type="text" class="campos" placeholder="Nome">
-				<input type="email" class="campos" placeholder="Email"/>
-				<input type="text" class="campos" placeholder="CPF: "/>
-				<input type="tel" class="campos" placeholder="(xx)xxxxx-xxxx"/>
-				<input type="password" class="campos" placeholder="Senha"/>
-				<input type="password" class="campos" placeholder="Confirmar Senha"/>
-				<button type="submit">ENVIAR</button>
+				<input type="text" class="campos cNomeMobiCad" placeholder="Nome">
+				<ul>
+					<li style="display:none;text-align: center; color: red; font-size: .9rem;font-weight: bolder;" class="mNomeMobiCad" >
+						Campo Nome Requirido
+					</li>
+				</ul>
+				<input type="email" class="campos cEmailMobiCad" placeholder="Email"/>
+				<ul>
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mEmailMobiCad">
+						Campo Email Requirido
+					</li>
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mEmailMobiCadCaracter">
+						Insira os caracteres '@'  e ' . ' no campo Email 
+					</li>
+
+				</ul>
+				<input type="text" class="campos cCpfMobiCad" placeholder="CPF: "/>
+				<ul>
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mCpfMobiCad">
+						Campo Cpf Requirido
+					</li>
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mCpfMobiCadConfig">
+						Campo CPF errado
+					</li>
+				</ul>
+				<input type="tel" class="campos cTelMobiCad" placeholder="(xx)xxxxx-xxxx"/>
+				<ul>
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mTelMobiCad">
+						Campo Telefone Requirido
+					</li>
+				</ul>
+				<input type="password" class="campos cSenhaMobiCad" placeholder="Senha"/>
+				<ul>
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mSenhaMobiCad">
+						Campo Senha Requirido
+					</li>
+				</ul>
+				<input type="password" class="campos cConfSenhaMobiCad" placeholder="Confirmar Senha"/>
+				<ul>
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mConfSenhaReq">
+						Campo Confirma Senha Requirido
+					</li>
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mConfSenha">
+						Confirme a Senha
+					</li>
+				</ul>
+				<button type="submit" class="btnCadMobi">ENVIAR</button>
 			</form>
 		</div>
 	</section>
