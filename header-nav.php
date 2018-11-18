@@ -109,16 +109,16 @@
 						</li>
 
 					</ul>
-					<input type="text" class="campoCpf" class="campos" name="campoCpf" placeholder="CPF: 000.000.000-00" />
+					<input type="text" class="campoCpf" class="campos" name="campoCpf" placeholder="CPF: 000.000.000-00" maxlength="14" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpf">
 							Campo Cpf Requirido
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpfConfig">
-							Campo CPF errado
+							Campo CPF sem a formatação xxx.xxx.xxx-xx
 						</li>
 					</ul>
-					<input type="tel" class="campoTel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx"/>
+					<input type="tel" class="campoTel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx" maxlength="15" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageTel">
 							Campo Telefone Requirido

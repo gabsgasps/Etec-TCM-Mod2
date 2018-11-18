@@ -43,7 +43,7 @@
 					</li>
 
 				</ul>
-				<input type="text" class="campos cCpfMobiCad" placeholder="CPF: "/>
+				<input type="text" class="campos cCpfMobiCad" placeholder="CPF: xxx.xxx.xxx-xx"/>
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mCpfMobiCad">
 						Campo Cpf Requirido
@@ -52,7 +52,7 @@
 						Campo CPF errado
 					</li>
 				</ul>
-				<input type="tel" class="campos cTelMobiCad" placeholder="(xx)xxxxx-xxxx"/>
+				<input type="tel" class="campos cTelMobiCad" placeholder="(xx)xxxxx-xxxx" maxlength="15" />
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mTelMobiCad">
 						Campo Telefone Requirido

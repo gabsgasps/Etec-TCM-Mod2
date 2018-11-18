@@ -79,10 +79,12 @@ setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
 		mTelMobiCad.style.display = 'block';
-	}else {
-		btnCadMobi.disabled = false;
-		mTelMobiCad.style.display = 'none';
-	}
+	}else if(!/\(\d{2}\)\d{5}-\d{4}/.test(event.target.value)) {
+			mTelMobiCad.style.display = 'none';
+			
+		}else{
+			btnCadMobi.disabled = false;
+		}
 	}, 500);
 });
 

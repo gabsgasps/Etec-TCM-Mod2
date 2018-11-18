@@ -61,7 +61,8 @@ cCpf.addEventListener('keyup', (event) => {
 		bEnviar.disabled = true;
 		messageCpf.style.display = 'block';
 		messageCpfConfig.style.display = 'none';
-	}else {
+	}else
+
 		if (!/\d{3}\.\d{3}\.\d{3}-\d{2}/.test(campos[2].value)) {
 			bEnviar.disabled = true;
 			messageCpfConfig.style.display = 'block';
@@ -70,7 +71,7 @@ cCpf.addEventListener('keyup', (event) => {
 			bEnviar.disabled = false;
 			messageCpfConfig.style.display = 'none';
 		}
-	}
+
 });
 
 cTel.addEventListener('keyup', (event) => {
@@ -78,10 +79,14 @@ cTel.addEventListener('keyup', (event) => {
 	if (!event.target.value.length) {
 		bEnviar.disabled = true;
 		messageTel.style.display = 'block';
-	}else {
-		bEnviar.disabled = false;
-		messageTel.style.display = 'none';
-	}
+	}else if(!/\(\d{2}\)\d{5}-\d{4}/.test(event.target.value)) {
+			messageTel.style.display = 'none';
+			console.log('não tem padrão');
+
+		}else{
+			bEnviar.disabled = false;
+			console.log('tem padrão');
+		}
 });
 
 cSenha.addEventListener('keyup', (event) => {
