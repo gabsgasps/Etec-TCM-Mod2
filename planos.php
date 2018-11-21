@@ -74,6 +74,25 @@
 		</div>
 	</section>
 	<section class="info-planos">
-		<div class="wrap"></div>
+		<div class="wrap">
+			<h2>Entenda mais e Planeje-se</h2>
+
+			<h4>Tire suas dúvidas</h4>
+		<div class="destaqueInfoP">
+			
+			<div class="infoAntesdeComprar">
+				<h5>Antes de Comprar</h5>
+				<p>Antes de comprar um plano é bom verificar se você já está pronto para começar e se escolheu o plano mais adequado. Aqui vai um checklist de coisas para fazer antes de comprar:</p>
+			</div>
+
+			<div class="infoLista">
+				<ul style="list-style: initial;">
+					<li>Converse com um atendente da Targeet para verificar se é possível implementar tudo o que você precisa em algum dos planos. Tire todas suas dúvidas antes de continuar.</li>
+					<li>Avalie qual plano se adequa melhor às suas necessidades, BASIC, PRO ou PREMIUM. Se precisar, solicite ajuda a nossa equipe para descobrir qual a melhor solução para o seu momento atual – você pode acabar economizando!.</li>
+					<li>Após ter escolhido algum de nossos planos, faça seu login, caso não seja cadastrado, faça seu cadastro. Por fim, contrate um de nossos planos.</li>
+				</ul>
+			</div>
+		</div>
+		</div>
 	</section>
 <?php  include_once('footer.php');?>
