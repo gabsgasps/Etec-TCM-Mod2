@@ -15,6 +15,7 @@ let mEmailMobiCad = document.querySelector(".mEmailMobiCad");
 let mEmailMobiCadCaracter = document.querySelector(".mEmailMobiCadCaracter");
 let mCpfMobiCad = document.querySelector(".mCpfMobiCad");
 let mTelMobiCad = document.querySelector(".mTelMobiCad");
+let mTelMobiCadConfig = document.querySelector(".mTelMobiCadConfig");
 let mSenhaMobiCad = document.querySelector(".mSenhaMobiCad");
 let mConfSenhaReq = document.querySelector(".mConfSenhaReq");
 let mConfSenha = document.querySelector(".mConfSenha");
@@ -78,11 +79,13 @@ cTelMobiCad.addEventListener('keyup', (event) => {
 setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
+		mTelMobiCadConfig.style.display = 'none';
 		mTelMobiCad.style.display = 'block';
-	}else if(!/\(\d{2}\)\d{5}-\d{4}/.test(event.target.value)) {
+	}else if(!/\(\d{2}\)\s\d{5}-\d{4}/.test(event.target.value)) {
 			mTelMobiCad.style.display = 'none';
-			
+			mTelMobiCadConfig.style.display = 'block';
 		}else{
+			mTelMobiCadConfig.style.display = 'none';
 			btnCadMobi.disabled = false;
 		}
 	}, 500);

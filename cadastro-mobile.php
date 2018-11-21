@@ -57,7 +57,12 @@
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mTelMobiCad">
 						Campo Telefone Requirido
 					</li>
+					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mTelMobiCadConfig">
+						Campo Telefone está no formato errado
+					</li>
 				</ul>
+				
+					
 				<input type="password" class="campos cSenhaMobiCad" placeholder="Senha"/>
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mSenhaMobiCad">

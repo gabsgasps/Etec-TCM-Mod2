@@ -15,6 +15,7 @@ let messageEmail = document.querySelector(".messageEmail");
 let messageEmailCaracter = document.querySelector(".messageEmailCaracter");
 let messageCpf = document.querySelector(".messageCpf");
 let messageTel = document.querySelector(".messageTel");
+let messageTelConfig = document.querySelector(".messageTelConfig");
 let messageSenha = document.querySelector(".messageSenha");
 let messageConfSenhaReq = document.querySelector(".messageConfSenhaReq");
 let messageConfSenha = document.querySelector(".messageConfSenha");
@@ -75,18 +76,23 @@ cCpf.addEventListener('keyup', (event) => {
 });
 
 cTel.addEventListener('keyup', (event) => {
+	setTimeout(() => {
 
-	if (!event.target.value.length) {
-		bEnviar.disabled = true;
-		messageTel.style.display = 'block';
-	}else if(!/\(\d{2}\)\d{5}-\d{4}/.test(event.target.value)) {
-			messageTel.style.display = 'none';
-			console.log('não tem padrão');
+		if (!event.target.value.length) {
+			bEnviar.disabled = true;
+			messageTel.style.display = 'block';
+			messageTelConfig.style.display = 'none';
+		}else if(!/\(\d{2}\)\s\d{5}-\d{4}/.test(event.target.value) 
+			|| !/\d/g.test(event.target.value) ) {
+				messageTel.style.display = 'none';
+				messageTelConfig.style.display = 'block';
 
-		}else{
-			bEnviar.disabled = false;
-			console.log('tem padrão');
-		}
+			}else{
+				messageTelConfig.style.display = 'none';			
+				bEnviar.disabled = false;
+			}
+
+	}, 500);
 });
 
 cSenha.addEventListener('keyup', (event) => {

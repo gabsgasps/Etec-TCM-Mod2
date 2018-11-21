@@ -124,6 +124,11 @@
 							Campo Telefone Requirido
 						</li>
 					</ul>
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageTelConfig">
+							Campo Telefone está no formato errado
+						</li>
+					</ul>
 					<input type="password" class="campoSenha" class="campos" name="campoSenha" placeholder="Senha" value="opa" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageSenha">
