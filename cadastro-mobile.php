@@ -43,7 +43,7 @@
 					</li>
 
 				</ul>
-				<input type="text" class="campos cCpfMobiCad" placeholder="CPF: xxx.xxx.xxx-xx"/>
+				<input type="text" class="campos cCpfMobiCad" placeholder="CPF: xxx.xxx.xxx-xx" maxlength="14" />
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mCpfMobiCad">
 						Campo Cpf Requirido
