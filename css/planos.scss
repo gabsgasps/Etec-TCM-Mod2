@@ -1,7 +1,7 @@
 .planos-header{
 	width: 100%;
 	height: 700px;
-	background-image: url(../img/sobre.jpg);
+	background-image: url(../img/o.jpeg);
 	@extend %background-fixed;
 	@extend %flex;
     position: relative;
@@ -75,7 +75,9 @@
             padding: 2rem .8rem;
             @extend %sombraMenor;
             border-radius: .7rem;
-
+			@media (max-width: 425px) {
+				flex: 1;
+			}
 			.card-header{
 				// padding: 1rem 2rem;
                 width: 100%;
@@ -140,7 +142,9 @@
 	min-height: 500px;
 	padding: 5rem 0;
 	.wrap{
-		@extend %wrap;
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
 
 	}
 	.destaqueInfoP{
@@ -150,7 +154,10 @@
 		width: auto;
 		height: auto;
 		border-radius: .7rem; 
-
+	
+		@media (max-width: 768px) {
+			padding: 2em;
+		}
 	}
 	h2{
 		font-size: 2.2rem;
@@ -169,13 +176,13 @@
 		h5{
 			color: map-get($pallete, amarelo1);
 			font-weight: bolder;
-			font-size: 1.5rem;
+			font-size: 1.6rem;
 			text-transform: uppercase;
 			margin-bottom: 1.5rem;
 		    text-shadow: 1px 1px 10px;
 		}
 		p{
-			font-size: 1.12rem;
+			font-size: 1rem;
 			letter-spacing: .03rem;
 			text-align: justify;
 			color: rgb(77, 77, 77);
@@ -185,7 +192,7 @@
 
 	.infoLista {
 		li {
-			font-size: 1.12rem;
+			font-size: 1rem;
 			letter-spacing: .03rem;
 			margin-bottom: .9rem;
 			text-align: justify;

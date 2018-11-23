@@ -57,7 +57,7 @@ header, .header-sobre, .planos-header, .area-Login, .header-areaUsu {
   background-size: cover;
   background-attachment: fixed; }
 
-.intersecao-1 .wrap, .contato .wrap, footer .wrap, .planos-header .wrap, .destaque-planos .wrap, .info-planos .wrap, .area-Login .wrap, .areaForm .wrap, .login-mobile .wrap, .form-mobile .wrap, .header-cadastro-M .wrap, .area-cadastro .wrap, .header-areaUsu .wrap, .area-Usu .wrap {
+.intersecao-1 .wrap, .contato .wrap, footer .wrap, .planos-header .wrap, .destaque-planos .wrap, .area-Login .wrap, .areaForm .wrap, .login-mobile .wrap, .form-mobile .wrap, .header-cadastro-M .wrap, .area-cadastro .wrap, .header-areaUsu .wrap, .area-Usu .wrap {
   width: 80%;
   height: auto;
   margin: 0 auto; }
@@ -699,7 +699,9 @@ footer {
       .main-sobre .wrap article p {
         text-align: center;
         font-size: 1.2rem;
-        line-height: 1.4rem; }
+        line-height: 1.4rem;
+        color: white;
+        font-weight: 600; }
 
 .destaque-sobre {
   width: 100%;
@@ -758,7 +760,7 @@ footer {
 .planos-header {
   width: 100%;
   height: 700px;
-  background-image: url(../img/sobre.jpg);
+  background-image: url(../img/o.jpeg);
   position: relative; }
   .planos-header:after {
     content: '';
@@ -810,6 +812,9 @@ footer {
       margin: .9rem;
       padding: 2rem .8rem;
       border-radius: .7rem; }
+      @media (max-width: 425px) {
+        .area-Planos .wrap .card-planos {
+          flex: 1; } }
       .area-Planos .wrap .card-planos .card-header {
         width: 100%;
         height: auto;
@@ -857,12 +862,19 @@ footer {
   width: 100%;
   min-height: 500px;
   padding: 5rem 0; }
+  .info-planos .wrap {
+    width: 90%;
+    height: auto;
+    margin: 0 auto; }
   .info-planos .destaqueInfoP {
     margin-top: 3rem;
     padding: 4em;
     width: auto;
     height: auto;
     border-radius: .7rem; }
+    @media (max-width: 768px) {
+      .info-planos .destaqueInfoP {
+        padding: 2em; } }
   .info-planos h2 {
     font-size: 2.2rem;
     font-weight: bolder; }
@@ -877,17 +889,17 @@ footer {
     .info-planos .infoAntesdeComprar h5 {
       color: #ffbe00;
       font-weight: bolder;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       text-transform: uppercase;
       margin-bottom: 1.5rem;
       text-shadow: 1px 1px 10px; }
     .info-planos .infoAntesdeComprar p {
-      font-size: 1.12rem;
+      font-size: 1rem;
       letter-spacing: .03rem;
       text-align: justify;
       color: #4d4d4d; }
   .info-planos .infoLista li {
-    font-size: 1.12rem;
+    font-size: 1rem;
     letter-spacing: .03rem;
     margin-bottom: .9rem;
     text-align: justify;

@@ -2,7 +2,7 @@
 	
 	<section class="planos-header">
 		<div class="wrap">
-			<h1>Nossos Planos</h1>
+			<h1>Planos</h1>
 		</div>
 	</section>
 	<section class="destaque-planos">
@@ -62,8 +62,8 @@
 				<div class="card-body">
 					<ul>
 						<li>Plano flexível, cujas tecnologias <br> você escolhe</li>
-						<li>descrição do plano</li>
-						<li>descrição do plano</li>
+						<li>Podendo escolher até 3 <br> tecnologias</li>
+						<li></li>
 					</ul>
 				</div>
 				<div class="card-footer">
