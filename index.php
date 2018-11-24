@@ -93,7 +93,7 @@
 				<input type="nome" placeholder="Nome">
 				<input type="text" placeholder="Email">
 				<br><br>
-				<button>Let's go talk</button>
+				<button>Enviar</button>
 			</form>
 		</div>
 

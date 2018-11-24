@@ -87,7 +87,7 @@
                 top: -45px;
                 @extend %sombra;
                 border-radius: 6px;
-                background: linear-gradient(336deg, map-get($pallete, amarelo3), map-get($pallete, amarelo1), map-get($pallete, amarelo));
+                background: linear-gradient(336deg, map-get($pallete, amarelo3), map-get($pallete, amarelo4), map-get($pallete, amarelo));
 
 				h4{
 					font-size: 2.8rem;

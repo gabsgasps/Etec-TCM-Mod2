@@ -83,7 +83,7 @@
 					</ul>
 					<button type="submit" class="enviarLogin">Entrar</button>
 				</form>
-			<a id="cadastrar">Quero me cadastrar</a>
+			<a id="cadastrar" style="cursor: pointer;">Quero me cadastrar</a>
 			<!-- href="cadastro-mobile.php"   --> 
 			</div>
 			<div class="area-que-muda-cadastro d-none">
@@ -144,7 +144,7 @@
 							Confirme a Senha
 						</li>
 					</ul>
-					<button class="enviar" type="submit">Envia</button>
+					<button class="enviar" type="submit">Cadastrar</button>
 				</form>
 
 			</div>
