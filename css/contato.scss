@@ -44,21 +44,36 @@
 	min-height: 500px;
 	background-color: #fcfcfc;
 	@extend %flex;
+	padding: 3rem 0;
+
+	
+
 	 .wrap{
-		@extend %wrap;
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		@media(min-width: 768px) {
+    	display: flex;
+    }
 		form{
 			width: 100%;
 			height: auto;
 			margin: 0 auto;
-			padding: 5rem 0rem;
-
+			padding: 3rem;
+			@extend %sombra;
+			
+			@media (min-width: 768px){
+					width: 60%;
+					padding: 4rem 0rem;
+					margin-left: 1rem;
+			}
 			input{
 				width: 100%;
 				display: block;
 				margin: 0 auto;
 				border: 1px solid rgba(0, 0, 0, .3);
 				border-radius: 5px;
-				padding: .9rem;
+				padding: .8rem;
 				margin-bottom: 2rem;
 				transition: box-shadow .3s;
 				-webkit-transition: box-shadow .3s;
@@ -66,7 +81,7 @@
 				font-size: 1.3rem;
 
 				@media (min-width: 768px){
-					width: 70%;
+					width: 80%;
 				}
 
 				&::placeholder{
@@ -81,11 +96,11 @@
 				margin-bottom: .9rem;
 				border: 1px solid rgba(0, 0, 0, .3);
 				@media (min-width: 768px){
-					width: 70%;
+					width: 80%;
 				}
 			}
 			button{
-				@include btn-padrao(20px, 5rem, black);
+				@include btn-padrao(1rem, 5rem, black);
 				font-size: 1.1rem;
 				margin: 0 auto;
 			}
@@ -94,11 +109,20 @@
 }
 
 .info-destaqueCont {
-    width: 30%;
-    height: 400px;
-    background-color: fuchsia;
+    height: auto;
+    padding: 3rem;
+        display: flex;
+    flex-flow: column;
+    align-items: center;
+    @media(min-width: 768px) {
+    	flex: 1;
+    }
     
     p{
-        text-align: justify;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        display: flex;
+    align-items: center
     }
 }
