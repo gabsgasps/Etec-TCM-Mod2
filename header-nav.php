@@ -5,14 +5,6 @@
 	<title>Targeet - Nosso alvo é acertar</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-	
-		
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
 
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -70,7 +62,7 @@
 				<form action="logar.php" method="post">
 					<input type="text" placeholder="Email" name="campoEmail" class="campoEmailLogin">
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailLog">
-							Campo Email Requirido
+							Campo Email Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailCaracterLog">
 							Insira os caracteres '@'  e ' . ' no campo Email 
@@ -78,7 +70,7 @@
 					<input type="password" placeholder="Senha" name="campoSenha" class="campoSenhaLogin">
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageSenhaLog">
-							Campo Senha Requirido
+							Campo Senha Obrigatório
 						</li>
 					</ul>
 					<button type="submit" class="enviarLogin">Entrar</button>
@@ -96,13 +88,13 @@
 					<input type="text" class="campoNome" class="campos" name="campoNome" placeholder="Nome">
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-size: .9rem;font-weight: bolder;" class="messageNome" >
-							Campo Nome Requirido
+							Campo Nome Obrigatório
 						</li>
 					</ul>
 					<input type="email" class="campoEmail" class="campos" name="campoEmail" placeholder="Email"/>
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmail">
-							Campo Email Requirido
+							Campo Email Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailCaracter">
 							Insira os caracteres '@'  e ' . ' no campo Email 
@@ -112,7 +104,7 @@
 					<input type="text" class="campoCpf" class="campos" name="campoCpf" placeholder="CPF: 000.000.000-00" maxlength="14" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpf">
-							Campo Cpf Requirido
+							Campo Cpf Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpfConfig">
 							Campo CPF sem a formatação xxx.xxx.xxx-xx
@@ -121,7 +113,7 @@
 					<input type="tel" class="campoTel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx" maxlength="15" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageTel">
-							Campo Telefone Requirido
+							Campo Telefone Obrigatório
 						</li>
 					</ul>
 					<ul>
@@ -132,13 +124,13 @@
 					<input type="password" class="campoSenha" class="campos" name="campoSenha" placeholder="Senha" value="opa" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageSenha">
-							Campo Senha Requirido
+							Campo Senha Obrigatório
 						</li>
 					</ul>
 					<input type="password" class="cConfirmaSenha" class="campos" placeholder="Confirmar Senha"/>
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageConfSenhaReq">
-							Campo Confirma Senha Requirido
+							Campo Confirma Senha Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageConfSenha">
 							Confirme a Senha

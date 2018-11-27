@@ -23,9 +23,16 @@ let messageCpfConfig = document.querySelector(".messageCpfConfig");
 // end area mensagens
 
 var statusButton = [];
+const status = {
+	nome: false,
+	email: false,
+	cpf: false,
+	tel: false,
+	senha: false,
+	cConfirmaSenha: false
+};
 
-
-cNome.addEventListener('keyup', (event) => {
+cNome.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
 		messageNome.style.display = 'block';
@@ -33,10 +40,11 @@ cNome.addEventListener('keyup', (event) => {
 	}else {
 		bEnviar.disabled = false;
 		messageNome.style.display = 'none';
+
 	}
 });
 
-cEmail.addEventListener('keyup', (event) => {
+cEmail.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
 		bEnviar.disabled = true;
@@ -56,7 +64,7 @@ cEmail.addEventListener('keyup', (event) => {
 	}
 });
 
-cCpf.addEventListener('keyup', (event) => {
+cCpf.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
 		bEnviar.disabled = true;
@@ -75,8 +83,7 @@ cCpf.addEventListener('keyup', (event) => {
 
 });
 
-cTel.addEventListener('keyup', (event) => {
-	setTimeout(() => {
+cTel.addEventListener('input', (event) => {
 
 		if (!event.target.value.length) {
 			bEnviar.disabled = true;
@@ -84,6 +91,7 @@ cTel.addEventListener('keyup', (event) => {
 			messageTelConfig.style.display = 'none';
 		}else if(!/\(\d{2}\)\s\d{5}-\d{4}/.test(event.target.value) 
 			|| !/\d/g.test(event.target.value) ) {
+				bEnviar.disabled = true;
 				messageTel.style.display = 'none';
 				messageTelConfig.style.display = 'block';
 
@@ -92,16 +100,14 @@ cTel.addEventListener('keyup', (event) => {
 				bEnviar.disabled = false;
 			}
 
-	}, 500);
 });
 
-cSenha.addEventListener('keyup', (event) => {
+cSenha.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
 		bEnviar.disabled = true;
 		messageSenha.style.display = 'block';
-	}else {
-		if( campos[4].value !== campos[5].value) {
+	}else if( campos[4].value !== campos[5].value) {
 			bEnviar.disabled = true;
 			messageConfSenha.style.display = 'block';
 			messageConfSenhaReq.style.display = 'none';
@@ -110,10 +116,10 @@ cSenha.addEventListener('keyup', (event) => {
 			messageConfSenha.style.display = 'none';
 			bEnviar.disabled = false;
 		}
-	}
+	
 });
 
-cConfirmaSenha.addEventListener('keyup', (event) => {
+cConfirmaSenha.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
 		bEnviar.disabled = true;
@@ -122,8 +128,8 @@ cConfirmaSenha.addEventListener('keyup', (event) => {
 	}else {
 		if( campos[4].value !== campos[5].value) {
 			bEnviar.disabled = true;
-			messageConfSenha.style.display = 'block';
 			messageConfSenhaReq.style.display = 'none';
+			messageConfSenha.style.display = 'block';
 		}else {
 			messageConfSenha.style.display = 'none';
 			bEnviar.disabled = false;
@@ -162,7 +168,7 @@ let messageEmailCaracterLog = document.querySelector(".messageEmailCaracterLog")
 let messageSenhaLog = document.querySelector(".messageSenhaLog");
 // end messages areas
 
-campoEmailLogin.addEventListener('keyup', (event) => {
+campoEmailLogin.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
 		enviarLogin.disabled = true;
@@ -182,7 +188,7 @@ campoEmailLogin.addEventListener('keyup', (event) => {
 		}
 	}
 });
-campoSenhaLogin.addEventListener('keyup', (event) => {
+campoSenhaLogin.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
 		enviarLogin.disabled = true;

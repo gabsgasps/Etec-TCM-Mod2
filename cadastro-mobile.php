@@ -63,13 +63,13 @@
 				</ul>
 				
 					
-				<input type="password" class="campos cSenhaMobiCad" placeholder="Senha"/>
+				<input type="password" class="campos cSenhaMobiCad" placeholder="Senha" maxlength="15" />
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mSenhaMobiCad">
 						Campo Senha Requirido
 					</li>
 				</ul>
-				<input type="password" class="campos cConfSenhaMobiCad" placeholder="Confirmar Senha"/>
+				<input type="password" class="campos cConfSenhaMobiCad" placeholder="Confirmar Senha" maxlength="15"/>
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mConfSenhaReq">
 						Campo Confirma Senha Requirido

@@ -25,7 +25,7 @@ let mCpfMobiCadConfig = document.querySelector(".mCpfMobiCadConfig");
 var statusButton = [];
 
 
-cNomeMobiCad.addEventListener('keyup', (event) => {
+cNomeMobiCad.addEventListener('input', (event) => {
 	setTimeout(() => {
 		if (!event.target.value.length) {
 			mNomeMobiCad.style.display = 'block';
@@ -37,7 +37,7 @@ cNomeMobiCad.addEventListener('keyup', (event) => {
 	}, 500);
 });
 
-cEmailMobiCad.addEventListener('keyup', (event) => {
+cEmailMobiCad.addEventListener('input', (event) => {
 	setTimeout(() => {
 		if (!event.target.value.length) {
 			btnCadMobi.disabled = true;
@@ -57,7 +57,7 @@ cEmailMobiCad.addEventListener('keyup', (event) => {
 	
 });
 
-cCpfMobiCad.addEventListener('keyup', (event) => {
+cCpfMobiCad.addEventListener('input', (event) => {
 setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
@@ -75,7 +75,7 @@ setTimeout(() => {
 	
 });
 
-cTelMobiCad.addEventListener('keyup', (event) => {
+cTelMobiCad.addEventListener('input', (event) => {
 setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
@@ -91,7 +91,7 @@ setTimeout(() => {
 	}, 500);
 });
 
-cSenhaMobiCad.addEventListener('keyup', (event) => {
+cSenhaMobiCad.addEventListener('input', (event) => {
 setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
@@ -108,7 +108,7 @@ setTimeout(() => {
 	}, 500);
 });
 
-cConfSenhaMobiCad.addEventListener('keyup', (event) => {
+cConfSenhaMobiCad.addEventListener('input', (event) => {
 	setTimeout(() => {
 		if (!event.target.value.length) {
 			btnCadMobi.disabled = true;

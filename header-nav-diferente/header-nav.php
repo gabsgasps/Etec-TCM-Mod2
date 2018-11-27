@@ -71,7 +71,7 @@
 				<form action="logar.php" method="post">
 					<input type="text" placeholder="Email" name="campoEmail" class="campoEmailLogin">
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailLog">
-							Campo Email Requirido
+							Campo Email Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailCaracterLog">
 							Insira os caracteres '@'  e ' . ' no campo Email 
@@ -79,12 +79,12 @@
 					<input type="password" placeholder="Senha" name="campoSenha" class="campoSenhaLogin">
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageSenhaLog">
-							Campo Senha Requirido
+							Campo Senha Obrigatório
 						</li>
 					</ul>
 					<button type="submit" class="enviarLogin">Entrar</button>
 				</form>
-			<a id="cadastrar">Quero me cadastrar</a>
+			<a id="cadastrar" style="cursor: pointer;">Quero me cadastrar</a>
 			<!-- href="cadastro-mobile.php"   --> 
 			</div>
 			<div class="area-que-muda-cadastro d-none">
@@ -97,50 +97,55 @@
 					<input type="text" class="campoNome" class="campos" name="campoNome" placeholder="Nome">
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-size: .9rem;font-weight: bolder;" class="messageNome" >
-							Campo Nome Requirido
+							Campo Nome Obrigatório
 						</li>
 					</ul>
 					<input type="email" class="campoEmail" class="campos" name="campoEmail" placeholder="Email"/>
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmail">
-							Campo Email Requirido
+							Campo Email Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailCaracter">
 							Insira os caracteres '@'  e ' . ' no campo Email 
 						</li>
 
 					</ul>
-					<input type="text" class="campoCpf" class="campos" name="campoCpf" placeholder="CPF: 000.000.000-00" />
+					<input type="text" class="campoCpf" class="campos" name="campoCpf" placeholder="CPF: 000.000.000-00" maxlength="14" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpf">
-							Campo Cpf Requirido
+							Campo Cpf Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpfConfig">
-							Campo CPF errado
+							Campo CPF sem a formatação xxx.xxx.xxx-xx
 						</li>
 					</ul>
-					<input type="tel" class="campoTel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx"/>
+					<input type="tel" class="campoTel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx" maxlength="15" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageTel">
-							Campo Telefone Requirido
+							Campo Telefone Obrigatório
+						</li>
+					</ul>
+					<ul>
+						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageTelConfig">
+							Campo Telefone está no formato errado
 						</li>
 					</ul>
 					<input type="password" class="campoSenha" class="campos" name="campoSenha" placeholder="Senha" value="opa" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageSenha">
-							Campo Senha Requirido
+							Campo Senha Obrigatório
 						</li>
 					</ul>
 					<input type="password" class="cConfirmaSenha" class="campos" placeholder="Confirmar Senha"/>
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageConfSenhaReq">
-							Campo Confirma Senha Requirido
+							Campo Confirma Senha Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageConfSenha">
 							Confirme a Senha
 						</li>
 					</ul>
-					<button class="enviar" type="submit">Envia</button>
+					<button class="enviar" type="submit">Cadastrar</button>
 				</form>
 
 			</div>

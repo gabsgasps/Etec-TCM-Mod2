@@ -16,7 +16,7 @@ let mEmailCaracterLogMobi = document.querySelector(".mEmailCaracterLogMobi");
 let mSenhaMobi = document.querySelector(".mSenhaMobi");
 // end messages areas
 
-cEmailMobi.addEventListener('keyup', (event) => {
+cEmailMobi.addEventListener('input', (event) => {
 	setTimeout( () => {
 		if (!event.target.value.length) {
 			btnLogMobi.disabled = true;
@@ -35,7 +35,7 @@ cEmailMobi.addEventListener('keyup', (event) => {
 			}
 	}, 500);
 });
-cSenhaMobi.addEventListener('keyup', (event) => {
+cSenhaMobi.addEventListener('input', (event) => {
 	setTimeout(() => {
 		
 		if (!event.target.value.length) {
