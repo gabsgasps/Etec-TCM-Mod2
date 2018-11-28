@@ -84,7 +84,7 @@
                     arrow_back
                 </i>
                </div>
-				<form action="cadastrar.php" method="post">
+				<form action="cadastrar.php" method="post" id="formCadastro">
 					<input type="text" class="campoNome" class="campos" name="campoNome" placeholder="Nome">
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-size: .9rem;font-weight: bolder;" class="messageNome" >
@@ -136,7 +136,7 @@
 							Confirme a Senha
 						</li>
 					</ul>
-					<button class="enviar" type="submit">Cadastrar</button>
+					<button class="enviar" type="button">Cadastrar</button>
 				</form>
 
 			</div>

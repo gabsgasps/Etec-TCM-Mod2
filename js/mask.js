@@ -1,11 +1,7 @@
 document.querySelector(".campoCpf").addEventListener('input', (event) => {
 
-
-
 		event.target.value = event.target.value
 			.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4');
-
-		
 });
 
 document.querySelector(".campoTel").addEventListener('input', (event) => {
