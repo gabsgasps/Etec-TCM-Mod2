@@ -8,7 +8,7 @@
 
 	<section class="area-cadastro">
 		<div class="wrap">
-			<form action="cadastro-mobile.php" method="">
+			<form action="cadastro-mobile.php" method="" id="formCadMobi">
 				<div class="img-up">
 					<label for="img-up" class="">Alterar Foto
 						<i class="material-icons">
@@ -78,7 +78,7 @@
 						Confirme a Senha
 					</li>
 				</ul>
-				<button type="submit" class="btnCadMobi">ENVIAR</button>
+				<button type="button" class="btnCadMobi">ENVIAR</button>
 			</form>
 		</div>
 	</section>
