@@ -35,7 +35,22 @@
 					<button>Contratar</button>
 				</div>
 			</div>
-
+			<div class="card-planos">
+				<div class="card-header">
+					<h4>PRO</h4>
+					<h6>A partir de <br> R$ 245,00/MÊS</h6>
+				</div>
+				<div class="card-body">
+					<ul>
+						<li>Plano flexível, cujas tecnologias <br> você escolhe</li>
+						<li>Podendo escolher até 3 <br> tecnologias</li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="card-footer">
+					<button>Contratar</button>
+				</div>
+			</div>
 			<div class="card-planos">
 				<div class="card-header">
 					<h4>PREMIUM</h4>
@@ -54,22 +69,7 @@
 				</div>
 			</div>
 
-			<div class="card-planos">
-				<div class="card-header">
-					<h4>PRO</h4>
-					<h6>A partir de <br> R$ 245,00/MÊS</h6>
-				</div>
-				<div class="card-body">
-					<ul>
-						<li>Plano flexível, cujas tecnologias <br> você escolhe</li>
-						<li>Podendo escolher até 3 <br> tecnologias</li>
-						<li></li>
-					</ul>
-				</div>
-				<div class="card-footer">
-					<button>Contratar</button>
-				</div>
-			</div>
+			
 
 		</div>
 	</section>
