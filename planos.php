@@ -17,7 +17,7 @@
 			<div class="card-planos">
 				<div class="card-header">
 					<h4>BASIC</h4>
-					<h6>R$ 199,99/MÊS</h6>
+					<h6>R$ 199,99/ANO</h6>
 				</div>
 				<div class="card-body">
 					<ul>
@@ -38,7 +38,7 @@
 			<div class="card-planos">
 				<div class="card-header">
 					<h4>PRO</h4>
-					<h6>A partir de <br> R$ 245,00/MÊS</h6>
+					<h6>A partir de <br> R$ 245,00/ANO</h6>
 				</div>
 				<div class="card-body">
 					<ul>
@@ -54,7 +54,7 @@
 			<div class="card-planos">
 				<div class="card-header">
 					<h4>PREMIUM</h4>
-					<h6>R$ 300,00/MÊS</h6>
+					<h6>R$ 300,00/ANO</h6>
 				</div>
 				<div class="card-body">
 					<ul>

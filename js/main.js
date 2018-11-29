@@ -40,6 +40,7 @@ btn_login.addEventListener('click', ()=>{
 });//end btn-login
 
 
+
 // close modal
 function fechaModal(){
 
@@ -49,6 +50,10 @@ function fechaModal(){
 	});
 }// end close modal
 
+let toOut = document.querySelector(".toOut");
+toOut.addEventListener("click", () => {
+    modal.classList.remove('display-modal');
+});
 fechaModal();
 
 // change the modal 

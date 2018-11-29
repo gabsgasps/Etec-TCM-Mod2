@@ -48,7 +48,7 @@
 
 
 	<div class="modal">
-		<div>
+		<div style="z-index: 9999;">
 			<div class="close-modal">
 				
 				<i class="material-icons">
@@ -141,6 +141,15 @@
 
 			</div>
 		</div>
+        <div class="toOut" style="    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: transparent;
+    z-index: 30;
+    transition: all cubic-bezier(0.4, 0, 0.09, 0.12);">
+        AQUI</div>
 	</div>
 
 	
