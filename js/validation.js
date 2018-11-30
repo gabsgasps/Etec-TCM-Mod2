@@ -23,7 +23,7 @@ let messageCpfConfig = document.querySelector(".messageCpfConfig");
 // end area mensagens
 
 var statusButton = [];
-var Bunda = {
+var statusCampo = {
 	nome: false,
 	email: false,
 	cpf: false,
@@ -37,11 +37,11 @@ cNome.addEventListener('input', (event) => {
 	if (!event.target.value.length) {
 		messageNome.style.display = 'block';
 //		bEnviar.disabled = true;
-        Bunda.nome = false;
+        statusCampo.nome = false;
 	}else {
 //		bEnviar.disabled = false;
 		messageNome.style.display = 'none';
-        Bunda.nome = true;
+        statusCampo.nome = true;
 	}
 });
 
@@ -51,7 +51,7 @@ cEmail.addEventListener('input', (event) => {
 		bEnviar.disabled = true;
 		messageEmail.style.display = 'block';
 		messageEmailCaracter.style.display = 'none';
-        Bunda.email = false;
+        statusCampo.email = false;
 	}else {
 		if (campos[1].value.indexOf('@')  < 1 || 
 				campos[1].value.indexOf('.')  < 1 ) {
@@ -62,7 +62,7 @@ cEmail.addEventListener('input', (event) => {
 		} else{
 			messageEmailCaracter.style.display = 'none';
 			bEnviar.disabled = false;
-            Bunda.email = true;
+            statusCampo.email = true;
 		}
 	}
 });
@@ -73,7 +73,7 @@ cCpf.addEventListener('input', (event) => {
 		bEnviar.disabled = true;
 		messageCpf.style.display = 'block';
 		messageCpfConfig.style.display = 'none';
-        Bunda.cpf = false;
+        statusCampo.cpf = false;
 	}else if (!/\d{3}\.\d{3}\.\d{3}-\d{2}/.test(campos[2].value)) {
 			bEnviar.disabled = true;
 			messageCpfConfig.style.display = 'block';
@@ -81,7 +81,7 @@ cCpf.addEventListener('input', (event) => {
 		}else {
 			bEnviar.disabled = false;
 			messageCpfConfig.style.display = 'none';
-		      Bunda.cpf = true;
+		      statusCampo.cpf = true;
         }
 
 });
@@ -92,7 +92,7 @@ cTel.addEventListener('input', (event) => {
 			bEnviar.disabled = true;
 			messageTel.style.display = 'block';
 			messageTelConfig.style.display = 'none';
-            Bunda.tel = false;
+            statusCampo.tel = false;
 		}else if(!/\(\d{2}\)\s\d{5}-\d{4}/.test(event.target.value) 
 			|| !/\d/g.test(event.target.value) ) {
 				bEnviar.disabled = true;
@@ -102,7 +102,7 @@ cTel.addEventListener('input', (event) => {
 			}else{
 				messageTelConfig.style.display = 'none';			
 				bEnviar.disabled = false;
-                Bunda.tel = true;
+                statusCampo.tel = true;
 			}
 
 });
@@ -112,7 +112,7 @@ cSenha.addEventListener('input', (event) => {
 	if (!event.target.value.length) {
 		bEnviar.disabled = true;
 		messageSenha.style.display = 'block';
-        Bunda.senha = false;
+        statusCampo.senha = false;
 	}else if( campos[4].value !== campos[5].value) {
 			bEnviar.disabled = true;
 			messageConfSenha.style.display = 'block';
@@ -121,7 +121,7 @@ cSenha.addEventListener('input', (event) => {
 		}else {
 			messageConfSenha.style.display = 'none';
 			bEnviar.disabled = false;
-            Bunda.senha = true;
+            statusCampo.senha = true;
 		}
 	
 });
@@ -132,7 +132,7 @@ cConfirmaSenha.addEventListener('input', (event) => {
 		bEnviar.disabled = true;
 		messageConfSenhaReq.style.display = 'block';
 		messageConfSenha.style.display = 'none';
-        Bunda.cConfirmaSenha = true;
+        statusCampo.cConfirmaSenha = true;
 	}else {
 		if( campos[4].value !== campos[5].value) {
 			bEnviar.disabled = true;
@@ -141,7 +141,7 @@ cConfirmaSenha.addEventListener('input', (event) => {
 		}else {
 			messageConfSenha.style.display = 'none';
 			bEnviar.disabled = false;
-            Bunda.cConfirmaSenha = true;
+            statusCampo.cConfirmaSenha = true;
 		}
 	}
 });
@@ -157,7 +157,7 @@ bEnviar.addEventListener('click', () => {
 	}
     
     
-	if(Bunda.nome && Bunda.cpf && Bunda.email && Bunda.senha && Bunda.cConfirmaSenha && Bunda.tel) {
+	if(statusCampo.nome && statusCampo.cpf && statusCampo.email && statusCampo.senha && statusCampo.cConfirmaSenha && statusCampo.tel) {
         formCadastro.submit();
     }
 });

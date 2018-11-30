@@ -8,7 +8,8 @@ use id7241972_targeet;
  cpfUser varchar(16),
  telUser varchar(16),
  nomeImgUser varchar(255),
- senhaUser varchar(12));
+ senhaUser varchar(12)
+ );
  
  drop table usuario;
   drop database id7241972_targeet;

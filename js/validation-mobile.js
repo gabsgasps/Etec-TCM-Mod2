@@ -33,7 +33,6 @@ var statusMobi = {
 };
 
 cNomeMobiCad.addEventListener('input', (event) => {
-	setTimeout(() => {
 		if (!event.target.value.length) {
 			mNomeMobiCad.style.display = 'block';
 			btnCadMobi.disabled = true;
@@ -43,11 +42,9 @@ cNomeMobiCad.addEventListener('input', (event) => {
 			mNomeMobiCad.style.display = 'none';
 			statusMobi.nome = true;
 		}
-	}, 500);
 });
 
 cEmailMobiCad.addEventListener('input', (event) => {
-	setTimeout(() => {
 		if (!event.target.value.length) {
 			btnCadMobi.disabled = true;
 			mEmailMobiCad.style.display = 'block';
@@ -64,12 +61,10 @@ cEmailMobiCad.addEventListener('input', (event) => {
 				btnCadMobi.disabled = false;
 				statusMobi.email = true;
 			}
-	}, 500);
 	
 });
 
 cCpfMobiCad.addEventListener('input', (event) => {
-setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
 		mCpfMobiCad.style.display = 'block';
@@ -84,12 +79,10 @@ setTimeout(() => {
 			mCpfMobiCadConfig.style.display = 'none';
 			statusMobi.cpf = true;
 		}
-	}, 500);
 	
 });
 
 cTelMobiCad.addEventListener('input', (event) => {
-setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
 		mTelMobiCadConfig.style.display = 'none';
@@ -103,11 +96,9 @@ setTimeout(() => {
 			btnCadMobi.disabled = false;
 			statusMobi.tel = true;
 		}
-	}, 500);
 });
 
 cSenhaMobiCad.addEventListener('input', (event) => {
-setTimeout(() => {
 	if (!event.target.value.length) {
 		btnCadMobi.disabled = true;
 		mSenhaMobiCad.style.display = 'block';
@@ -122,11 +113,9 @@ setTimeout(() => {
 			btnCadMobi.disabled = false;
 			statusMobi.senha = true;
 		}
-	}, 500);
 });
 
 cConfSenhaMobiCad.addEventListener('input', (event) => {
-	setTimeout(() => {
 		if (!event.target.value.length) {
 			btnCadMobi.disabled = true;
 			mConfSenha.style.display = 'none';
@@ -142,7 +131,6 @@ cConfSenhaMobiCad.addEventListener('input', (event) => {
 				btnCadMobi.disabled = false;
 				statusMobi.cConfirmaSenha = true;
 			}
-	}, 500);
 	
 });
 /////////////// ??????????????????????///

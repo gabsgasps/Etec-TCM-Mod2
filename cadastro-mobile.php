@@ -94,7 +94,7 @@
 
 			leitorDeArquivo.readAsDataURL(eventObject.target.files[0]);
 
-			console.log(eventObject.target);
+			// console.log(eventObject.target);
 
 		}
 	</script>
