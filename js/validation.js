@@ -36,10 +36,10 @@ cNome.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
 		messageNome.style.display = 'block';
-//		bEnviar.disabled = true;
+//		
         statusCampo.nome = false;
 	}else {
-//		bEnviar.disabled = false;
+		
 		messageNome.style.display = 'none';
         statusCampo.nome = true;
 	}
@@ -48,20 +48,20 @@ cNome.addEventListener('input', (event) => {
 cEmail.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
-		bEnviar.disabled = true;
+		
 		messageEmail.style.display = 'block';
 		messageEmailCaracter.style.display = 'none';
         statusCampo.email = false;
 	}else {
 		if (campos[1].value.indexOf('@')  < 1 || 
 				campos[1].value.indexOf('.')  < 1 ) {
-			bEnviar.disabled = true;
+			
 			messageEmailCaracter.style.display = 'block';
 			messageEmail.style.display = 'none';
 			
 		} else{
 			messageEmailCaracter.style.display = 'none';
-			bEnviar.disabled = false;
+			
             statusCampo.email = true;
 		}
 	}
@@ -70,38 +70,42 @@ cEmail.addEventListener('input', (event) => {
 cCpf.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
-		bEnviar.disabled = true;
-		messageCpf.style.display = 'block';
+		
 		messageCpfConfig.style.display = 'none';
+		messageCpf.style.display = 'block';
         statusCampo.cpf = false;
-	}else if (!/\d{3}\.\d{3}\.\d{3}-\d{2}/.test(campos[2].value)) {
-			bEnviar.disabled = true;
-			messageCpfConfig.style.display = 'block';
+	}else if (event.target.value.length < 11 || 
+		(event.target.value.length > 11 && event.target.value.length < 14)
+		|| event.target.value.length > 14) {
+			
 			messageCpf.style.display = 'none';
+			messageCpfConfig.style.display = 'block';
 		}else {
-			bEnviar.disabled = false;
+			
 			messageCpfConfig.style.display = 'none';
 		      statusCampo.cpf = true;
         }
 
+
 });
+      
 
 cTel.addEventListener('input', (event) => {
 
 		if (!event.target.value.length) {
-			bEnviar.disabled = true;
+			
 			messageTel.style.display = 'block';
 			messageTelConfig.style.display = 'none';
             statusCampo.tel = false;
 		}else if(!/\(\d{2}\)\s\d{5}-\d{4}/.test(event.target.value) 
 			|| !/\d/g.test(event.target.value) ) {
-				bEnviar.disabled = true;
+				
 				messageTel.style.display = 'none';
 				messageTelConfig.style.display = 'block';
 
 			}else{
 				messageTelConfig.style.display = 'none';			
-				bEnviar.disabled = false;
+				
                 statusCampo.tel = true;
 			}
 
@@ -110,17 +114,17 @@ cTel.addEventListener('input', (event) => {
 cSenha.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
-		bEnviar.disabled = true;
+		
 		messageSenha.style.display = 'block';
         statusCampo.senha = false;
 	}else if( campos[4].value !== campos[5].value) {
-			bEnviar.disabled = true;
+			
 			messageConfSenha.style.display = 'block';
 			messageConfSenhaReq.style.display = 'none';
 			messageSenha.style.display = 'none';
 		}else {
 			messageConfSenha.style.display = 'none';
-			bEnviar.disabled = false;
+			
             statusCampo.senha = true;
 		}
 	
@@ -129,18 +133,18 @@ cSenha.addEventListener('input', (event) => {
 cConfirmaSenha.addEventListener('input', (event) => {
 
 	if (!event.target.value.length) {
-		bEnviar.disabled = true;
+		
 		messageConfSenhaReq.style.display = 'block';
 		messageConfSenha.style.display = 'none';
         statusCampo.cConfirmaSenha = true;
 	}else {
 		if( campos[4].value !== campos[5].value) {
-			bEnviar.disabled = true;
+			
 			messageConfSenhaReq.style.display = 'none';
 			messageConfSenha.style.display = 'block';
 		}else {
 			messageConfSenha.style.display = 'none';
-			bEnviar.disabled = false;
+			
             statusCampo.cConfirmaSenha = true;
 		}
 	}

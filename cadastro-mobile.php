@@ -30,32 +30,32 @@
 				<input type="text" class="campos cNomeMobiCad" placeholder="Nome" autofocus="true">
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-size: .9rem;font-weight: bolder;" class="mNomeMobiCad" >
-						Campo Nome Requirido
+						Campo Nome obrigatório
 					</li>
 				</ul>
 				<input type="email" class="campos cEmailMobiCad" placeholder="Email"/>
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mEmailMobiCad">
-						Campo Email Requirido
+						Campo Email obrigatório
 					</li>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mEmailMobiCadCaracter">
 						Insira os caracteres '@'  e ' . ' no campo Email 
 					</li>
 
 				</ul>
-				<input type="text" class="campos cCpfMobiCad" placeholder="CPF: xxx.xxx.xxx-xx" maxlength="14" />
+				<input type="text" class="campos cCpfMobiCad" placeholder="CPF/CNPJ" maxlength="18" />
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mCpfMobiCad">
-						Campo Cpf Requirido
+						Campo Cpf obrigatório
 					</li>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mCpfMobiCadConfig">
-						Campo CPF errado
+						Campo CPF/CPNJ com formatação incorreta
 					</li>
 				</ul>
 				<input type="tel" class="campos cTelMobiCad" placeholder="(xx)xxxxx-xxxx" maxlength="15" />
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mTelMobiCad">
-						Campo Telefone Requirido
+						Campo Telefone obrigatório
 					</li>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mTelMobiCadConfig">
 						Campo Telefone está no formato errado
@@ -66,13 +66,13 @@
 				<input type="password" class="campos cSenhaMobiCad" placeholder="Senha" maxlength="15" />
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mSenhaMobiCad">
-						Campo Senha Requirido
+						Campo Senha obrigatório
 					</li>
 				</ul>
 				<input type="password" class="campos cConfSenhaMobiCad" placeholder="Confirmar Senha" maxlength="15"/>
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mConfSenhaReq">
-						Campo Confirma Senha Requirido
+						Campo Confirma Senha obrigatório
 					</li>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mConfSenha">
 						Confirme a Senha

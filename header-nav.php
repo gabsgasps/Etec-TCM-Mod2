@@ -115,13 +115,13 @@ require_once 'lib/bancoDeDados.php';?>
 						</li>
 
 					</ul>
-					<input type="text" class="campoCpf" class="campos" name="campoCpf" placeholder="CPF: 000.000.000-00" maxlength="14" />
+					<input type="text" class="campoCpf" class="campos" name="campoCpf" placeholder="CPF/CNPJ" maxlength="18" />
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpf">
-							Campo Cpf Obrigatório
+							Campo CPF/CNPJ Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpfConfig">
-							Campo CPF sem a formatação xxx.xxx.xxx-xx
+							Campo CPF/CPNJ com formatação incorreta
 						</li>
 					</ul>
 					<input type="tel" class="campoTel" class="campos" name="campoTel" placeholder="(xx)xxxxx-xxxx" maxlength="15" />

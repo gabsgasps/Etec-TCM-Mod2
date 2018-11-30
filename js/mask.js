@@ -1,7 +1,18 @@
-document.querySelector(".campoCpf").addEventListener('input', (event) => {
+document.querySelector(".campoCpf").addEventListener('blur', (event) => {
+	if(event.target.value.length == 11) {
 
+		 if (vCpf(event.target.value)) {
+
+				event.target.value = event.target.value
+					.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4');
+				messageCpfConfig.style.display = 'none';
+			}else {
+				messageCpfConfig.style.display = 'block';
+			}
+	}else if(event.target.value.length == 14) {
 		event.target.value = event.target.value
-			.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4');
+			.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
+	}
 });
 
 document.querySelector(".campoTel").addEventListener('input', (event) => {
@@ -36,11 +47,24 @@ document.querySelector(".campoTel").addEventListener('input', (event) => {
 });
 
 
-document.querySelector(".cCpfMobiCad").addEventListener('input', (event) => {
+document.querySelector(".cCpfMobiCad").addEventListener('blur', (event) => {
 
 
-		event.target.value = event.target.value
-			.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4');
+		if(event.target.value.length == 11) {
+
+		if (vCpf(event.target.value)) {
+
+				event.target.value = event.target.value
+					.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4');
+				mCpfMobiCadConfig.style.display = 'none';
+			}else {
+				mCpfMobiCadConfig.style.display = 'block';
+			}
+			
+		}else if(event.target.value.length == 14) {
+			event.target.value = event.target.value
+				.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
+		}
 	
 });
 
