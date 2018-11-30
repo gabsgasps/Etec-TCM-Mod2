@@ -1,3 +1,5 @@
+<?php session_start();
+require_once 'lib/bancoDeDados.php';?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -23,7 +25,19 @@
 					<li><a href="planos.php">Planos</a></li>
 					<li><a href="contato.php">Contato</a></li>
 				</ul>
-				<button class="btn-login">Login</button>
+				<?php
+					if($_SESSION){
+						if($_SESSION["cod"]){
+
+				?>
+					<button class="btn-login" onclick="location.href='areaUsuario.php?sair=sim'">Sair</button>
+				<?php
+					}
+					}
+					else{
+						echo '<button class="btn-login">Login</button>';
+					}
+				?>
 			</nav>
 			
 				<i class="material-icons btn-hamburguer" style="font-size: 2.5rem;">
@@ -59,7 +73,7 @@
 				<div class="img-usuario">
 					<i class="material-icons" style="font-size: 4rem">person_outline</i>
 				</div>
-				<form action="logar.php" method="post">
+				<form action="/funcaoBancoDeDados/logar.php" method="post">
 					<input type="text" placeholder="Email" name="campoEmail" class="campoEmailLogin">
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageEmailLog">
 							Campo Email Obrigatório
@@ -84,7 +98,7 @@
                     arrow_back
                 </i>
                </div>
-				<form action="cadastrar.php" method="post" id="formCadastro">
+				<form action="./funcaoBancoDeDados/cadastrar.php" method="post" id="formCadastro">
 					<input type="text" class="campoNome" class="campos" name="campoNome" placeholder="Nome">
 					<ul>
 						<li style="display:none;text-align: center; color: red; font-size: .9rem;font-weight: bolder;" class="messageNome" >

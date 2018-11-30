@@ -26,7 +26,7 @@ var closeM = document.querySelector('.close-modal');
 
 
 btn_login.addEventListener('click', ()=>{
-
+    
 
 	if (modal.classList.contains('display-modal')) {
 		fechaModal();
