@@ -111,6 +111,7 @@ cSenhaMobiCad.addEventListener('input', (event) => {
 			mConfSenha.style.display = 'block';
 			mConfSenhaReq.style.display = 'none';
 			mSenhaMobiCad.style.display = 'none';
+			
 		}else {
 			mConfSenha.style.display = 'none';
 			
@@ -133,6 +134,7 @@ cConfSenhaMobiCad.addEventListener('input', (event) => {
 				mConfSenha.style.display = 'none';
 				
 				statusMobi.cConfirmaSenha = true;
+				statusMobi.senha = true;
 			}
 	
 });

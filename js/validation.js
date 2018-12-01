@@ -124,7 +124,6 @@ cSenha.addEventListener('input', (event) => {
 			messageSenha.style.display = 'none';
 		}else {
 			messageConfSenha.style.display = 'none';
-			
             statusCampo.senha = true;
 		}
 	
@@ -136,7 +135,7 @@ cConfirmaSenha.addEventListener('input', (event) => {
 		
 		messageConfSenhaReq.style.display = 'block';
 		messageConfSenha.style.display = 'none';
-        statusCampo.cConfirmaSenha = true;
+        statusCampo.cConfirmaSenha = false;
 	}else {
 		if( campos[4].value !== campos[5].value) {
 			
@@ -146,6 +145,7 @@ cConfirmaSenha.addEventListener('input', (event) => {
 			messageConfSenha.style.display = 'none';
 			
             statusCampo.cConfirmaSenha = true;
+            statusCampo.senha = true;
 		}
 	}
 });
@@ -163,6 +163,7 @@ bEnviar.addEventListener('click', () => {
     
 	if(statusCampo.nome && statusCampo.cpf && statusCampo.email && statusCampo.senha && statusCampo.cConfirmaSenha && statusCampo.tel) {
         formCadastro.submit();
+        formCadastro.reset();
     }
 });
 
