@@ -10,5 +10,6 @@
 	<script src="js/validation-mobile.js"></script>
 	<script src="js/login-mobile.js"></script>
 	<script src="js/validationCpf.js"></script>
+	<script src="js/validationCpnj.js"></script>
 </body>
 </html>
