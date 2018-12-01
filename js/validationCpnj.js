@@ -25,7 +25,7 @@ function vCpnj() {
 
         var soma = 0;
         for (var i = 1; i <= 10; i++) {
-                soma = soma + (parseInt(cnpj[i -1]) * aux[i];
+                soma = soma + (parseInt(cnpj[i -1]) * aux[i -1];
         }
 
         // var resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
