@@ -1,5 +1,6 @@
 document.querySelector(".campoCpf").addEventListener('blur', (event) => {
-	if(event.target.value.length == 11) {
+	if(event.target.value.length == 11 ||
+		/^\d{3}\.\d{3}\.\d{3}-\d{2}$/.test(event.target.value)	) {
 
 		 if (vCpf(event.target.value)) {
 
@@ -9,9 +10,19 @@ document.querySelector(".campoCpf").addEventListener('blur', (event) => {
 			}else {
 				messageCpfConfig.style.display = 'block';
 			}
-	}else if(event.target.value.length == 14) {
-		event.target.value = event.target.value
-			.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
+	}else if(event.target.value.length == 14 || 
+			/^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/.test(event.target.value)) {
+
+		if(vCpnj(event.target.value)) {
+
+			event.target.value = event.target.value
+				.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
+			messageCpfConfig.style.display = 'none';
+
+		}else {
+
+			messageCpfConfig.style.display = 'block';
+		}
 	}
 });
 
@@ -50,7 +61,8 @@ document.querySelector(".campoTel").addEventListener('input', (event) => {
 document.querySelector(".cCpfMobiCad").addEventListener('blur', (event) => {
 
 
-		if(event.target.value.length == 11) {
+		if(event.target.value.length == 11 ||
+		/^\d{3}\.\d{3}\.\d{3}-\d{2}$/.test(event.target.value)) {
 
 		if (vCpf(event.target.value)) {
 
@@ -61,9 +73,19 @@ document.querySelector(".cCpfMobiCad").addEventListener('blur', (event) => {
 				mCpfMobiCadConfig.style.display = 'block';
 			}
 			
-		}else if(event.target.value.length == 14) {
-			event.target.value = event.target.value
-				.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
+		}else if(event.target.value.length == 14 || 
+			/^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/.test(event.target.value)) {
+
+			if(vCpnj(event.target.value)) {
+
+				event.target.value = event.target.value
+					.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
+				mCpfMobiCadConfig.style.display = 'none';
+
+			}else {
+
+				mCpfMobiCadConfig.style.display = 'block';
+			}
 		}
 	
 });

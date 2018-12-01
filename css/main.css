@@ -684,9 +684,6 @@ footer {
       margin-bottom: 2rem; }
       @media (max-width: 768px) {
         .main-sobre .wrap article {
-          padding: 0 3rem; } }
-      @media (max-width: 425px) {
-        .main-sobre .wrap article {
           padding: 0 0rem; } }
       @media (min-width: 1024px) {
         .main-sobre .wrap article {
