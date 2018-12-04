@@ -941,7 +941,7 @@ footer {
       width: 100%;
       height: auto;
       margin: 0 auto;
-      padding: 3rem; }
+      padding: 1rem; }
       @media (min-width: 768px) {
         .areaForm .wrap form {
           width: 60%;
