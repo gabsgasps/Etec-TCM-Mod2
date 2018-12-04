@@ -121,7 +121,7 @@ require_once 'lib/bancoDeDados.php';?>
 							Campo CPF/CNPJ Obrigatório
 						</li>
 						<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="messageCpfConfig">
-							Campo CPF/CPNJ incorreto
+							Campo CPF/CNPJ incorreto
 						</li>
 					</ul>
 					<input type="tel" class="campoTel" class="campos" name="campoTel" placeholder="Telefone" maxlength="15" />

@@ -46,10 +46,10 @@
 				<input type="text" class="campos cCpfMobiCad" placeholder="CPF/CNPJ" maxlength="18" />
 				<ul>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mCpfMobiCad">
-						Campo Cpf obrigatório
+						Campo CPF/CNPJ obrigatório
 					</li>
 					<li style="display:none;text-align: center; color: red; font-weight: bolder; font-size: .9rem;" class="mCpfMobiCadConfig">
-						Campo CPF/CPNJ com formatação incorreta
+						Campo CPF/CNPJ incorreta
 					</li>
 				</ul>
 				<input type="tel" class="campos cTelMobiCad" placeholder="(xx)xxxxx-xxxx" maxlength="15" />
