@@ -17,7 +17,7 @@
 			<div class="card-planos">
 				<div class="card-header">
 					<h4>BASIC</h4>
-					<h6>R$ 199,99/ANO</h6>
+					<h6>R$ 24,99/MÊS</h6>
 				</div>
 				<div class="card-body">
 					<ul>
@@ -28,7 +28,7 @@
 						<li>
 							Identificação do Público Alvo
 						</li>
-						<li>Publicações, Campanhas e <br> Acompanhamento do público alvo</li>
+						<li>Publicações, Campanhas e <br> Acomp. do público alvo</li>
 					</ul>
 				</div>
 				<div class="card-footer">
@@ -38,13 +38,12 @@
 			<div class="card-planos">
 				<div class="card-header">
 					<h4>PRO</h4>
-					<h6>A partir de <br> R$ 245,00/ANO</h6>
+					<h6>A partir de <br> R$ 29,99/MÊS</h6>
 				</div>
 				<div class="card-body">
 					<ul>
 						<li>Plano flexível, cujas tecnologias <br> você escolhe</li>
 						<li>Podendo escolher até 3 <br> tecnologias</li>
-						<li></li>
 					</ul>
 				</div>
 				<div class="card-footer">
@@ -54,11 +53,10 @@
 			<div class="card-planos">
 				<div class="card-header">
 					<h4>PREMIUM</h4>
-					<h6>R$ 300,00/ANO</h6>
+					<h6>R$ 34,99/MÊS</h6>
 				</div>
 				<div class="card-body">
 					<ul>
-						<li>Gerencimanto das <strong>Redes Sociais</strong> </li>
 						<li> <strong>Google Adwords</strong> (anúncios no Google)</li>
 						<li> <strong>SEO</strong>  (Otimização dos Mecanismos <br> de Busca)</li>
 						<li>Google Analytics</li>

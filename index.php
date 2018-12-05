@@ -25,27 +25,27 @@
           <h2>Alguns Clientes</h2>
        <div class="wrap">
             <div class="cliente">
-                <div class="destaque-cliente"></div>
+                <div class="destaque-cliente" style="background-image: url(img/cliente1.jpg);background-size: cover;"></div>
                 <div class="info-cliente">
-                    <h3>Cliente 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum mollitia cupiditate odit excepturi quae repellat, obcaecati numquam, labore iusto deserunt laudantium.</p>
+                    <h3>Monocle</h3>
+                    <p>Monocle, Loja de Departamento Americana, que procurou a Targeet, pois não estava conseguindo um bom raqueamento da loja nas pesquisas, sendo assim foi trabalhado incialmente o SEO da Loja.</p>
                 </div>
             </div>
             <div class="cliente">
-                <div class="destaque-cliente"></div>
+                <div class="destaque-cliente" style="background-image: url(img/cliente2.jpg);background-size: cover;"></div>
                 <div class="info-cliente">
-                    <h3>Cliente 2</h3>
+                    <h3>Award</h3>
                     <p>
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum mollitia cupiditate odit excepturi quae repellat, obcaecati numquam, labore iusto deserunt laudantium.
+                       Award, empresa Americana com Blog sobre música Indies, a Targeet trabalhou com análises e levamentos acerca do público alvo e o engajamento de novos leitores por meio das Redes Sociais.
                     </p>
                 </div>
             </div>
             <div class="cliente">
-                <div class="destaque-cliente"></div>
+                <div class="destaque-cliente" style="background-image: url(img/cliente3.jpg);background-size: cover;"></div>
                 <div class="info-cliente">
-                    <h3>Cliente 3</h3>
+                    <h3>House</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum mollitia cupiditate odit excepturi quae repellat, obcaecati numquam, labore iusto deserunt laudantium.
+                        House, Loja de Deparmento Polonesa, que enfrentava sérios problemas de créscimento e visibilidade, a Targeet trabalhou com anúncios e progandas no Google para uma maior abrangencia e fidelização de novos clientes.
                     </p>
                 </div>
             </div>
