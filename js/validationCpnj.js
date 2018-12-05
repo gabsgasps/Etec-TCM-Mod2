@@ -26,11 +26,7 @@ function vCpnj(cnpj) {
 
         var resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
  
-        if(resultado != cnpj[12]){
-         return false
-        }else {
-                return true;       
-        }
+       
         // console.log(resultado);
 
         var soma = 0;
@@ -40,10 +36,14 @@ function vCpnj(cnpj) {
 
         var resultado2 = soma % 11 < 2 ? 0 : 11 - soma % 11;
 
-        if(resultado != cnpj[13]) {
-                return false
-        }else {
-                return true;
+         if(resultado != cnpj[12]){
+            return false
+        }else {       
+            if(resultado2 != cnpj[13]) {
+                    return false
+            }else {
+                    return true;
+            }
         }
 
 
